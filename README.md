@@ -18,8 +18,7 @@ credits:
 ---
 
 # ORGANS Knowledge Graph
-BELLS Knowledge Graph stores information about the organs instrument and their evolution through time.
-[...]
+ORGANS Knowledge Graph stores information about the organs instrument and their evolution through time.
 
 ORGANS Knowledge Graph can be queried on the **[ArCo SPARQL endpoint](https://dati.cultura.gov.it/sparql)**.
 Moreover, it can be downloaded in different formats.
