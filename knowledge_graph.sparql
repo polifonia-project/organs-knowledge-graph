@@ -1,0 +1,79 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX organ: <http://w3id.org/polifonia/resource/organs/>
+PREFIX oont: <http://w3id.org/polifonia/ontology/organs/>
+PREFIX core: <https://w3id.org/arco/ontology/core/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+CONSTRUCT
+  {
+	?organ a oont:Organ ;
+		core:isDescribedBy ?organName ;
+		oont:windPressure ?windpressure ;
+		oont:temperature ?temperature ;
+		.
+
+	?organName rdfs:subclassOf ?description .
+	?organName core:hasPlace ?place .
+	?orgaName core:hasAgentRole "builder" .
+
+	"builder" core:hasRole ?builder .
+
+	"parthood" core:includesWhole ?organ .
+	"parthood" core:includesPart ?windsystem .
+	"parthood" core:includesPart "console" .
+
+	"console" oont:consoleLocation ?consolelocation .
+	"console" oont:systemPlayingAids ?playingaids .
+  }
+WHERE
+  { SERVICE <x-sparql-anything:file:./output/base.json>
+    { 
+		fx:properties
+			fx:json.path.1 "$.Part01_001MIDDE.name";
+			fx:json.path.2 "$.Part01_001MIDDE.place" ; 
+			. 
+			
+		[] a fx:root; 
+			rdf:_1 ?organName ;
+			rdf:_2 ?place ;
+			.
+
+		BIND (?_organ AS ?organ) .
+	}	SERVICE <x-sparql-anything:file:./output/dispositions.json> 
+	{ 
+		fx:properties
+			fx:json.path.1 "$.Part01_001MIDDE.dispositions[?(@.current==true)].description";
+			.
+
+		[] a fx:root; 
+			rdf:_1 ?description ;
+
+  	} 	SERVICE <x-sparql-anything:file:./output/history_projects.json>  {
+		fx:properties
+			fx:json.path.1 "$.Part01_001MIDDE[0].name";	
+			.
+
+		[] a fx:root; 
+			rdf:_1 ?builder ;
+	} 
+	SERVICE <x-sparql-anything:file:./output/tech.json>
+    { 
+		fx:properties
+			fx:json.path.1 "$.Part01_001MIDDE.windPres" ; 
+			fx:json.path.2 "$.Part01_001MIDDE.temperature" ; 
+			fx:json.path.3 "$.Part01_001MIDDE.windSys" ; 
+			fx:json.path.4 "$.Part01_001MIDDE.aids" ;
+			.
+				
+		[] a fx:root; 
+			rdf:_1 ?windpressure ;
+			rdf:_2 ?temperature ;
+			rdf:_3 ?windsystem ;
+			rdf:_4 ?playingaids ;
+ 			.
+	} 
+  }
