@@ -1,0 +1,25 @@
+@prefix core:  <https://w3id.org/arco/ontology/core/> .
+@prefix fx:    <http://sparql.xyz/facade-x/ns/> .
+@prefix oont:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organ: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd:    <http://www.wikidata.org/entity/> .
+@prefix wdt:   <http://www.wikidata.org/prop/direct/> .
+@prefix xyz:   <http://sparql.xyz/facade-x/data/> .
+
+"builder"  core:hasRole  "Gerrit Petersz" .
+
+"parthood"  core:includesPart  "console" , "in 1886 verdwenen" ;
+        core:includesWhole  "Part01_001MIDDE" .
+
+"Middelburg, Koorkerk"
+        rdfs:subclassOf  "" ;
+        core:hasPlace    "Middelburg" .
+
+"console"  oont:systemPlayingAids  "koppeling HW-RP\nafsluiters HW, RP, BW, Ped" .
+
+"Part01_001MIDDE"  rdf:type  oont:Organ ;
+        oont:temperature    "niet vast te stellen" ;
+        oont:windPressure   "niet vast te stellen" ;
+        core:isDescribedBy  "Middelburg, Koorkerk" .
