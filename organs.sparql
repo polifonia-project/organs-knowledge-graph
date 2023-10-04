@@ -9,91 +9,132 @@ PREFIX core: <https://w3id.org/polifonia/ontology/core/>
 construct {
 
     #################
-    # Predefined roles
-    organs:roleBuilder a core:Role ;
-    rdfs:label "Builder" .
-
-    ##################
-    # Predefined tasks
-    organs:taskDelivery a core:Task ;
-        rdfs:label "Delivery" .
-
-    #################
     # Organ individual
 
     ?organ_iri a organ:Organ ;
-        core:isDescribedBy ?project_delivery ;
-        core:isDescribedBy ?project_iri ;
-        rdfs:label ?building_year ;
-        core:isWholeIncludedIn ?organ_building_parthood_iri ;
-        core:isWholeIncludedIn ?organ_originallocation_parthood_iri .
+        rdfs:label ?organ_name ; # string literal
+        core:includesWhole ?organ_parthood_iri ;
 
-    # construct a parthood with location and timeinterval of the organ
+    # construct a parthood with location(s) and timeinterval(s) of the organ
+    ?organ_parthood_iri a ins:InstrumentWhole ;
+        core:hasTimedLocation [
+            core:hasLocation [
+                core:hasAddress ?address ; # string literal with formatted address
+                core:name ?name ; # string literal
+                core:longitude ?longitude ; # float (?)
+                core:latitude ?latitude ; # float (?)
+                rdf:comment ?building_description . # string literal.
+            ] ;
+            core:hasTimeInterval [
+                core:hasIntervalDate ?parthood_date_iri ;
+            ]
+        ]
 
-    ?organ_building_parthood_iri a core:Parthood ;
-        core:hasTimeInterval ?build_timeinterval_iri ;
-        core:hasPlace ?build_place_iri .
-    
-    ?build_timeinterval_iri a core:TimeInterval ;
-        core:startTime ?building_year .
+    #Q What is ?parthood_date_iri? 
 
-    ?build_place_iri a core:PhysicalSite ;
-        rdfs:label ?organ_building_place .
+    ###################################
+    ### Date for the parts.
 
-    # if there is a original location, make a dedicated parthood for that
+    ?timed_location_iri [
+        a core:TimedLocation ;
+        core:hasTimeInterval [
+            core:hasIntervalDate ?date_iri .
+        ]
+    ] .
 
-    ?organ_originallocation_parthood_iri a core:Parthood ;
-        core:hasTimeInterval ?originallocation_timeinterval_iri ;
-        core:hasPlace ?originallocation_place_iri .
-    
-    ?originallocation_timeinterval_iri a core:TimeInterval ;
-        core:endTime ?building_year .
+    #Q What is ?date_iri
 
-    ?originallocation_place_iri a core:PhysicalSite ;
-        rdfs:label ?organ_originallocation_place .
+    ###################################
+    ### BASIC TECHNICAL DATA
 
-    ###########
-    # Deliveries
+    # These data are only available for current situation
 
-    ?project_delivery a core:Project ;
-        core:hasAgentRole ?project_delivery_builder_agentrole ;
-        core:definesTask organs:taskDelivery ;
-        core:hasTimeInterval ?project_delivery_timeinterval .
+    OPTIONAL { ?organ_parthood_iri organ:hasWindPressure ?windpressure . } # string literal
+    OPTIONAL { ?organ_parthood_iri organ:hasTemperament ?temperament . } # string literal
+    OPTIONAL { ?organ_parthood_iri organ:hasPitch ?pitch . } # string literal
 
-    ?project_delivery_timeinterval a core:TimeInterval ;
-        core:endTime ?project_delivery_endtime ;
-        core:startTime ?project_delivery_starttime .
+    ###################################
+    ### DIVISIONS AND STOPS AND CONSOLE
 
-    ?project_delivery_builder_agent a core:Agent ;
-        rdfs:label ?project_delivery_builder_disambiguatedname ;
-        rdfs:label ?project_delivery_builder_disambiguatedid .
+    # Division
+    ?organ_division_iri a organ:OrganDivision ;
+        core:name ?division_name ; # string literal
+        core:isClassifiedBy ?division_type_iri ; # (?)
+        core:hasPart ?organ_division_stop_iri ;
+        organ:hasKeyboard ?keyboard_iri ;
+        core:hasTimedLocation ?timed_location_iri .
 
-    ?project_delivery_builder_agentrole a core:AgentRole ;
-        core:hasAgent ?project_delivery_builder_agent ;
-        core:hasRole organs:roleBuilder .
+    OPTIONAL { ?organ_division_iri rdfs:comment ?division_footnote . } # string literal
 
-    ##############
-    #Other projects
+    # Keyboard
+    ?keyboard_iri a organ:OrganConsoleKeyboard ;
+        core:name ?keyboard_name ; # string literal
+        organ:hasRank ?keyboard_rank . # string literal. One of {'I', 'II', 'III', 'IV', 'P'}
 
-    ?project_iri a core:Project ;
-        core:definesTask ?project_task_iri ;
-        core:hasTimeInterval ?project_timeinterval ;
-        core:hasAgentRole ?project_builder_agentrole .
+    # Relation parthood - division
+    ?organ_parthood_iri core:hasPart ?organ_division_iri ;
 
-    ?project_timeinterval a core:TimeInterval ;
-        core:endTime ?project_endtime ;
-        core:startTime ?project_starttime .
+    # Console
+    ?organ_parthood_iri core:hasPart [
+        a organ:OrganConsole ;
+        organ:hasKeyboard ?keyboard_iri ;
+        core:isClassifiedBy ?keyboard_class_iri ;
+        core:hasPart [
+            a organ:OrganConsolePlayingAids ;
+            core:value ?playing_ads . # string literal
+        ] ;
+        core:hasOrganConsoleLocation [
+            a organ:OrganConsoleLocation ;
+            core:value ?console_location . # string literal
+        ] ;
+        organ:hasKeyboardRanges ?keyboard_ranges ; # string literal
+        core:hasTimedLocation ?timed_location_iri
+    ] .
 
-    ?project_task_iri a core:Task ;
-         rdfs:label ?project_change .
+    # Stop
+    ?organ_division_stop a organ:OrganDivisionStop ;
+        core:hasName [
+            core:name ?stop_name ; # string literal
+            a core:Name .
+        ]
+        core:hasName ?disambiguated_name_iri ;
+        organ:hasPartition ?stop_partition ; # string literal
+        organ:hasDouble ?stop_double ; # string literal
+        organ:hasOrder ?stop_order ; # string literal
+        organ:hasSpecification ?stop_specification . # string literal
 
-    ?project_builder_agent a core:Agent ;
-        rdfs:label ?project_builder_disambiguatedname ;
-        rdfs:label ?project_builder_disambiguatedid .
+    OPTIONAL { ?organ_division_stop rdfs:comment ?stop_footnote ; } # string literal
 
-    ?project_builder_agentrole a core:AgentRole ;
-        core:hasAgent ?project_builder_agent ;
-        core:hasRole organs:roleBuilder .
+    # Disambiguated Stopname
+    ?disambiguated_name_iri a core:DisambiguatedName ;
+        core:name ?stop_disambiguated_name . # string literal
+
+    # Compound stop
+    OPTIONAL {
+    ?organ_division_stop core:hasPart [
+            a organ:OrgandivisionStopRankRange ;
+            organ:lowestKey ?division_lowest_key ; # string literal. E.g. 'C', 'f2'
+            organ:hasFootHeight ?footheight . # string literal. E.g. '4', '2/3'
+        ]
+    }
+
+    ###################################
+    ### WIND SYSTEM
+
+    ?organ_parthood_iri core:hasPart [
+        a organ:OrganWindSystem ;
+        core:value ?windsystem_description ; # string literal
+        core:hasTimedLocation ?timed_location_iri .
+    ]
+
+    ###################################
+    ### CASE
+
+    ?organ_parthood_iri core:hasPart [
+        a organ:OrganCase ;
+        core:value ?case_description ; # string literal.
+        core:hasTimedLocation ?timed_location_iri .
+    ]
 
 }
 WHERE {
@@ -105,17 +146,15 @@ WHERE {
         ?base_root a fx:root ;
             ?organ_slot ?organ_base .
 
-        ?organ_base xyz:name ?organ_building_place .
+        ?organ_base xyz:name ?organ_name .
 
         BIND (IRI(replace(str(?organ_slot), str(xyz:), str(organs:))) AS ?organ_iri)
-        BIND (IRI(concat(str(organs:timeinterval),struuid())) AS ?build_timeinterval_iri)
-        BIND (IRI(concat(str(organs:physicalsite),struuid())) AS ?build_place_iri)
-        BIND (IRI(concat(str(organs:parthood),struuid())) AS ?organ_building_parthood_iri)
 
-        # VALUES ?organ_iri {
-        #     organs:Part01_005NIEUW
-        #     organs:Part13_138Ruinen
-        # }
+        # For testing
+        VALUES ?organ_iri {
+            #organs:Part01_005NIEUW
+            organs:Part03_007HELMO
+        }
     }
 
     SERVICE <x-sparql-anything:> {
@@ -125,40 +164,6 @@ WHERE {
         ?deliveries_root a fx:root ;
             ?organ_slot ?organ .
 
-        OPTIONAL {            
-            ?organ xyz:originallocation ?organ_originallocation_place .
-
-            FILTER( ?organ_originallocation_place != "" )
-
-            BIND (IRI(concat(str(organs:physicalsite),struuid())) AS ?originallocation_place_iri)
-            BIND (IRI(concat(str(organs:parthood),struuid())) AS ?organ_originallocation_parthood_iri)
-            BIND (IRI(concat(str(organs:timeinterval),struuid())) AS ?originallocation_timeinterval_iri)
-        }
-
-        ?organ xyz:deliveries ?deliveries .
-        ?deliveries fx:anySlot ?delivery .
-        ?deliveries rdf:_1 ?first_delivery . #to extract building year
-
-        #These need to be done here
-        BIND (IRI(concat(str(organs:project),struuid())) AS ?project_delivery)
-        BIND (IRI(concat(str(organs:timeinterval),struuid())) AS ?project_delivery_timeinterval)
-        BIND (IRI(concat(str(organs:agentrole),struuid())) AS ?project_delivery_builder_agentrole)
-        
-        ?delivery xyz:year_low ?project_delivery_starttime .
-        ?delivery xyz:year_high ?project_delivery_endtime .
-
-        ?first_delivery xyz:year_low ?building_year .
-
-        OPTIONAL {
-            ?delivery xyz:extracted_names ?delivery_extracted_names .
-            ?delivery_extracted_names fx:anySlot ?extracted_name .
-            ?extracted_name xyz:disambiguated_name ?project_delivery_builder_disambiguatedname .
-            ?extracted_name xyz:disambiguated_name_id ?project_delivery_builder_disambiguatedid .
-        }
-
-        #This one needs to be done here
-        BIND (IRI(concat(str(organs:agentDisambiguatedBuilder), ?project_delivery_builder_disambiguatedid)) AS ?project_delivery_builder_agent)
-
     }
 
     SERVICE <x-sparql-anything:> {
@@ -167,33 +172,6 @@ WHERE {
     
         ?projects_root a fx:root ;
             ?organ_slot ?projects .
-
-        ?projects fx:anySlot ?project .
-
-        #These need to be done here
-        BIND (IRI(concat(str(organs:project),struuid())) AS ?project_iri)
-        BIND (IRI(concat(str(organs:timeinterval),struuid())) AS ?project_timeinterval)
-        BIND (IRI(concat(str(organs:agentrole), struuid())) AS ?project_builder_agentrole)
-
-        ?project xyz:year_low ?project_starttime .
-        ?project xyz:year_high ?project_endtime .
-
-        ?project xyz:description ?project_description .
-        ?project xyz:changes ?project_changes .
-        ?project_changes ?_ ?project_change . 
-
-        #This one needs to be done here
-        BIND (IRI(concat(str(organs:task),struuid())) AS ?project_task_iri)
-
-        OPTIONAL {
-            ?project xyz:extracted_names ?project_extracted_names .
-            ?project_extracted_names fx:anySlot ?project_extracted_name .
-            ?project_extracted_name xyz:disambiguated_name ?project_builder_disambiguatedname .
-            ?project_extracted_name xyz:disambiguated_name_id ?project_builder_disambiguatedid .
-        }
-
-        #This one needs to be done here
-        BIND (IRI(concat(str(organs:agentDisambiguatedBuilder), ?project_builder_disambiguatedid)) AS ?project_builder_agent)
 
 
     }
