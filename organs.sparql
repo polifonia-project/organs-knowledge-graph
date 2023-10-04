@@ -14,7 +14,7 @@ construct {
     ?organ_iri a organ:Organ ;
         rdfs:label ?organ_name ; # string literal
         core:includesWhole ?organ_parthood_iri ;
-        organ:hasOrganNumber ?organNumber .
+        organ:hasOrganNumber ?organ_number .
 
     # construct a parthood with location(s) and timeinterval(s) of the organ
     ?organ_parthood_iri a ins:InstrumentWhole ;
@@ -86,7 +86,7 @@ construct {
         core:isClassifiedBy ?keyboard_class_iri ;
         core:hasPart [
             a organ:OrganConsolePlayingAids ;
-            core:value ?playing_ads . # string literal
+            core:value ?playing_aids . # string literal
         ] ;
         core:hasOrganConsoleLocation [
             a organ:OrganConsoleLocation ;
@@ -118,7 +118,7 @@ construct {
     OPTIONAL {
     ?organ_division_stop core:hasPart [
             a organ:OrgandivisionStopRankRange ;
-            organ:lowestKey ?division_lowest_key ; # string literal. E.g. 'C', 'f2'
+            organ:lowestKey ?range_lowest_key ; # string literal. E.g. 'C', 'f2'
             organ:hasFootHeight ?footheight . # string literal. E.g. '4', '2/3'
         ]
     }
