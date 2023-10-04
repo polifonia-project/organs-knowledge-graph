@@ -14,11 +14,14 @@ construct {
     ?organ_iri a organ:Organ ;
         rdfs:label ?organ_name ; # string literal
         core:includesWhole ?organ_parthood_iri ;
+        organ:hasOrganNumber ?organNumber .
 
     # construct a parthood with location(s) and timeinterval(s) of the organ
     ?organ_parthood_iri a ins:InstrumentWhole ;
         core:hasTimedLocation [
+            a core:TimedLocation ;
             core:hasLocation [
+                a core:Location ; #Q Is this the correct class name?
                 core:hasAddress ?address ; # string literal with formatted address
                 core:name ?name ; # string literal
                 core:longitude ?longitude ; # float (?)
@@ -26,6 +29,7 @@ construct {
                 rdf:comment ?building_description . # string literal.
             ] ;
             core:hasTimeInterval [
+                a core:TimeInterval ; #Q Is this the correct class name?
                 core:hasIntervalDate ?parthood_date_iri ;
             ]
         ]
@@ -38,6 +42,7 @@ construct {
     ?timed_location_iri [
         a core:TimedLocation ;
         core:hasTimeInterval [
+            a core:TimeInterval ; #Q Correct class?
             core:hasIntervalDate ?date_iri .
         ]
     ] .
@@ -141,7 +146,7 @@ WHERE {
 
     SERVICE <x-sparql-anything:> {
 
-        fx:properties fx:location "./output/base.json"  .
+        fx:properties fx:location "./output/base.json" . # Base information. Current location.
     
         ?base_root a fx:root ;
             ?organ_slot ?organ_base .
@@ -159,20 +164,120 @@ WHERE {
 
     SERVICE <x-sparql-anything:> {
 
-        fx:properties fx:location "./output/history_base.json"  .
+        fx:properties fx:location "./output/addresses.json" . # Address of current location
     
-        ?deliveries_root a fx:root ;
-            ?organ_slot ?organ .
+        ?addresses_root a fx:root ;
+            ?organ_slot ?organ_address .
 
     }
 
     SERVICE <x-sparql-anything:> {
 
-        fx:properties fx:location "./output/history_projects.json"  .
+        fx:properties fx:location "./output/moves.json" . # Previous locations, and dates of moving
     
-        ?projects_root a fx:root ;
-            ?organ_slot ?projects .
+        ?moves_root a fx:root .
 
 
     }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/history_base.json" . # Original location, deliveries and associated builders, 
+    
+        ?history_base_root a fx:root .
+
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/history_projects.json" . # History of the organs. List of projects and events.
+    
+        ?history_projects_root a fx:root .
+
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/dispositions.json" . # Dispositions.
+    
+        ?dispositions_root a fx:root .
+
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/compoundstops.json" . # Composition of compound stops for 'current' disposition
+    
+        ?compoundstops_root a fx:root .
+
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/tech.json" . # some technical information
+    
+        ?tech_root a fx:root .
+
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/texts_bijzonderheden.json" . # texts with additional information
+    
+        ?bijzonderheden_root a fx:root .
+
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/texts_kunst.json"  . # Case descriptions
+    
+        ?kunst_root a fx:root .
+
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/builder_disambiguation_builder_groups.json"  . # Disambiguated organ builder names
+    
+        ?buildername_root a fx:root .
+
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/stop_disambiguation_stop_groups.json"  . # Disambiguated stop names
+    
+        ?stopname_root a fx:root .
+
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/literature.json"  . # Literature references
+    
+        ?literature_root a fx:root .
+
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/RCEBeeldbank_data.json"  . # links to images
+    
+        ?rcebeeldbank_root a fx:root .
+
+
+    }
+
+
 }

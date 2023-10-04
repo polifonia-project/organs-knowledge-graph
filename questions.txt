@@ -2,7 +2,8 @@ Questions 9 October 2023
 - What about inverse relations?
 - Where to put the description of the building?
 - Where to put the 'particularities' (text blob describing 'current' parthood)
-
+- Can we have the place name as separate data property 
+- add organnumber to organ:Organ.
 
 Questions September 2023
 - Did I do it right? See sparql query organ.sparql at github organ-knowledge-graph
