@@ -1,0 +1,87 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX organs: <http://w3id.org/polifonia/resource/organs/>
+PREFIX organ: <http://w3id.org/polifonia/ontology/organs/>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX ins: <http://w3id.org/polifonia/ontology/instrument/>
+
+construct {
+
+    #################
+    # Organ individual
+
+    ?organ_iri a organ:Organ ;
+        rdfs:label ?organ_name ; # string literal
+        core:includesWhole ?organ_parthood_iri ;
+        organ:hasOrganNumber ?organ_number . 
+
+    # construct a parthood with location(s) and timeinterval(s) of the organ
+    ?organ_parthood_iri a ins:InstrumentWhole ;
+        core:hasTimedLocation [
+            a core:TimedLocation ;
+            core:hasLocation [
+                a core:Location ; #Q Is this the correct class name?
+                core:hasAddress ?location_address ; # string literal with formatted address
+                core:name ?location_name ; # string literal
+                core:longitude ?location_longitude ; # float (?)
+                core:latitude ?location_latitude ; # float (?)
+                rdf:comment ?location_building_description  # string literal.
+            ] ;
+            core:hasTimeInterval [
+                a core:TimeInterval ; #Q Is this the correct class name?
+                rdfs:label ?start_time ;
+                rdfs:label ?start_time_label ;
+                #core:hasIntervalDate ?parthood_date_iri ;
+            ]
+        ]
+
+}
+WHERE {
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/kg/kg_base.json" . # Base information. Current location.
+    
+        ?base_root a fx:root ;
+            ?organ_slot ?organ_base .
+
+        ?organ_base xyz:label ?organ_name .
+
+        OPTIONAL { ?organ_base xyz:organnumber ?organ_number . }
+
+        BIND(IRI(replace(str(?organ_slot), str(xyz:), str(organs:))) AS ?organ_iri)
+        BIND(IRI(CONCAT(STR( ?organ_iri ), "_parthood")) AS ?organ_parthood_iri)
+
+        ?organ_base xyz:parthood ?parthood_base . #list of timedlocations
+
+        # BIND(?parthood_base AS ?location_name)
+    
+        ?parthood_base fx:anySlot ?timedlocation . #each timedlocation
+
+        #THIS builds a new TimedLocation object for each location_name. It should not...
+        # ?timedlocation xyz:names ?names_base .
+        # ?names_base fx:anySlot ?location_name .
+
+        #Temporal solution: just take first name of the list
+        ?timedlocation xyz:names ?names_base .
+        ?names_base rdf:_1 ?location_name .
+
+        OPTIONAL { ?timedlocation xyz:startTime ?start_time . }
+        OPTIONAL { ?timedlocation xyz:startTimeLable ?start_time_label . }
+
+        OPTIONAL { ?timedlocation xyz:address ?location_address . }
+        OPTIONAL { ?timedlocation xyz:longitude ?location_longitude . }
+        OPTIONAL { ?timedlocation xyz:latitude ?location_latitude . }
+        OPTIONAL { ?timedlocation xyz:description ?location_building_description . }
+
+        # #For testing
+        # VALUES ?organ_iri {
+        #     #organs:Part01_005NIEUW
+        #     #organs:Part03_007HELMO
+        #     organs:Part09_056Nieuwegein
+        # }
+    }
+
+}
