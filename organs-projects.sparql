@@ -1,0 +1,73 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX organs: <http://w3id.org/polifonia/resource/organs/>
+PREFIX organ: <http://w3id.org/polifonia/ontology/organs/>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX ins: <http://w3id.org/polifonia/ontology/instrument/>
+
+construct {
+
+ ###################################
+    ### PROJECTS
+
+    ?organ_iri core:describedBy ?project_iri .
+
+    ?project_iri a organ:OrganProject ;
+        core:isClassifiedBy ?project_class_iri ;
+        core:hasTimedLocation [
+            core:hasTimeInterval [
+                a core:TimeInterval ; #Q Is this the correct class name?
+                rdfs:label ?project_date
+                #core:hasIntervalDate ?project_date_iri
+            ]
+        ] ;
+        # core:hasProjectist [
+        #     a ins:Projectist ;
+        #     core:hasRole organ:Builder ;
+        #     core:involvesAgent [
+        #         a core:Agent ;
+        #         core:hasName [
+        #             a core:DisambiguatedName ;
+        #             core:name ?builder_disambiguated_name ] ;
+        #         core:hasName [
+        #             a core:Name ;
+        #             core:name ?builder_stated_name ]
+        #     ]
+        # ] ;
+        core:definesTask [
+            a core:Task ;
+            core:value ?task_description
+        ] .
+
+}
+WHERE {
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/kg/kg_projects_sel.json" .
+    
+        ?project_root a fx:root ;
+            ?project_slot ?project_base .
+
+        ?project_base xyz:organid ?organid .
+        ?project_base xyz:year_low ?project_date .
+
+        OPTIONAL {
+            ?project_base xyz:project_types ?types_base .
+            ?types_base rdf:_1 ?project_type .
+
+            BIND(IRI(CONCAT(str(organs:ProjectType), ?project_type)) AS ?project_class_iri)
+        }
+
+        ?project_base xyz:tasks ?tasks_base .
+        ?tasks_base rdf:_1 ?task_description .
+
+        BIND(IRI(replace(str(?project_slot), str(xyz:), str(organs:))) AS ?project_iri)
+        BIND(IRI(CONCAT(str(organs:), str(?organid))) as ?organ_iri)
+
+    }
+
+
+}

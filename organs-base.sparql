@@ -31,9 +31,8 @@ construct {
             ] ;
             core:hasTimeInterval [
                 a core:TimeInterval ; #Q Is this the correct class name?
-                rdfs:label ?start_time ;
                 rdfs:label ?start_time_label ;
-                #core:hasIntervalDate ?parthood_date_iri ;
+                core:hasIntervalStartDate ?start_time ;
             ]
         ]
 
@@ -43,7 +42,8 @@ WHERE {
     SERVICE <x-sparql-anything:> {
 
         fx:properties fx:location "./output/kg/kg_base.json" . # Base information. Current location.
-    
+        fx:properties fx:use-rdfs-member true .
+
         ?base_root a fx:root ;
             ?organ_slot ?organ_base .
 
@@ -58,15 +58,15 @@ WHERE {
 
         # BIND(?parthood_base AS ?location_name)
     
-        ?parthood_base fx:anySlot ?timedlocation . #each timedlocation
+        ?parthood_base rdfs:member ?timedlocation . #each timedlocation
 
         #THIS builds a new TimedLocation object for each location_name. It should not...
-        # ?timedlocation xyz:names ?names_base .
-        # ?names_base fx:anySlot ?location_name .
+        ?timedlocation xyz:names ?names_base .
+        ?names_base rdfs:member ?location_name .
 
         #Temporal solution: just take first name of the list
-        ?timedlocation xyz:names ?names_base .
-        ?names_base rdf:_1 ?location_name .
+        # ?timedlocation xyz:names ?names_base .
+        # ?names_base rdf:_1 ?location_name .
 
         OPTIONAL { ?timedlocation xyz:startTime ?start_time . }
         OPTIONAL { ?timedlocation xyz:startTimeLable ?start_time_label . }
@@ -77,11 +77,11 @@ WHERE {
         OPTIONAL { ?timedlocation xyz:description ?location_building_description . }
 
         # #For testing
-        # VALUES ?organ_iri {
-        #     #organs:Part01_005NIEUW
-        #     #organs:Part03_007HELMO
-        #     organs:Part09_056Nieuwegein
-        # }
+        VALUES ?organ_iri {
+            #organs:Part01_005NIEUW
+            #organs:Part03_007HELMO
+            organs:Part14_000Hilversum
+        }
     }
 
 }

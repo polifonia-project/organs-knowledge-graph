@@ -1,0 +1,183 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX organs: <http://w3id.org/polifonia/resource/organs/>
+PREFIX organ: <http://w3id.org/polifonia/ontology/organs/>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX ins: <http://w3id.org/polifonia/ontology/instrument/>
+
+construct {
+
+    ###################################
+    ### Parthood
+
+    # link with organ
+    ?organ_iri core:includesWhole ?disposition_parthood_iri .
+
+    # construct a parthood for each disposition
+    ?disposition_parthood_iri a ins:InstrumentWhole ;
+        core:hasTimedLocation [
+            a core:TimedLocation ;
+            core:hasTimeInterval [
+                a core:TimeInterval ; #Q Correct class?
+                core:hasIntervalDate ?disposition_date_label ;
+                core:hasInterpretedIntervalDate ?disposition_date
+            ]
+        ] ;
+        #core:hasPart ?organ_division_iri ;
+        core:label ?disposition_description ;
+        organ:hasWindPressure ?disposition_windpressure ;
+        organ:hasTemperament ?disposition_temperament ;
+        organ:hasPitch ?disposition_pitch ;
+        rdfs:comment ?disposition_peculiarities ;
+        rdfs:comment ?disposition_extra_information .
+    
+    # windsystem
+    ?disposition_parthood_iri core:hasPart [
+        a organ:OrganWindSystem ;
+        core:value ?disposition_windsystem_description 
+    ] .
+
+    # Console and keyboard
+    ?disposition_parthood_iri core:hasPart ?disposition_console_iri . # iri: <dispositionid>Console  to be reused for divisions
+    
+    ?disposition_console_iri a organ:OrganConsole ;
+        core:hasPart [
+            a organ:OrganConsolePlayingAids ;
+            core:value ?disposition_playing_aids  # string literal
+        ] ;
+        core:hasOrganConsoleLocation [
+            a organ:OrganConsoleLocation ;
+            core:value ?disposition_console_location # string literal
+        ] .
+    
+    # Case
+    ?disposition_parthood_iri core:hasPart [
+        a organ:OrganCase ;
+        core:value ?disposition_case_description  # string literal.
+    ] .
+
+        # OPTIONAL { ?disposition_base xyz:windsystem_description ?disposition_windsystem_description . }
+        # OPTIONAL { ?disposition_base xyz:windpressure ?disposition_windpressure . }
+        # OPTIONAL { ?disposition_base xyz:temperament ?disposition_temperament . }
+        # OPTIONAL { ?disposition_base xyz:pitch ?disposition_pitch . }
+        # OPTIONAL { ?disposition_base xyz:console_location ?disposition_console_location . }
+        # OPTIONAL { ?disposition_base xyz:playing_aids ?disposition_playing_aids . }
+
+        # OPTIONAL { ?disposition_base xyz:keyboard_ranges ?disposition_keyboard_ranges . }
+        # OPTIONAL { ?disposition_base xyz:peculiarities ?disposition_peculiarities . }
+        # OPTIONAL { ?disposition_base xyz:case_description ?disposition_case_description . }
+
+
+    ###################################
+    ### DIVISIONS AND STOPS AND CONSOLE
+
+    # Division
+    # ?organ_division_iri a organ:OrganDivision ;
+    #     core:name ?division_name . # string literal
+    #     #core:isClassifiedBy ?division_type_iri ; # (?)
+    #     #core:hasPart ?organ_division_stop_iri ;
+    #     #organ:hasKeyboard ?keyboard_iri ;
+    #     #rdfs:comment ?division_footnote .
+
+    # # Relation parthood - division
+    # ?organ_disposition_parthood_iri core:hasPart ?organ_division_iri ;
+
+    # # Keyboard
+    # ?keyboard_iri a organ:OrganConsoleKeyboard ;
+    #     core:name ?keyboard_name ; # string literal
+    #     organ:hasRank ?keyboard_rank . # string literal. One of {'I', 'II', 'III', 'IV', 'P'}
+
+
+    # # Stop
+    # ?organ_division_stop a organ:OrganDivisionStop ;
+    #     core:hasName [
+    #         core:name ?stop_name ; # string literal
+    #         a core:Name .
+    #     ]
+    #     core:hasName ?disambiguated_stop_name_iri ;
+    #     organ:hasPartition ?stop_partition ; # string literal
+    #     organ:hasDouble ?stop_double ; # string literal
+    #     organ:hasOrder ?stop_order ; # string literal
+    #     organ:hasSpecification ?stop_specification ; # string literal
+    #     rdfs:comment ?stop_footnote . # string literal
+
+    # # Compound stop
+    # OPTIONAL {
+    # ?organ_division_stop core:hasPart [
+    #         a organ:OrgandivisionStopRankRange ;
+    #         organ:lowestKey ?range_lowest_key ; # string literal. E.g. 'C', 'f2'
+    #         organ:hasFootHeight ?footheight . # string literal. E.g. '4', '2/3'
+    #     ]
+    # }
+
+    # ###################################
+    # ### WIND SYSTEM
+
+    # ?organ_parthood_iri core:hasPart [
+    #     a organ:OrganWindSystem ;
+    #     core:value ?windsystem_description . # string literal
+    # ]
+
+    # ###################################
+    # ### CASE
+
+    # ?organ_parthood_iri core:hasPart [
+    #     a organ:OrganCase ;
+    #     core:value ?case_description . # string literal.
+    # ]
+
+
+
+}
+WHERE {
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/kg/kg_dispositions.json" . 
+
+        ?dispositions_root a fx:root ;
+            ?disposition_slot ?disposition_base .
+
+        ?disposition_base
+            xyz:organid ?disposition_base_organid ;
+            xyz:description ?disposition_description .
+
+        OPTIONAL { ?disposition_base xyz:windsystem_description ?disposition_windsystem_description . }
+        OPTIONAL { ?disposition_base xyz:windpressure ?disposition_windpressure . }
+        OPTIONAL { ?disposition_base xyz:temperament ?disposition_temperament . }
+        OPTIONAL { ?disposition_base xyz:pitch ?disposition_pitch . }
+        OPTIONAL { ?disposition_base xyz:playing_aids ?disposition_playing_aids . }
+        OPTIONAL { ?disposition_base xyz:keyboard_ranges ?disposition_keyboard_ranges . }
+        OPTIONAL { ?disposition_base xyz:peculiarities ?disposition_peculiarities . }
+        OPTIONAL { ?disposition_base xyz:case_description ?disposition_case_description . }
+
+        OPTIONAL { ?disposition_base xyz:console_location ?disposition_console_location . }
+
+        OPTIONAL { ?disposition_base xyz:year_low ?disposition_date . }
+        OPTIONAL { ?disposition_base xyz:extra_information ?disposition_extra_information . }
+
+        BIND(IRI(concat(replace(str(?disposition_slot), str(xyz:), str(organs:)), "Console")) AS ?disposition_console_iri) #create anyway.
+        BIND(IRI(concat(replace(str(?disposition_slot), str(xyz:), str(organs:)), "_parthood")) AS ?disposition_parthood_iri)
+        BIND(IRI(CONCAT(str(organs:), str(?disposition_base_organid))) as ?organ_iri)
+
+    }
+
+    # SERVICE <x-sparql-anything:> {
+
+    #     fx:properties fx:location "./output/kg/kg_divisions.json" . 
+    
+    #     ?divisions_root a fx:root ;
+    #         ?division_slot ?division_base .
+
+    #     ?division_base
+    #         xyz:dispositionid ?dispositionid ;
+    #         xyz:name ?division_name  .
+
+    #     #?organ_division_iri
+    #     BIND(IRI(replace(str(?division_slot), str(xyz:), str(organs:))) AS ?organ_division_iri)
+
+    # }
+
+}
