@@ -28,7 +28,6 @@ construct {
 
     # blank node for the location entity
     ?blank_location a core:Location ; 
-        rdfs:label ?blank_locationid ;
         core:hasAddress ?location_address ; # string literal with formatted address
         core:name ?location_name ; # string literal
         core:longitude ?location_longitude ; # float
@@ -37,7 +36,6 @@ construct {
 
     # blank node for the timeinterval entity
     ?blank_timeinterval a core:TimeInterval ;
-        rdfs:label ?blank_timeintervalid ;
         rdfs:label ?start_time_label ;
         core:hasIntervalStartDate ?start_time .
 
