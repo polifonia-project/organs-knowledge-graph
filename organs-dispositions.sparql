@@ -17,14 +17,7 @@ construct {
 
     # construct a parthood for each disposition
     ?disposition_parthood_iri a ins:InstrumentWhole ;
-        core:hasTimedLocation [
-            a core:TimedLocation ;
-            core:hasTimeInterval [
-                a core:TimeInterval ; #Q Correct class?
-                core:hasIntervalDate ?disposition_date_label ;
-                core:hasInterpretedIntervalDate ?disposition_date
-            ]
-        ] ;
+        core:hasTimedLocation ?blank_timedlocation ;
         #core:hasPart ?organ_division_iri ;
         core:label ?disposition_description ;
         organ:hasWindPressure ?disposition_windpressure ;
@@ -33,48 +26,43 @@ construct {
         rdfs:comment ?disposition_peculiarities ;
         rdfs:comment ?disposition_extra_information .
     
+    ?blank_timedlocation a core:TimedLocation ;
+        core:hasTimeInterval ?blank_timeinterval .
+
+    ?blank_timeinterval a core:TimeInterval ;
+        core:hasIntervalDate ?disposition_date ;
+        core:hasInterpretedIntervalDate ?disposition_date .
+
     # windsystem
-    ?disposition_parthood_iri core:hasPart [
-        a organ:OrganWindSystem ;
-        core:value ?disposition_windsystem_description 
-    ] .
+    ?disposition_parthood_iri core:hasPart ?blank_windsystem .
+
+    ?blank_windsystem a organ:OrganWindSystem ;
+        core:value ?disposition_windsystem_description .
 
     # Console and keyboard
     ?disposition_parthood_iri core:hasPart ?disposition_console_iri . # iri: <dispositionid>Console  to be reused for divisions
     
     ?disposition_console_iri a organ:OrganConsole ;
-        core:hasPart [
-            a organ:OrganConsolePlayingAids ;
-            core:value ?disposition_playing_aids  # string literal
-        ] ;
-        core:hasOrganConsoleLocation [
-            a organ:OrganConsoleLocation ;
-            core:value ?disposition_console_location # string literal
-        ] .
+        core:hasPart ?blank_playing_aids ;
+        core:hasOrganConsoleLocation ?blank_console_location .
     
+    ?blank_playing_aids a organ:OrganConsolePlayingAids ;
+            core:value ?disposition_playing_aids . # string literal
+
+    ?blank_console_location a organ:OrganConsoleLocation ;
+            core:value ?disposition_console_location . # string literal
+
     # Case
-    ?disposition_parthood_iri core:hasPart [
-        a organ:OrganCase ;
-        core:value ?disposition_case_description  # string literal.
-    ] .
-
-        # OPTIONAL { ?disposition_base xyz:windsystem_description ?disposition_windsystem_description . }
-        # OPTIONAL { ?disposition_base xyz:windpressure ?disposition_windpressure . }
-        # OPTIONAL { ?disposition_base xyz:temperament ?disposition_temperament . }
-        # OPTIONAL { ?disposition_base xyz:pitch ?disposition_pitch . }
-        # OPTIONAL { ?disposition_base xyz:console_location ?disposition_console_location . }
-        # OPTIONAL { ?disposition_base xyz:playing_aids ?disposition_playing_aids . }
-
-        # OPTIONAL { ?disposition_base xyz:keyboard_ranges ?disposition_keyboard_ranges . }
-        # OPTIONAL { ?disposition_base xyz:peculiarities ?disposition_peculiarities . }
-        # OPTIONAL { ?disposition_base xyz:case_description ?disposition_case_description . }
-
+    ?disposition_parthood_iri core:hasPart ?blank_case .
+    
+    ?blank_case a organ:OrganCase ;
+        core:value ?disposition_case_description . # string literal.
 
     ###################################
     ### DIVISIONS AND STOPS AND CONSOLE
 
-    # Division
-    # ?organ_division_iri a organ:OrganDivision ;
+    # # Division
+    # ?division_iri a organ:OrganDivision ;
     #     core:name ?division_name . # string literal
     #     #core:isClassifiedBy ?division_type_iri ; # (?)
     #     #core:hasPart ?organ_division_stop_iri ;
@@ -82,7 +70,7 @@ construct {
     #     #rdfs:comment ?division_footnote .
 
     # # Relation parthood - division
-    # ?organ_disposition_parthood_iri core:hasPart ?organ_division_iri ;
+    # ?division_disposition_parthood_iri core:hasPart ?division_iri ;
 
     # # Keyboard
     # ?keyboard_iri a organ:OrganConsoleKeyboard ;
@@ -140,9 +128,14 @@ WHERE {
         ?dispositions_root a fx:root ;
             ?disposition_slot ?disposition_base .
 
+        BIND(replace(str(?disposition_slot), str(xyz:), "") AS ?dispositionid)
+        
         ?disposition_base
             xyz:organid ?disposition_base_organid ;
             xyz:description ?disposition_description .
+
+        BIND(IRI(concat(replace(str(?disposition_slot), str(xyz:), str(organs:)), "_parthood")) AS ?disposition_parthood_iri)
+        BIND(IRI(CONCAT(str(organs:), str(?disposition_base_organid))) as ?organ_iri)
 
         OPTIONAL { ?disposition_base xyz:windsystem_description ?disposition_windsystem_description . }
         OPTIONAL { ?disposition_base xyz:windpressure ?disposition_windpressure . }
@@ -152,15 +145,43 @@ WHERE {
         OPTIONAL { ?disposition_base xyz:keyboard_ranges ?disposition_keyboard_ranges . }
         OPTIONAL { ?disposition_base xyz:peculiarities ?disposition_peculiarities . }
         OPTIONAL { ?disposition_base xyz:case_description ?disposition_case_description . }
-
         OPTIONAL { ?disposition_base xyz:console_location ?disposition_console_location . }
-
         OPTIONAL { ?disposition_base xyz:year_low ?disposition_date . }
         OPTIONAL { ?disposition_base xyz:extra_information ?disposition_extra_information . }
 
-        BIND(IRI(concat(replace(str(?disposition_slot), str(xyz:), str(organs:)), "Console")) AS ?disposition_console_iri) #create anyway.
-        BIND(IRI(concat(replace(str(?disposition_slot), str(xyz:), str(organs:)), "_parthood")) AS ?disposition_parthood_iri)
-        BIND(IRI(CONCAT(str(organs:), str(?disposition_base_organid))) as ?organ_iri)
+        #only if a console is needed
+        BIND(
+            IF(
+                BOUND(?disposition_playing_aids) || BOUND(?disposition_console_location),
+                IRI(concat(replace(str(?disposition_slot), str(xyz:), str(organs:)), "Console")),
+                ?nothing
+            )
+            AS ?disposition_console_iri
+        )
+        # playing aids
+        BIND(IF(BOUND(?disposition_playing_aids), concat(?dispositionid, "playingaids"), ?nothing)  AS ?blank_playing_aidsid)
+        BIND(IF(BOUND(?disposition_playing_aids), fx:bnode(?blank_playing_aidsid), ?nothing) AS ?blank_playing_aids)
+        # ConsolseLocation
+        BIND(IF(BOUND(?disposition_console_location), concat(?dispositionid, "consloc"), ?nothing)  AS ?blank_console_locationid)
+        BIND(IF(BOUND(?disposition_console_location), fx:bnode(?blank_console_locationid), ?nothing) AS ?blank_console_location)
+
+        # only if a timeinterval is needed:
+        BIND(IF(BOUND(?disposition_date), fx:bnode(concat(?dispositionid, "timedlocation")), ?nothing) AS ?blank_timedlocation)
+        BIND(IF(BOUND(?disposition_date), fx:bnode(concat(?dispositionid, "timeinterval")), ?nothing) AS ?blank_timeinterval)
+
+        # Windsystem
+        BIND(IF(BOUND(?windsystem_description), fx:bnode(concat(?dispositionid, "windsystem")), ?nothing) AS ?blank_windsystem)
+
+        # Case
+        BIND(IF(BOUND(?disposition_case_description), concat(?dispositionid, "case"), ?nothing)  AS ?blank_caseid)
+        BIND(IF(BOUND(?disposition_case_description), fx:bnode(?blank_caseid), ?nothing) AS ?blank_case)
+
+        # For testing
+        VALUES ?disposition_parthood_iri {
+            organs:Part01_010GRON_disposition000_parthood
+            organs:Part01_100ZAAND_disposition003_parthood
+        }
+
 
     }
 
@@ -175,8 +196,9 @@ WHERE {
     #         xyz:dispositionid ?dispositionid ;
     #         xyz:name ?division_name  .
 
-    #     #?organ_division_iri
-    #     BIND(IRI(replace(str(?division_slot), str(xyz:), str(organs:))) AS ?organ_division_iri)
+    #     BIND(replace(str(?division_slot), str(xyz:), "")) AS ?divisionid)
+    #     BIND(IRI(replace(str(?division_slot), str(xyz:), str(organs:))) AS ?division_iri)
+    #     BIND(IRI(concat(str(organs:), str(?dispositionid), "_parthood")) AS ?disposition_parthood_iri)
 
     # }
 

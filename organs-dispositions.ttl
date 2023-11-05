@@ -1,0 +1,52 @@
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part01_010GRON
+        core:includesWhole  organs:Part01_010GRON_disposition000_parthood .
+
+organs:Part01_100ZAAND
+        core:includesWhole  organs:Part01_100ZAAND_disposition003_parthood .
+
+organs:Part01_100ZAAND_disposition003_parthood
+        rdf:type               ins:InstrumentWhole ;
+        rdfs:comment           "Van het oude orgel bleven de kas en enig pijpwerk bewaard." ;
+        organ:hasPitch         "a1 = 440 Hz" ;
+        organ:hasTemperament   "evenredig zwevend" ;
+        core:hasPart           organs:Part01_100ZAAND_disposition003Console ;
+        core:hasPart           [ rdf:type    organ:OrganCase ;
+                                 core:value  "Bij dit orgel keert Duyschot in zekere zin terug naar zijn oorspronkelijke inspiratiebron, het Amsterdamse Nieuwe Kerk-orgel. De verhoogde middenpartij, kenmerkend voor alle grote Duyschot-orgels, laat hij varen. De gesloten opbouw van het Van Campen-front is hier weer het uitgangspunt. Er zijn echter belangrijke verschillen. Anders dan bij Van Campen wordt alleen de middenpartij door een fronton afgesloten. Dit is hier overigens gebogen van vorm. Verder is het gehele front beweeglijker geworden, doordat het op de plattegrond van een vlakke driehoek is opgebouwd. Alle torens hebben een ronde vorm. Daardoor werkt dit front vloeiender dan de oudere Duyschot-orgels. De vier zuilen en pilasters van de Westerkerk zijn hier ook weer aanwezig. Verder heeft de onderbouw geen uitgesproken architectonisch karakter. Opmerkelijk is het snijwerk van de balustrade met rijke dooreen gestrengelde acanthusmotieven. Men lette op de elegante dames die op het orgel de bazuin blazen. De wilde opzetstukken in Marot-achtige vormen zijn eveneens opvallend. Het blinderingssnijwerk vertoont eenvoudig acanthusbladwerk."
+                               ] ;
+        core:hasTimedLocation  [ rdf:type              core:TimedLocation ;
+                                 core:hasTimeInterval  [ rdf:type              core:TimeInterval ;
+                                                         core:hasInterpretedIntervalDate
+                                                                 "1997" ;
+                                                         core:hasIntervalDate  "1997"
+                                                       ]
+                               ] ;
+        core:label             "Dispositie in 1997" .
+
+organs:Part01_010GRON_disposition000_parthood
+        rdf:type               ins:InstrumentWhole ;
+        core:hasTimedLocation  [ rdf:type              core:TimedLocation ;
+                                 core:hasTimeInterval  [ rdf:type              core:TimeInterval ;
+                                                         core:hasInterpretedIntervalDate
+                                                                 "1692" ;
+                                                         core:hasIntervalDate  "1692"
+                                                       ]
+                               ] ;
+        core:label             "Dispositie in 1692" .
+
+organs:Part01_100ZAAND_disposition003Console
+        rdf:type                      organ:OrganConsole ;
+        core:hasOrganConsoleLocation  [ rdf:type    organ:OrganConsoleLocation ;
+                                        core:value  "voorzijde"
+                                      ] ;
+        core:hasPart                  [ rdf:type    organ:OrganConsolePlayingAids ;
+                                        core:value  "koppelingen BW-HW, Ped-HW\ntremulant"
+                                      ] .
