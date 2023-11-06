@@ -18,7 +18,6 @@ construct {
     # construct a parthood for each disposition
     ?disposition_parthood_iri a ins:InstrumentWhole ;
         core:hasTimedLocation ?blank_timedlocation ;
-        #core:hasPart ?organ_division_iri ;
         core:label ?disposition_description ;
         organ:hasWindPressure ?disposition_windpressure ;
         organ:hasTemperament ?disposition_temperament ;
@@ -39,12 +38,13 @@ construct {
     ?blank_windsystem a organ:OrganWindSystem ;
         core:value ?disposition_windsystem_description .
 
-    # Console and keyboard
+    # Console
     ?disposition_parthood_iri core:hasPart ?disposition_console_iri . # iri: <dispositionid>Console  to be reused for divisions
     
     ?disposition_console_iri a organ:OrganConsole ;
         core:hasPart ?blank_playing_aids ;
-        core:hasOrganConsoleLocation ?blank_console_location .
+        core:hasOrganConsoleLocation ?blank_console_location ;
+        organ:hasKeyboardRanges ?disposition_keyboard_ranges .
     
     ?blank_playing_aids a organ:OrganConsolePlayingAids ;
             core:value ?disposition_playing_aids . # string literal
@@ -62,61 +62,50 @@ construct {
     ### DIVISIONS AND STOPS AND CONSOLE
 
     # # Division
-    # ?division_iri a organ:OrganDivision ;
-    #     core:name ?division_name . # string literal
-    #     #core:isClassifiedBy ?division_type_iri ; # (?)
-    #     #core:hasPart ?organ_division_stop_iri ;
-    #     #organ:hasKeyboard ?keyboard_iri ;
-    #     #rdfs:comment ?division_footnote .
+    ?division_iri a organ:OrganDivision ;
+        core:name ?division_name ; # string literal
+        core:isClassifiedBy ?division_type_iri ;
+        organ:hasKeyboard ?div_keyboard_iri ;
+        rdfs:comment ?division_footnote .
 
-    # # Relation parthood - division
-    # ?division_disposition_parthood_iri core:hasPart ?division_iri ;
+    # Relation parthood - division
+    ?div_disposition_parthood_iri core:hasPart ?division_iri .
 
-    # # Keyboard
-    # ?keyboard_iri a organ:OrganConsoleKeyboard ;
-    #     core:name ?keyboard_name ; # string literal
-    #     organ:hasRank ?keyboard_rank . # string literal. One of {'I', 'II', 'III', 'IV', 'P'}
+    # Keyboard (from kg_keyboards.json)
+    ?keyboard_iri a organ:OrganConsoleKeyboard ;
+        organ:hasRank ?keyboard_rank ; # string literal. One of {'I', 'II', 'III', 'IV', 'P'}
+        core:isClassifiedBy ?keyboard_type_iri .
 
+    # Link keyboad to Console (from kg_keyboards.json)
+    # Might give duplicates with data from dispositions
+    ?keyboard_console_iri a organ:OrganConsole ;
+        organ:hasKeyboard ?keyboard_iri .
+
+    # Link Console to disposition parthood (from kg_keyboards.json)
+    ?keyboard_disposition_parthood_iri core:hasPart ?keyboard_console_iri .
 
     # # Stop
-    # ?organ_division_stop a organ:OrganDivisionStop ;
-    #     core:hasName [
-    #         core:name ?stop_name ; # string literal
-    #         a core:Name .
-    #     ]
-    #     core:hasName ?disambiguated_stop_name_iri ;
-    #     organ:hasPartition ?stop_partition ; # string literal
-    #     organ:hasDouble ?stop_double ; # string literal
-    #     organ:hasOrder ?stop_order ; # string literal
-    #     organ:hasSpecification ?stop_specification ; # string literal
-    #     rdfs:comment ?stop_footnote . # string literal
+    ?stop_iri a organ:OrganDivisionStop ;
+        core:hasName ?blank_stopname ;
+        core:hasName ?disambiguated_stopname_iri ;
+        organ:hasPartition ?stop_partition ; # string literal
+        organ:hasDouble ?stop_double ; # string literal
+        organ:hasOrder ?stop_order ; # integer
+        organ:hasSpecification ?stop_specification ; # string literal
+        rdfs:comment ?stop_footnote . # string literal
 
-    # # Compound stop
-    # OPTIONAL {
-    # ?organ_division_stop core:hasPart [
-    #         a organ:OrgandivisionStopRankRange ;
-    #         organ:lowestKey ?range_lowest_key ; # string literal. E.g. 'C', 'f2'
-    #         organ:hasFootHeight ?footheight . # string literal. E.g. '4', '2/3'
-    #     ]
-    # }
+    ?blank_stopname a core:Name ;
+        core:name ?stop_name . # string literal
 
-    # ###################################
-    # ### WIND SYSTEM
+    # link stop with division
+    ?stop_divisionid_iri core:hasPart ?stop_iri .
 
-    # ?organ_parthood_iri core:hasPart [
-    #     a organ:OrganWindSystem ;
-    #     core:value ?windsystem_description . # string literal
-    # ]
+    #Compound stop
+    ?cstop_stop_iri core:hasPart ?blank_stoprankrange .
 
-    # ###################################
-    # ### CASE
-
-    # ?organ_parthood_iri core:hasPart [
-    #     a organ:OrganCase ;
-    #     core:value ?case_description . # string literal.
-    # ]
-
-
+    ?blank_stoprankrange a organ:OrgandivisionStopRankRange ;
+        organ:lowestKey ?range_lowest_key ; # string literal. E.g. 'C', 'f2'
+        organ:hasFootHeight ?footheight . # string literal. E.g. '4', '2/3'
 
 }
 WHERE {
@@ -152,7 +141,7 @@ WHERE {
         #only if a console is needed
         BIND(
             IF(
-                BOUND(?disposition_playing_aids) || BOUND(?disposition_console_location),
+                BOUND(?disposition_playing_aids) || BOUND(?disposition_console_location) || BOUND(?disposition_keyboard_ranges),
                 IRI(concat(replace(str(?disposition_slot), str(xyz:), str(organs:)), "Console")),
                 ?nothing
             )
@@ -176,30 +165,129 @@ WHERE {
         BIND(IF(BOUND(?disposition_case_description), concat(?dispositionid, "case"), ?nothing)  AS ?blank_caseid)
         BIND(IF(BOUND(?disposition_case_description), fx:bnode(?blank_caseid), ?nothing) AS ?blank_case)
 
-        # For testing
-        VALUES ?disposition_parthood_iri {
-            organs:Part01_010GRON_disposition000_parthood
-            organs:Part01_100ZAAND_disposition003_parthood
-        }
-
+        # # For testing
+        # VALUES ?disposition_parthood_iri {
+        #     organs:Part01_010GRON_disposition000_parthood
+        #     organs:Part01_100ZAAND_disposition003_parthood
+        # }
 
     }
 
-    # SERVICE <x-sparql-anything:> {
+    SERVICE <x-sparql-anything:> {
 
-    #     fx:properties fx:location "./output/kg/kg_divisions.json" . 
+        fx:properties fx:location "./output/kg/kg_keyboards.json" . 
     
-    #     ?divisions_root a fx:root ;
-    #         ?division_slot ?division_base .
+        ?keyboards_root a fx:root ;
+            ?keyboard_slot ?keyboard_base .
 
-    #     ?division_base
-    #         xyz:dispositionid ?dispositionid ;
-    #         xyz:name ?division_name  .
+        ?keyboard_base
+            xyz:dispositionid ?keyboard_dispositionid ;
+            xyz:rank ?keyboard_rank  ;
+            xyz:type ?keyboard_type .
 
-    #     BIND(replace(str(?division_slot), str(xyz:), "")) AS ?divisionid)
-    #     BIND(IRI(replace(str(?division_slot), str(xyz:), str(organs:))) AS ?division_iri)
-    #     BIND(IRI(concat(str(organs:), str(?dispositionid), "_parthood")) AS ?disposition_parthood_iri)
+        # Keyboard object
+        BIND(replace(str(?keyboard_slot), str(xyz:), "") AS ?keyboardid)
+        BIND(IRI(concat(str(organs:), ?keyboardid)) AS ?keyboard_iri)
+        BIND(IRI(concat(str(organ:), ?keyboard_type)) AS ?keyboard_type_iri)
 
-    # }
+        # Console object 
+        BIND(IRI(concat(str(organs:), ?keyboard_dispositionid, "Console")) AS ?keyboard_console_iri)
+
+        # Disposition parthood
+        BIND(IRI(concat(str(organs:), ?keyboard_dispositionid, "_parthood")) AS ?keyboard_disposition_parthood_iri)       
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/kg/kg_divisions.json" . 
+    
+        ?divisions_root a fx:root ;
+            ?division_slot ?division_base .
+
+        ?division_base
+            xyz:dispositionid ?div_dispositionid ;
+            xyz:name ?division_name  .
+
+        OPTIONAL { ?division_base xyz:footnote ?division_footnote }
+
+        # identifier for division
+        BIND(replace(str(?division_slot), str(xyz:), "") AS ?divisionid)
+
+        # iri for division and for parthood
+        BIND(IRI(replace(str(?division_slot), str(xyz:), str(organs:))) AS ?division_iri)
+        BIND(IRI(concat(str(organs:), str(?div_dispositionid), "_parthood")) AS ?div_disposition_parthood_iri)
+
+        # division id for disambiguated division name
+        OPTIONAL { ?division_base xyz:divisiontype_id ?divisiontype_id }
+        BIND(IF(BOUND(?divisiontype_id), IRI(concat(str(organs:), "DivisionType", ?divisiontype_id)), ?nothing) AS ?division_type_iri)
+        
+        # link Keyboard with division
+        OPTIONAL { ?division_base xyz:keyboard ?div_keyboard_id }
+        BIND(IF(BOUND(?div_keyboard_id), IRI(concat(str(organs:), ?divisionid, "Keyboard", ?div_keyboard_id)) ,?nothing) AS ?div_keyboard_iri)
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/kg/kg_stops.json" . 
+    
+        ?stops_root a fx:root ;
+            ?stop_slot ?stop_base .
+
+        ?stop_base
+            xyz:divisionid ?stop_divisionid ;
+            xyz:stopname ?stop_name  ;
+            xyz:order ?stop_order ;
+            xyz:specification ?stop_specification .
+
+        # identifier for stop
+        BIND(replace(str(?stop_slot), str(xyz:), "") AS ?stopid)
+        BIND(IRI(concat(str(organs:), ?stopid)) AS ?stop_iri)
+
+        # division iri
+        BIND(IRI(concat(str(organs:), ?stop_divisionid)) AS ?stop_divisionid_iri)
+
+        # stopname
+        # unique name for blank stopname node
+        BIND(concat(?stopid, "name") AS ?blank_stopnameid)
+        BIND(fx:bnode(?blank_stopnameid) as ?blank_stopname)
+
+        OPTIONAL { ?stop_base xyz:partition ?stop_partition }
+        OPTIONAL { ?stop_base xyz:double ?stop_double }
+        OPTIONAL { ?stop_base xyz:footnote ?stop_footnote }
+
+        OPTIONAL {
+            ?stop_base xyz:disambiguated_stopname_id ?stop_disambiguated_name_id .
+        }
+        BIND(IF(BOUND(?stop_disambiguated_name_id),IRI(concat(str(organs:), "StopDisambiguatedName", ?stop_disambiguated_name_id)), ?nothing) AS ?disambiguated_stopname_iri)
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/kg/kg_compound_stops.json" . 
+    
+        ?cstops_root a fx:root ;
+            ?cstop_slot ?cstop_base .
+
+        ?cstop_base
+            xyz:stopid ?cstop_stopid ;
+            xyz:ranges ?cstop_ranges_base .
+
+        BIND(replace(str(?cstop_slot), str(xyz:), "") AS ?cstopid)
+
+        BIND(IRI(concat(str(organs:), ?cstop_stopid)) AS ?cstop_stop_iri)
+
+        ?cstop_ranges_base ?range_slot ?range_base .
+        ?range_base fx:anySlot ?footheight .
+
+        BIND(replace(str(?range_slot), str(xyz:), "") AS ?range_lowest_key)
+
+        # make identifiers
+        BIND(concat(?cstopid, ?range_lowest_key) AS ?blank_stoprankrangeid)
+        # make blank node
+        BIND(fx:bnode(?blank_stoprankrangeid) AS ?blank_stoprankrange)
+
+    }
 
 }
