@@ -10,7 +10,7 @@ PREFIX ins: <http://w3id.org/polifonia/ontology/instrument/>
 construct {
 
     ###################################
-    ### Parthood
+    ### Parthood, Case, Console, Windsystem
 
     # link with organ
     ?organ_iri core:includesWhole ?disposition_parthood_iri .
@@ -59,7 +59,7 @@ construct {
         core:value ?disposition_case_description . # string literal.
 
     ###################################
-    ### DIVISIONS AND STOPS AND CONSOLE
+    ### DIVISIONS
 
     # # Division
     ?division_iri a organ:OrganDivision ;
@@ -84,7 +84,10 @@ construct {
     # Link Console to disposition parthood (from kg_keyboards.json)
     ?keyboard_disposition_parthood_iri core:hasPart ?keyboard_console_iri .
 
-    # # Stop
+    ###################################
+    ### STOPS
+
+    # Stop
     ?stop_iri a organ:OrganDivisionStop ;
         core:hasName ?blank_stopname ;
         core:hasName ?disambiguated_stopname_iri ;
