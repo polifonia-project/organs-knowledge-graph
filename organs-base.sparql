@@ -6,6 +6,7 @@ PREFIX organs: <http://w3id.org/polifonia/resource/organs/>
 PREFIX organ: <http://w3id.org/polifonia/ontology/organs/>
 PREFIX core: <https://w3id.org/polifonia/ontology/core/>
 PREFIX ins: <http://w3id.org/polifonia/ontology/instrument/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 construct {
 

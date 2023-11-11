@@ -6,6 +6,7 @@ PREFIX organs: <http://w3id.org/polifonia/resource/organs/>
 PREFIX organ: <http://w3id.org/polifonia/ontology/organs/>
 PREFIX core: <https://w3id.org/polifonia/ontology/core/>
 PREFIX ins: <http://w3id.org/polifonia/ontology/instrument/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 construct {
 
@@ -103,12 +104,13 @@ construct {
     # link stop with division
     ?stop_divisionid_iri core:hasPart ?stop_iri .
 
-    #Compound stop
-    ?cstop_stop_iri core:hasPart ?blank_stoprankrange .
+    # -> Compound stop in separate query
+    # #Compound stop
+    # ?cstop_stop_iri core:hasPart ?blank_stoprankrange .
 
-    ?blank_stoprankrange a organ:OrgandivisionStopRankRange ;
-        organ:lowestKey ?range_lowest_key ; # string literal. E.g. 'C', 'f2'
-        organ:hasFootHeight ?footheight . # string literal. E.g. '4', '2/3'
+    # ?blank_stoprankrange a organ:OrgandivisionStopRankRange ;
+    #     organ:lowestKey ?range_lowest_key ; # string literal. E.g. 'C', 'f2'
+    #     organ:hasFootHeight ?footheight . # string literal. E.g. '4', '2/3'
 
 }
 WHERE {
@@ -117,8 +119,19 @@ WHERE {
 
         fx:properties fx:location "./output/kg/kg_dispositions.json" . 
 
-        ?dispositions_root a fx:root ;
-            ?disposition_slot ?disposition_base .
+        BIND(IRI(concat(str(xyz:),?_organ)) as ?organ_slot)
+
+        ?organs_root a fx:root ;
+            ?organ_slot ?organ_base .
+
+        ?organ_base
+            xyz:dispositions ?dispositions_root ;
+            xyz:divisions ?divisions_root ;
+            xyz:keyboards ?keyboards_root ;
+            xyz:stops ?stops_root ;
+            xyz:compound_stops ?cstops_root .
+
+        ?dispositions_root ?disposition_slot ?disposition_base .
 
         BIND(replace(str(?disposition_slot), str(xyz:), "") AS ?dispositionid)
         
@@ -128,6 +141,11 @@ WHERE {
 
         BIND(IRI(concat(replace(str(?disposition_slot), str(xyz:), str(organs:)), "_parthood")) AS ?disposition_parthood_iri)
         BIND(IRI(CONCAT(str(organs:), str(?disposition_base_organid))) as ?organ_iri)
+
+        # # For testing
+        # VALUES ?organ_slot {
+        #     xyz:Part01_010GRON
+        # }
 
         OPTIONAL { ?disposition_base xyz:windsystem_description ?disposition_windsystem_description . }
         OPTIONAL { ?disposition_base xyz:windpressure ?disposition_windpressure . }
@@ -168,20 +186,7 @@ WHERE {
         BIND(IF(BOUND(?disposition_case_description), concat(?dispositionid, "case"), ?nothing)  AS ?blank_caseid)
         BIND(IF(BOUND(?disposition_case_description), fx:bnode(?blank_caseid), ?nothing) AS ?blank_case)
 
-        # # For testing
-        # VALUES ?disposition_parthood_iri {
-        #     organs:Part01_010GRON_disposition000_parthood
-        #     organs:Part01_100ZAAND_disposition003_parthood
-        # }
-
-    }
-
-    SERVICE <x-sparql-anything:> {
-
-        fx:properties fx:location "./output/kg/kg_keyboards.json" . 
-    
-        ?keyboards_root a fx:root ;
-            ?keyboard_slot ?keyboard_base .
+        ?keyboards_root ?keyboard_slot ?keyboard_base .
 
         ?keyboard_base
             xyz:dispositionid ?keyboard_dispositionid ;
@@ -198,14 +203,8 @@ WHERE {
 
         # Disposition parthood
         BIND(IRI(concat(str(organs:), ?keyboard_dispositionid, "_parthood")) AS ?keyboard_disposition_parthood_iri)       
-    }
-
-    SERVICE <x-sparql-anything:> {
-
-        fx:properties fx:location "./output/kg/kg_divisions.json" . 
     
-        ?divisions_root a fx:root ;
-            ?division_slot ?division_base .
+        ?divisions_root ?division_slot ?division_base .
 
         ?division_base
             xyz:dispositionid ?div_dispositionid ;
@@ -227,15 +226,8 @@ WHERE {
         # link Keyboard with division
         OPTIONAL { ?division_base xyz:keyboard ?div_keyboard_id }
         BIND(IF(BOUND(?div_keyboard_id), IRI(concat(str(organs:), ?divisionid, "Keyboard", ?div_keyboard_id)) ,?nothing) AS ?div_keyboard_iri)
-
-    }
-
-    SERVICE <x-sparql-anything:> {
-
-        fx:properties fx:location "./output/kg/kg_stops.json" . 
     
-        ?stops_root a fx:root ;
-            ?stop_slot ?stop_base .
+        ?stops_root ?stop_slot ?stop_base .
 
         ?stop_base
             xyz:divisionid ?stop_divisionid ;
@@ -264,32 +256,25 @@ WHERE {
         }
         BIND(IF(BOUND(?stop_disambiguated_name_id),IRI(concat(str(organs:), "StopDisambiguatedName", ?stop_disambiguated_name_id)), ?nothing) AS ?disambiguated_stopname_iri)
 
-    }
+        # ?cstops_root ?cstop_slot ?cstop_base .
 
-    SERVICE <x-sparql-anything:> {
+        # ?cstop_base
+        #     xyz:stopid ?cstop_stopid ;
+        #     xyz:ranges ?cstop_ranges_base .
 
-        fx:properties fx:location "./output/kg/kg_compound_stops.json" . 
-    
-        ?cstops_root a fx:root ;
-            ?cstop_slot ?cstop_base .
+        # BIND(replace(str(?cstop_slot), str(xyz:), "") AS ?cstopid)
 
-        ?cstop_base
-            xyz:stopid ?cstop_stopid ;
-            xyz:ranges ?cstop_ranges_base .
+        # BIND(IRI(concat(str(organs:), ?cstop_stopid)) AS ?cstop_stop_iri)
 
-        BIND(replace(str(?cstop_slot), str(xyz:), "") AS ?cstopid)
+        # ?cstop_ranges_base ?range_slot ?range_base .
+        # ?range_base fx:anySlot ?footheight .
 
-        BIND(IRI(concat(str(organs:), ?cstop_stopid)) AS ?cstop_stop_iri)
+        # BIND(replace(str(?range_slot), str(xyz:), "") AS ?range_lowest_key)
 
-        ?cstop_ranges_base ?range_slot ?range_base .
-        ?range_base fx:anySlot ?footheight .
-
-        BIND(replace(str(?range_slot), str(xyz:), "") AS ?range_lowest_key)
-
-        # make identifiers
-        BIND(concat(?cstopid, ?range_lowest_key) AS ?blank_stoprankrangeid)
-        # make blank node
-        BIND(fx:bnode(?blank_stoprankrangeid) AS ?blank_stoprankrange)
+        # # make identifiers
+        # BIND(concat(?cstopid, ?range_lowest_key) AS ?blank_stoprankrangeid)
+        # # make blank node
+        # BIND(fx:bnode(?blank_stoprankrangeid) AS ?blank_stoprankrange)
 
     }
 
