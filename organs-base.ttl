@@ -5,6 +5,7 @@
 @prefix organs: <http://w3id.org/polifonia/resource/organs/> .
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:    <http://sparql.xyz/facade-x/data/> .
 
 organs:Part10_103Zwijndrecht_parthood

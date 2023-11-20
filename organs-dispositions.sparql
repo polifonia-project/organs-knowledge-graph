@@ -65,6 +65,7 @@ construct {
     # # Division
     ?division_iri a organ:OrganDivision ;
         core:name ?division_name ; # string literal
+        organ:hasOrder ?division_order ; # integer
         core:isClassifiedBy ?division_type_iri ;
         organ:hasKeyboard ?div_keyboard_iri ;
         rdfs:comment ?division_footnote .
@@ -103,14 +104,6 @@ construct {
 
     # link stop with division
     ?stop_divisionid_iri core:hasPart ?stop_iri .
-
-    # -> Compound stop in separate query
-    # #Compound stop
-    # ?cstop_stop_iri core:hasPart ?blank_stoprankrange .
-
-    # ?blank_stoprankrange a organ:OrgandivisionStopRankRange ;
-    #     organ:lowestKey ?range_lowest_key ; # string literal. E.g. 'C', 'f2'
-    #     organ:hasFootHeight ?footheight . # string literal. E.g. '4', '2/3'
 
 }
 WHERE {
@@ -186,29 +179,35 @@ WHERE {
         BIND(IF(BOUND(?disposition_case_description), concat(?dispositionid, "case"), ?nothing)  AS ?blank_caseid)
         BIND(IF(BOUND(?disposition_case_description), fx:bnode(?blank_caseid), ?nothing) AS ?blank_case)
 
-        ?keyboards_root ?keyboard_slot ?keyboard_base .
+        OPTIONAL {
 
-        ?keyboard_base
-            xyz:dispositionid ?keyboard_dispositionid ;
-            xyz:rank ?keyboard_rank  ;
-            xyz:type ?keyboard_type .
+            ?keyboards_root ?keyboard_slot ?keyboard_base .
+
+            ?keyboard_base
+                xyz:dispositionid ?keyboard_dispositionid ;
+                xyz:rank ?keyboard_rank  ;
+                xyz:type ?keyboard_type .
+
+        }
 
         # Keyboard object
-        BIND(replace(str(?keyboard_slot), str(xyz:), "") AS ?keyboardid)
-        BIND(IRI(concat(str(organs:), ?keyboardid)) AS ?keyboard_iri)
-        BIND(IRI(concat(str(organ:), ?keyboard_type)) AS ?keyboard_type_iri)
+        BIND(IF(BOUND(?keyboard_base), replace(str(?keyboard_slot), str(xyz:), ""), ?nothing) AS ?keyboardid)
+        BIND(IF(BOUND(?keyboard_base), IRI(concat(str(organs:), ?keyboardid)), ?nothing) AS ?keyboard_iri)
+        BIND(IF(BOUND(?keyboard_base), IRI(concat(str(organ:), ?keyboard_type)), ?nothing) AS ?keyboard_type_iri)
 
         # Console object 
-        BIND(IRI(concat(str(organs:), ?keyboard_dispositionid, "Console")) AS ?keyboard_console_iri)
+        BIND(IF(BOUND(?keyboard_base), IRI(concat(str(organs:), ?keyboard_dispositionid, "Console")), ?nothing) AS ?keyboard_console_iri)
 
         # Disposition parthood
-        BIND(IRI(concat(str(organs:), ?keyboard_dispositionid, "_parthood")) AS ?keyboard_disposition_parthood_iri)       
-    
+        BIND(IF(BOUND(?keyboard_base), IRI(concat(str(organs:), ?keyboard_dispositionid, "_parthood")), ?nothing) AS ?keyboard_disposition_parthood_iri)       
+
+
         ?divisions_root ?division_slot ?division_base .
 
         ?division_base
             xyz:dispositionid ?div_dispositionid ;
-            xyz:name ?division_name  .
+            xyz:name ?division_name  ;
+            xyz:order ?division_order .
 
         OPTIONAL { ?division_base xyz:footnote ?division_footnote }
 
@@ -255,26 +254,6 @@ WHERE {
             ?stop_base xyz:disambiguated_stopname_id ?stop_disambiguated_name_id .
         }
         BIND(IF(BOUND(?stop_disambiguated_name_id),IRI(concat(str(organs:), "StopDisambiguatedName", ?stop_disambiguated_name_id)), ?nothing) AS ?disambiguated_stopname_iri)
-
-        # ?cstops_root ?cstop_slot ?cstop_base .
-
-        # ?cstop_base
-        #     xyz:stopid ?cstop_stopid ;
-        #     xyz:ranges ?cstop_ranges_base .
-
-        # BIND(replace(str(?cstop_slot), str(xyz:), "") AS ?cstopid)
-
-        # BIND(IRI(concat(str(organs:), ?cstop_stopid)) AS ?cstop_stop_iri)
-
-        # ?cstop_ranges_base ?range_slot ?range_base .
-        # ?range_base fx:anySlot ?footheight .
-
-        # BIND(replace(str(?range_slot), str(xyz:), "") AS ?range_lowest_key)
-
-        # # make identifiers
-        # BIND(concat(?cstopid, ?range_lowest_key) AS ?blank_stoprankrangeid)
-        # # make blank node
-        # BIND(fx:bnode(?blank_stoprankrangeid) AS ?blank_stoprankrange)
 
     }
 

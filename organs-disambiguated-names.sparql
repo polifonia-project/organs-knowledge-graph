@@ -18,7 +18,7 @@ construct {
     ?disambiguated_stop_name_iri a core:DisambiguatedName ;
         core:name ?stop_disambiguated_name . # string literal
 
-    # # Division
+    # Division
     ?division_type_iri a organ:DivisionType ;
         core:name ?division_type_name .
 

@@ -1,3 +1,13 @@
+Questions 20 november 2023
+- Dating: Interpreted vs Verbatim || dateStr vs yearInt
+- Distinct class for 'Disposition'
+- Indicate type of DisambiguatedName (Stop, Builder, Division)
+- How to include picture (id / url, caption, date, creator, comment)
+- How to include link to youtube video?
+- How to include link to audio file?
+- Link with terms from organ dictionary
+
+
 Questions 9 October 2023
 - What about inverse relations?
 - Where to put the description of the building?
