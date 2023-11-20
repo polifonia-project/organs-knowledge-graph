@@ -20,4 +20,6 @@ credits:
 # ORGANS Knowledge Graph
 ORGANS Knowledge Graph stores information about the organs instrument and their evolution through time.
 
+The ORGANS Knowledge Graph can be queried from: https://polifonia.disi.unibo.it/organs/sparql.
+
 ORGANS Knowledge Graph is described in a dedicated MELODY data story: **[ORGANS Statistics, documenting pipe organs of historic importance](https://projects.dharc.unibo.it/melody/organs/organs_statistics)**.
