@@ -1,0 +1,61 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX organs: <http://w3id.org/polifonia/resource/organs/>
+PREFIX organ: <http://w3id.org/polifonia/ontology/organs/>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX ins: <http://w3id.org/polifonia/ontology/instrument/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+construct {
+
+    # Builder
+    ?disambiguated_builder_name_iri a core:DisambiguatedName ;
+        core:name ?builder_disambiguated_name .
+
+    # Stop
+    ?disambiguated_stop_name_iri a core:DisambiguatedName ;
+        core:name ?stop_disambiguated_name . # string literal
+
+    # Division
+    ?division_type_iri a organ:DivisionType ;
+        core:name ?division_type_name .
+
+}
+WHERE {
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/kg/kg_disambiguated_builders.json" . 
+    
+        ?builder_base_root a fx:root ;
+            ?builder_slot ?builder_disambiguated_name .
+
+        BIND(IRI(replace(str(?builder_slot), str(xyz:), str(organs:))) AS ?disambiguated_builder_name_iri)
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/kg/kg_disambiguated_stops.json" . 
+    
+        ?stop_base_root a fx:root ;
+            ?stop_slot ?stop_disambiguated_name .
+
+        BIND(IRI(replace(str(?stop_slot), str(xyz:), str(organs:))) AS ?disambiguated_stop_name_iri)
+
+    }
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/kg/kg_division_types.json" . 
+    
+        ?division_base_root a fx:root ;
+            ?division_slot ?division_type_name .
+
+        BIND(IRI(replace(str(?division_slot), str(xyz:), str(organs:))) AS ?division_type_iri)
+
+    }
+
+}

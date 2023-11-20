@@ -1,0 +1,107 @@
+Questions 20 november 2023
+- Dating: Interpreted vs Verbatim || dateStr vs yearInt
+- Distinct class for 'Disposition'
+- Indicate type of DisambiguatedName (Stop, Builder, Division)
+- How to include picture (id / url, caption, date, creator, comment)
+- How to include link to youtube video?
+- How to include link to audio file?
+- Link with terms from organ dictionary
+
+
+Questions 9 October 2023
+- What about inverse relations?
+- Where to put the description of the building?
+- Where to put the 'particularities' (text blob describing 'current' parthood)
+- Can we have the place name as separate data property 
+- add organnumber to organ:Organ.
+
+Questions September 2023
+- Did I do it right? See sparql query organ.sparql at github organ-knowledge-graph
+- How to include geographic locations (PhysicalSite), cities, buildings.
+- How to include agents. Both literal name, and disambiguated name.
+- How to link with the organ lexicon? Use terms and IDs.
+- Do we need persistent identifiers? How to be robust towards the future?
+- How to include the rdf:type information?
+- How to construct IDs?
+- Should IDs be persistent?
+- How to construct IRIs for intermediate nodes
+- which namespaces to use (ontology/resources)
+- How to include images
+- How to include links to youtube videos'
+
+
+Requested additions for Ontology:
+
+-------------------
+ 
+The location (core:PhysicalSite) should go to the Parthood instead of the Project.
+ 
+Then the parthood always refers to a certain time and place.
+ 
+-------------------
+ 
+Could Windpressure, Tuning and Pitch also go to Parthood (instead of Organ). Then they have a timeInterval as well.
+
+Windpressure, Tuning, and Pitch should have time intervals as well
+ 
+-------------------
+ 
+Pipes should be part of …RankRange
+ 
+Could be simplified:
+ 
+o:OrganDivisionStop core:hasPart o:OrganDivisionStopRankRange (1:n relation)
+ 
+o:OrganDivisionStopRankRange o:lowestkey xsd:Literal
+o:OrganDivisionStopRankRange o:highestKey xsd:Literal
+o:OrganDivisionStopRankRange o:hasFootHeight xsd:Literal (1:n relation)
+ 
+o:OrganDivisionStopRankRange core:hasPart o:OrganDivisionStopRankRangePipe (1:n relation)
+ 
+------------------
+ 
+Missing:
+o:OrganConsoleKeyboard o:hasRange xsd:Literal
+ 
+------------------
+ 
+Add :derivedFrom to o:OrganCase (analogous to o:organ)
+ 
+------------------
+ 
+Add Organ Lexicon identifier to all classes. How?
+ 
+------------------
+ 
+Include:
+o:WindSystemBellow rdf:type ...
+ 
+reservoir bellows;6120
+wedge bellows;6105
+schwimmer bellows;6160
+feeder bellows;6135
+horizontal bellows;6125
+concussion bellows;6175
+box bellows;6165
+inbuild bellows;6180
+regulator bellows;6350
+ 
+------------------
+ 
+Action: add 'pin action' (8300) type
+ 
+------------------
+ 
+Type of projects:
+- enlarge (1195)
+- alter (1170)
+- dismantle (1165)
+- renovate (1150)
+- clean (1135)
+- build (1235)
+- repair (1115)
+- maintain (1125)
+- tune (1105)
+- restore (1215)
+- reconstruct (1225)
+

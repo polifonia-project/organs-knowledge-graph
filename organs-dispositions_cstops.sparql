@@ -1,0 +1,62 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX organs: <http://w3id.org/polifonia/resource/organs/>
+PREFIX organ: <http://w3id.org/polifonia/ontology/organs/>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX ins: <http://w3id.org/polifonia/ontology/instrument/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+construct {
+
+    #Compound stop
+    ?cstop_stop_iri core:hasPart ?blank_stoprankrange .
+
+    ?blank_stoprankrange a organ:OrgandivisionStopRankRange ;
+        organ:lowestKey ?range_lowest_key ; # string literal. E.g. 'C', 'f2'
+        organ:hasFootHeight ?footheight . # string literal. E.g. '4', '2/3'
+
+}
+WHERE {
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/kg/kg_dispositions.json" . 
+
+        BIND(IRI(concat(str(xyz:),?_organ)) as ?organ_slot)
+
+        ?organs_root a fx:root ;
+            ?organ_slot ?organ_base .
+
+        # # For testing
+        # VALUES ?organ_slot {
+        #     xyz:Part01_010GRON
+        # }
+
+        ?organ_base
+            xyz:compound_stops ?cstops_root .
+
+        ?cstops_root ?cstop_slot ?cstop_base .
+
+        ?cstop_base
+            xyz:stopid ?cstop_stopid ;
+            xyz:ranges ?cstop_ranges_base .
+
+        BIND(replace(str(?cstop_slot), str(xyz:), "") AS ?cstopid)
+
+        BIND(IRI(concat(str(organs:), ?cstop_stopid)) AS ?cstop_stop_iri)
+
+        ?cstop_ranges_base ?range_slot ?range_base .
+        ?range_base fx:anySlot ?footheight .
+
+        BIND(replace(str(?range_slot), str(xyz:), "") AS ?range_lowest_key)
+
+        # make identifiers
+        BIND(concat(?cstopid, ?range_lowest_key) AS ?blank_stoprankrangeid)
+        # make blank node
+        BIND(fx:bnode(?blank_stoprankrangeid) AS ?blank_stoprankrange)
+
+    }
+
+}

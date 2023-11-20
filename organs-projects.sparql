@@ -1,0 +1,121 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX organs: <http://w3id.org/polifonia/resource/organs/>
+PREFIX organ: <http://w3id.org/polifonia/ontology/organs/>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX ins: <http://w3id.org/polifonia/ontology/instrument/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+construct {
+
+ ###################################
+    ### PROJECTS
+
+    ?organ_iri core:describedBy ?project_iri .
+
+    ?project_iri a organ:OrganProject ;
+        core:hasTimedLocation ?blank_timedlocation ;
+        core:hasProjectist ?blank_projectist ;
+        core:definesTask ?blank_task .
+
+    ?blank_timedlocation a core:TimedLocation ;
+        core:hasTimeInterval ?blank_timeinterval .
+
+    ?blank_timeinterval a core:TimeInterval ;
+        rdfs:label ?project_date ;
+        core:hasIntervalDate ?project_date .
+
+    ?blank_task a core:Task ;
+        core:value ?task_description ;
+        core:isClassifiedBy ?task_type_iri .
+
+    ?blank_projectist a ins:Projectist ;
+        core:hasRole organ:Builder ;
+        core:involvesAgent ?blank_agent .
+
+    ?blank_agent a core:Agent ;
+        core:hasName ?disambiguatedname_iri ;
+        core:hasName ?blank_name .
+
+    ?blank_name a core:Name ;
+            core:name ?builder_stated_name .
+
+}
+WHERE {
+
+    SERVICE <x-sparql-anything:> {
+
+        #fx:properties fx:location "./output/kg/kg_projects_sel.json" .
+        fx:properties fx:location "./output/kg/kg_projects.json" .
+    
+        ?project_root a fx:root ;
+            ?project_slot ?project_base .
+
+        # Extract project identifier
+        BIND(replace(str(?project_slot), str(xyz:), "") AS ?projectid)
+        # Mint project IRI
+        BIND(IRI(replace(str(?project_slot), str(xyz:), str(organs:))) AS ?project_iri)
+        # Mint timedlocation identifiers
+        BIND(concat(?projectid, "timedlocation") AS ?blank_timedlocationid)
+        BIND(concat(?projectid, "timeinterval") AS ?blank_timeintervalid)
+        # Make the blind nodes
+        BIND(fx:bnode(?blank_timedlocationid) as ?blank_timedlocation)
+        BIND(fx:bnode(?blank_timeintervalid) as ?blank_timeinterval)
+
+        # link with organ
+        ?project_base xyz:organid ?organid .
+        BIND(IRI(CONCAT(str(organs:), str(?organid))) as ?organ_iri)
+
+        # builder name
+        OPTIONAL {
+            # stated name
+            ?project_base xyz:builder_stated ?builder_stated_name .
+        }
+        # make identifiers
+        BIND(IF(BOUND(?builder_stated_name), concat(?projectid, "projectist"), ?nothing)  AS ?blank_projectistid)
+        BIND(IF(BOUND(?builder_stated_name), concat(?projectid, "statedagent"), ?nothing)  AS ?blank_statedagentid)
+        BIND(IF(BOUND(?builder_stated_name), concat(?projectid, "statedname"), ?nothing)  AS ?blank_nameid)
+        # make blank nodes
+        BIND(IF(BOUND(?builder_stated_name), fx:bnode(?blank_projectistid), ?nothing) AS ?blank_projectist)
+        BIND(IF(BOUND(?builder_stated_name), fx:bnode(?blank_statedagentid), ?nothing) AS ?blank_agent)
+        BIND(IF(BOUND(?builder_stated_name), fx:bnode(?blank_nameid), ?nothing) AS ?blank_name)
+
+        # disambiguated builder name(s)
+        OPTIONAL {
+            ?project_base xyz:disambiguated_buildername_ids ?disamb_builder_base .
+            ?disamb_builder_base ?disamb_builder_slot ?disamb_builder_id .
+            BIND(IRI(concat(str(organs:), "BuilderDisambiguatedName", ?disamb_builder_id)) AS ?disambiguatedname_iri)
+        }
+
+        # tasks
+        ?project_base xyz:tasks ?tasks_base .
+        ?tasks_base ?task_slot ?task_base .
+        ?task_base xyz:description ?task_description .
+
+        # Extract identifier for task entity
+        BIND(replace(str(?task_slot), str(rdf:), "") AS ?task_slotid)
+        # Make global unique identifier
+        BIND(concat(?projectid, ?task_slotid) AS ?taskid)
+        BIND(fx:bnode(?taskid) as ?blank_task)
+
+        # add task types
+        OPTIONAL {
+            ?task_base xyz:type ?task_type .
+            BIND(IRI(concat(str(organ:), "TaskType", ?task_type)) AS ?task_type_iri)
+        }
+
+        # date stated
+        ?project_base xyz:date_stated ?project_date .
+        
+        # interpreted date
+        # OPTIONAL {
+        #     ?project_base xyz:year_high ?project_interpreted_date .
+        # }
+
+
+    }
+
+
+}

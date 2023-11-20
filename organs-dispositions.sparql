@@ -1,0 +1,260 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX organs: <http://w3id.org/polifonia/resource/organs/>
+PREFIX organ: <http://w3id.org/polifonia/ontology/organs/>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX ins: <http://w3id.org/polifonia/ontology/instrument/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+construct {
+
+    ###################################
+    ### Parthood, Case, Console, Windsystem
+
+    # link with organ
+    ?organ_iri core:includesWhole ?disposition_parthood_iri .
+
+    # construct a parthood for each disposition
+    ?disposition_parthood_iri a ins:InstrumentWhole ;
+        core:hasTimedLocation ?blank_timedlocation ;
+        core:label ?disposition_description ;
+        organ:hasWindPressure ?disposition_windpressure ;
+        organ:hasTemperament ?disposition_temperament ;
+        organ:hasPitch ?disposition_pitch ;
+        rdfs:comment ?disposition_peculiarities ;
+        rdfs:comment ?disposition_extra_information .
+    
+    ?blank_timedlocation a core:TimedLocation ;
+        core:hasTimeInterval ?blank_timeinterval .
+
+    ?blank_timeinterval a core:TimeInterval ;
+        core:hasIntervalDate ?disposition_date ;
+        core:hasInterpretedIntervalDate ?disposition_date .
+
+    # windsystem
+    ?disposition_parthood_iri core:hasPart ?blank_windsystem .
+
+    ?blank_windsystem a organ:OrganWindSystem ;
+        core:value ?disposition_windsystem_description .
+
+    # Console
+    ?disposition_parthood_iri core:hasPart ?disposition_console_iri . # iri: <dispositionid>Console  to be reused for divisions
+    
+    ?disposition_console_iri a organ:OrganConsole ;
+        core:hasPart ?blank_playing_aids ;
+        core:hasOrganConsoleLocation ?blank_console_location ;
+        organ:hasKeyboardRanges ?disposition_keyboard_ranges .
+    
+    ?blank_playing_aids a organ:OrganConsolePlayingAids ;
+            core:value ?disposition_playing_aids . # string literal
+
+    ?blank_console_location a organ:OrganConsoleLocation ;
+            core:value ?disposition_console_location . # string literal
+
+    # Case
+    ?disposition_parthood_iri core:hasPart ?blank_case .
+    
+    ?blank_case a organ:OrganCase ;
+        core:value ?disposition_case_description . # string literal.
+
+    ###################################
+    ### DIVISIONS
+
+    # # Division
+    ?division_iri a organ:OrganDivision ;
+        core:name ?division_name ; # string literal
+        organ:hasOrder ?division_order ; # integer
+        core:isClassifiedBy ?division_type_iri ;
+        organ:hasKeyboard ?div_keyboard_iri ;
+        rdfs:comment ?division_footnote .
+
+    # Relation parthood - division
+    ?div_disposition_parthood_iri core:hasPart ?division_iri .
+
+    # Keyboard (from kg_keyboards.json)
+    ?keyboard_iri a organ:OrganConsoleKeyboard ;
+        organ:hasRank ?keyboard_rank ; # string literal. One of {'I', 'II', 'III', 'IV', 'P'}
+        core:isClassifiedBy ?keyboard_type_iri .
+
+    # Link keyboad to Console (from kg_keyboards.json)
+    # Might give duplicates with data from dispositions
+    ?keyboard_console_iri a organ:OrganConsole ;
+        organ:hasKeyboard ?keyboard_iri .
+
+    # Link Console to disposition parthood (from kg_keyboards.json)
+    ?keyboard_disposition_parthood_iri core:hasPart ?keyboard_console_iri .
+
+    ###################################
+    ### STOPS
+
+    # Stop
+    ?stop_iri a organ:OrganDivisionStop ;
+        core:hasName ?blank_stopname ;
+        core:hasName ?disambiguated_stopname_iri ;
+        organ:hasPartition ?stop_partition ; # string literal
+        organ:hasDouble ?stop_double ; # string literal
+        organ:hasOrder ?stop_order ; # integer
+        organ:hasSpecification ?stop_specification ; # string literal
+        rdfs:comment ?stop_footnote . # string literal
+
+    ?blank_stopname a core:Name ;
+        core:name ?stop_name . # string literal
+
+    # link stop with division
+    ?stop_divisionid_iri core:hasPart ?stop_iri .
+
+}
+WHERE {
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location "./output/kg/kg_dispositions.json" . 
+
+        BIND(IRI(concat(str(xyz:),?_organ)) as ?organ_slot)
+
+        ?organs_root a fx:root ;
+            ?organ_slot ?organ_base .
+
+        ?organ_base
+            xyz:dispositions ?dispositions_root ;
+            xyz:divisions ?divisions_root ;
+            xyz:keyboards ?keyboards_root ;
+            xyz:stops ?stops_root ;
+            xyz:compound_stops ?cstops_root .
+
+        ?dispositions_root ?disposition_slot ?disposition_base .
+
+        BIND(replace(str(?disposition_slot), str(xyz:), "") AS ?dispositionid)
+        
+        ?disposition_base
+            xyz:organid ?disposition_base_organid ;
+            xyz:description ?disposition_description .
+
+        BIND(IRI(concat(replace(str(?disposition_slot), str(xyz:), str(organs:)), "_parthood")) AS ?disposition_parthood_iri)
+        BIND(IRI(CONCAT(str(organs:), str(?disposition_base_organid))) as ?organ_iri)
+
+        # # For testing
+        # VALUES ?organ_slot {
+        #     xyz:Part01_010GRON
+        # }
+
+        OPTIONAL { ?disposition_base xyz:windsystem_description ?disposition_windsystem_description . }
+        OPTIONAL { ?disposition_base xyz:windpressure ?disposition_windpressure . }
+        OPTIONAL { ?disposition_base xyz:temperament ?disposition_temperament . }
+        OPTIONAL { ?disposition_base xyz:pitch ?disposition_pitch . }
+        OPTIONAL { ?disposition_base xyz:playing_aids ?disposition_playing_aids . }
+        OPTIONAL { ?disposition_base xyz:keyboard_ranges ?disposition_keyboard_ranges . }
+        OPTIONAL { ?disposition_base xyz:peculiarities ?disposition_peculiarities . }
+        OPTIONAL { ?disposition_base xyz:case_description ?disposition_case_description . }
+        OPTIONAL { ?disposition_base xyz:console_location ?disposition_console_location . }
+        OPTIONAL { ?disposition_base xyz:year_low ?disposition_date . }
+        OPTIONAL { ?disposition_base xyz:extra_information ?disposition_extra_information . }
+
+        #only if a console is needed
+        BIND(
+            IF(
+                BOUND(?disposition_playing_aids) || BOUND(?disposition_console_location) || BOUND(?disposition_keyboard_ranges),
+                IRI(concat(replace(str(?disposition_slot), str(xyz:), str(organs:)), "Console")),
+                ?nothing
+            )
+            AS ?disposition_console_iri
+        )
+        # playing aids
+        BIND(IF(BOUND(?disposition_playing_aids), concat(?dispositionid, "playingaids"), ?nothing)  AS ?blank_playing_aidsid)
+        BIND(IF(BOUND(?disposition_playing_aids), fx:bnode(?blank_playing_aidsid), ?nothing) AS ?blank_playing_aids)
+        # ConsolseLocation
+        BIND(IF(BOUND(?disposition_console_location), concat(?dispositionid, "consloc"), ?nothing)  AS ?blank_console_locationid)
+        BIND(IF(BOUND(?disposition_console_location), fx:bnode(?blank_console_locationid), ?nothing) AS ?blank_console_location)
+
+        # only if a timeinterval is needed:
+        BIND(IF(BOUND(?disposition_date), fx:bnode(concat(?dispositionid, "timedlocation")), ?nothing) AS ?blank_timedlocation)
+        BIND(IF(BOUND(?disposition_date), fx:bnode(concat(?dispositionid, "timeinterval")), ?nothing) AS ?blank_timeinterval)
+
+        # Windsystem
+        BIND(IF(BOUND(?windsystem_description), fx:bnode(concat(?dispositionid, "windsystem")), ?nothing) AS ?blank_windsystem)
+
+        # Case
+        BIND(IF(BOUND(?disposition_case_description), concat(?dispositionid, "case"), ?nothing)  AS ?blank_caseid)
+        BIND(IF(BOUND(?disposition_case_description), fx:bnode(?blank_caseid), ?nothing) AS ?blank_case)
+
+        OPTIONAL {
+
+            ?keyboards_root ?keyboard_slot ?keyboard_base .
+
+            ?keyboard_base
+                xyz:dispositionid ?keyboard_dispositionid ;
+                xyz:rank ?keyboard_rank  ;
+                xyz:type ?keyboard_type .
+
+        }
+
+        # Keyboard object
+        BIND(IF(BOUND(?keyboard_base), replace(str(?keyboard_slot), str(xyz:), ""), ?nothing) AS ?keyboardid)
+        BIND(IF(BOUND(?keyboard_base), IRI(concat(str(organs:), ?keyboardid)), ?nothing) AS ?keyboard_iri)
+        BIND(IF(BOUND(?keyboard_base), IRI(concat(str(organ:), ?keyboard_type)), ?nothing) AS ?keyboard_type_iri)
+
+        # Console object 
+        BIND(IF(BOUND(?keyboard_base), IRI(concat(str(organs:), ?keyboard_dispositionid, "Console")), ?nothing) AS ?keyboard_console_iri)
+
+        # Disposition parthood
+        BIND(IF(BOUND(?keyboard_base), IRI(concat(str(organs:), ?keyboard_dispositionid, "_parthood")), ?nothing) AS ?keyboard_disposition_parthood_iri)       
+
+
+        ?divisions_root ?division_slot ?division_base .
+
+        ?division_base
+            xyz:dispositionid ?div_dispositionid ;
+            xyz:name ?division_name  ;
+            xyz:order ?division_order .
+
+        OPTIONAL { ?division_base xyz:footnote ?division_footnote }
+
+        # identifier for division
+        BIND(replace(str(?division_slot), str(xyz:), "") AS ?divisionid)
+
+        # iri for division and for parthood
+        BIND(IRI(replace(str(?division_slot), str(xyz:), str(organs:))) AS ?division_iri)
+        BIND(IRI(concat(str(organs:), str(?div_dispositionid), "_parthood")) AS ?div_disposition_parthood_iri)
+
+        # division id for disambiguated division name
+        OPTIONAL { ?division_base xyz:divisiontype_id ?divisiontype_id }
+        BIND(IF(BOUND(?divisiontype_id), IRI(concat(str(organs:), "DivisionType", ?divisiontype_id)), ?nothing) AS ?division_type_iri)
+        
+        # link Keyboard with division
+        OPTIONAL { ?division_base xyz:keyboard ?div_keyboard_id }
+        BIND(IF(BOUND(?div_keyboard_id), IRI(concat(str(organs:), ?divisionid, "Keyboard", ?div_keyboard_id)) ,?nothing) AS ?div_keyboard_iri)
+    
+        ?stops_root ?stop_slot ?stop_base .
+
+        ?stop_base
+            xyz:divisionid ?stop_divisionid ;
+            xyz:stopname ?stop_name  ;
+            xyz:order ?stop_order ;
+            xyz:specification ?stop_specification .
+
+        # identifier for stop
+        BIND(replace(str(?stop_slot), str(xyz:), "") AS ?stopid)
+        BIND(IRI(concat(str(organs:), ?stopid)) AS ?stop_iri)
+
+        # division iri
+        BIND(IRI(concat(str(organs:), ?stop_divisionid)) AS ?stop_divisionid_iri)
+
+        # stopname
+        # unique name for blank stopname node
+        BIND(concat(?stopid, "name") AS ?blank_stopnameid)
+        BIND(fx:bnode(?blank_stopnameid) as ?blank_stopname)
+
+        OPTIONAL { ?stop_base xyz:partition ?stop_partition }
+        OPTIONAL { ?stop_base xyz:double ?stop_double }
+        OPTIONAL { ?stop_base xyz:footnote ?stop_footnote }
+
+        OPTIONAL {
+            ?stop_base xyz:disambiguated_stopname_id ?stop_disambiguated_name_id .
+        }
+        BIND(IF(BOUND(?stop_disambiguated_name_id),IRI(concat(str(organs:), "StopDisambiguatedName", ?stop_disambiguated_name_id)), ?nothing) AS ?disambiguated_stopname_iri)
+
+    }
+
+}
