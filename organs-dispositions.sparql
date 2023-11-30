@@ -110,7 +110,7 @@ WHERE {
 
     SERVICE <x-sparql-anything:> {
 
-        fx:properties fx:location "./output/kg/kg_dispositions.json" . 
+        fx:properties fx:location ?_filepath . 
 
         BIND(IRI(concat(str(xyz:),?_organ)) as ?organ_slot)
 

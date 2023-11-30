@@ -31,7 +31,7 @@ WHERE {
 
     SERVICE <x-sparql-anything:> {
 
-        fx:properties fx:location "./output/kg/kg_pictures.json" .
+        fx:properties fx:location ?_filepath .
 
         ?organ_root a fx:root ;
             ?organ_slot ?organ_base .
