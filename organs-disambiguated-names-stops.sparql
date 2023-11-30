@@ -1,0 +1,31 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX fx:   <http://sparql.xyz/facade-x/ns/>
+PREFIX xyz:  <http://sparql.xyz/facade-x/data/>
+PREFIX organs: <http://w3id.org/polifonia/resource/organs/>
+PREFIX organ: <http://w3id.org/polifonia/ontology/organs/>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX ins: <http://w3id.org/polifonia/ontology/instrument/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+construct {
+
+    # Stop
+    ?disambiguated_stop_name_iri a core:DisambiguatedName ;
+        core:name ?stop_disambiguated_name . # string literal
+
+}
+WHERE {
+
+    SERVICE <x-sparql-anything:> {
+
+        fx:properties fx:location ?_filepath . 
+    
+        ?stop_base_root a fx:root ;
+            ?stop_slot ?stop_disambiguated_name .
+
+        BIND(IRI(replace(str(?stop_slot), str(xyz:), str(organs:))) AS ?disambiguated_stop_name_iri)
+
+    }
+
+}
