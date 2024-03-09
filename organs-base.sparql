@@ -29,11 +29,16 @@ construct {
 
     # blank node for the location entity
     ?blank_location a core:Location ; 
-        core:hasAddress ?location_address ; # string literal with formatted address
+        #core:hasAddress ?location_address ; # string literal with formatted address
+        core:hasAddress ?blank_address ;
         core:name ?location_name ; # string literal
         core:longitude ?location_longitude ; # float
         core:latitude ?location_latitude ; # float
         rdf:comment ?location_building_description . # string literal.
+
+    ?blank_address a core:Address ;
+        core:hasAddressComponent ?address_component ;
+        core:hasCity ?city .
 
     # blank node for the timeinterval entity
     ?blank_timeinterval a core:TimeInterval ;

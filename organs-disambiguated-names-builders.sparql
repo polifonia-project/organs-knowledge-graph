@@ -12,7 +12,8 @@ construct {
 
     # Builder
     ?disambiguated_builder_name_iri a core:DisambiguatedName ;
-        core:name ?builder_disambiguated_name .
+        core:name ?builder_disambiguated_name ;
+        core:refersTo core:Agent .
 
 }
 WHERE {

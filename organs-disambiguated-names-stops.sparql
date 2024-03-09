@@ -12,8 +12,8 @@ construct {
 
     # Stop
     ?disambiguated_stop_name_iri a core:DisambiguatedName ;
-        core:name ?stop_disambiguated_name . # string literal
-
+        core:name ?stop_disambiguated_name ; # string literal
+        core:refersTo organ:OrganDivisionStop .
 }
 WHERE {
 

@@ -40,7 +40,7 @@ construct {
         core:hasName ?blank_name .
 
     ?blank_name a core:Name ;
-            core:name ?builder_stated_name .
+        core:name ?builder_stated_name .
 
 }
 WHERE {
@@ -86,8 +86,8 @@ WHERE {
         OPTIONAL {
             ?project_base xyz:disambiguated_buildername_ids ?disamb_builder_base .
             ?disamb_builder_base ?disamb_builder_slot ?disamb_builder_id .
-            BIND(IRI(concat(str(organs:), "BuilderDisambiguatedName", ?disamb_builder_id)) AS ?disambiguatedname_iri)
         }
+        BIND(IF(BOUND(?disamb_builder_id), IRI(concat(str(organs:), "BuilderDisambiguatedName", ?disamb_builder_id), ?nothing)) AS ?disambiguatedname_iri)
 
         # tasks
         ?project_base xyz:tasks ?tasks_base .
@@ -103,16 +103,14 @@ WHERE {
         # add task types
         OPTIONAL {
             ?task_base xyz:type ?task_type .
-            BIND(IRI(concat(str(organ:), "TaskType", ?task_type)) AS ?task_type_iri)
         }
+        BIND(IF(BOUND(?task_type), IRI(concat(str(organ:), "TaskType", ?task_type), ?nothing)) AS ?task_type_iri)
 
         # date stated
         ?project_base xyz:date_stated ?project_date .
         
-        # interpreted date
-        # OPTIONAL {
-        #     ?project_base xyz:year_high ?project_interpreted_date .
-        # }
+        interpreted date
+        OPTIONAL { ?project_base xyz:year_high ?project_interpreted_date_low . }
 
 
     }

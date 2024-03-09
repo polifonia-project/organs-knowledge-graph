@@ -12,7 +12,8 @@ construct {
 
     # Division
     ?division_type_iri a organ:DivisionType ;
-        core:name ?division_type_name .
+        core:name ?division_type_name ;
+        core:refersTo organ:OrganDivision .
 
 }
 WHERE {

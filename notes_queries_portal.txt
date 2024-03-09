@@ -1,0 +1,36 @@
+Find melody (uri+label)
+
+start from melody: find other (uri+label)
+
+on card of melody:
+show: 
+-
+-
+-
+- external link
+- 
+
+
+People; (uri+label)
+One query: only with widi or viaf
+- Composer
+- Lyricist
+- Publisher
+
+
+
+Composer:
+- query to retrieve works (music entities)
+
+
+Publisher
+
+
+organs:
+uri + label
+
+relationships between organs:
+
+- shared location built by
+- shared builder
+- built by
