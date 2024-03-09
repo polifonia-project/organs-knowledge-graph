@@ -1,18 +1,20 @@
-Questions 20 november 2023
+Questions feb 2024
 - Dating: Interpreted vs Verbatim || dateStr vs yearInt
-- Distinct class for 'Disposition'
 - Indicate type of DisambiguatedName (Stop, Builder, Division)
-- How to include picture (id / url, caption, date, creator, comment)
-- How to include link to youtube video?
-- How to include link to audio file?
+- indicate primary picture.
 - Link with terms from organ dictionary
-
-
-Questions 9 October 2023
 - What about inverse relations?
+- Where to put the 'particularities' (text blob describing 'current' parthood) -> rdfs:comment current parthood 
+- Can we have the place name as separate data property
+- what to do with multiple location names?  core:preferedName 
+- How to include link to youtube video? core:hasVideo 
+- How to include link to audio file?
+
+skos:closeMatch 
+
+Questions november 2023
 - Where to put the description of the building?
-- Where to put the 'particularities' (text blob describing 'current' parthood)
-- Can we have the place name as separate data property 
+- How to include picture (id / url, caption, date, creator, comment)
 - add organnumber to organ:Organ.
 
 Questions September 2023
