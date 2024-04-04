@@ -1,0 +1,2258 @@
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:StopDisambiguatedName264
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Open Speelfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName179
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Geigenprinzipal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName445
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Zwegel" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName234
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ligtfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName91
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cremona" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName149
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluit dulce" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName6
+        rdf:type       core:DisambiguatedName ;
+        core:name      "German Flute" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName415
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Viola di Gamba (af c)" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName391
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tregterfluyt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName61
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cymbel" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName204
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Holzged" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName119
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echo-trompet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName180
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gemsfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName361
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stentor-sologamba" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName31
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bas Bazuin" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName276
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Piccolo" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName150
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluit d’amour" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName331
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Schwellgedeckt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName246
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Nachthorn-gedackt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName120
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echo Viola" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName427
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Viool Prinzipal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName301
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quindecima" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName73
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Kontrabass" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName216
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Klein Octaaf" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName192
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Grosse Tierce" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName373
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sufflet of Nasart" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName43
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bell Gamba" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName288
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Prestant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName162
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flust open" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName13
+        rdf:type       core:DisambiguatedName ;
+        core:name      "14 stemmen" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName343
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Small Open Diapason" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName258
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Open Contrabas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName132
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fiffaro" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName439
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Zacht gedekt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName313
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ruispijp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName85
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornet à Piston" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName228
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Large Open Diapason" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName102
+        rdf:type       core:DisambiguatedName ;
+        core:name      "doorslaand tongwerk" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName409
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Veldfluit-Baarpijp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName385
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tibia Clausa" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName55
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Calcodion" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName174
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gedaktbass" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName440
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Zachte bas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName355
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Spitspijp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName25
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Aeoline" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName144
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Houtfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName1
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tongwerk" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName410
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ventil" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName325
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Saliset" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName97
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Doesfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName114
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echofluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName67
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Clarabel" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName397
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Trompet of Clarinet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName271
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pedalfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName186
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Groot Trompet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName367
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stopt Bas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName37
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bassethoorn" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName241
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Mixtuur Cornet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName156
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluit overbl t" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName422
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Viool Prestant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName337
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sesquialter" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName211
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jubal-Flöte" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName126
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Euphon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName307
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quint prestant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName79
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName283
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Portunaal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName198
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Harmonium" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName379
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tertiaan" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName49
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Boerenfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName253
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Octaaf harmonique" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName168
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flutte d'amour" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName434
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vulwerk" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName349
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Spaanse Cornet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName19
+        rdf:type       core:DisambiguatedName ;
+        core:name      "3 st." ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName223
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Koppeling" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName80
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornettino" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName138
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flageolet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName404
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Unison" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName319
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Roerfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName50
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bombarde" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName380
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Terts harmonique" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName295
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Principaalbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName108
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Dulciaanregaal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName350
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Speelfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName20
+        rdf:type       core:DisambiguatedName ;
+        core:name      "4 stemmen" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName265
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ophiclide" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName446
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Zwevend prestant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName320
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Roerkwint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName92
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Kromhoorn" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName235
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Linkerhand" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName7
+        rdf:type       core:DisambiguatedName ;
+        core:name      "(3 stemmen)" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName416
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Viola di Gamba af c" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName62
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Zink" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName205
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Holzrohrfl" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName392
+        rdf:type       core:DisambiguatedName ;
+        core:name      "tremulant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName181
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Geemshoorn" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName362
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stentorphone" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName32
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bas Prestant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName277
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Piccolo Harmoniek" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName151
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluit B 4'/Klarinet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName332
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Schwiegel" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName247
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Naesaetquint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName121
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echo Voxh." ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName428
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vlakfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName302
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quint & Cornett" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName74
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Contrebombarde" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName217
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Klein Scherp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName193
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Harmoniefluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName374
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Super octaaf" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName44
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Blokfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName289
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Prestantbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName163
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flûte à Bec" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName344
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sollitom" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName14
+        rdf:type       core:DisambiguatedName ;
+        core:name      "16'" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName259
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Open Diapason" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName133
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fifteenth" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName314
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Rauschquinte" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName86
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornetbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName229
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Larigot" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName103
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Doppel-Gedackt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName290
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Praestantquint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName56
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Carillon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName386
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tibia major" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName260
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Open Nachthoorn" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName175
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gedekt fluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName441
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ziegfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName26
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Althoorn" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName356
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Spitzquint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName230
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Lieflijk gedact" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName145
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluit amabilis" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName2
+        rdf:type       core:DisambiguatedName ;
+        core:name      "vulstem" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName411
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vigesimaseconda" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName326
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Saxophoon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName200
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hobo" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName98
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Dolceaan" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName115
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echo Gamba" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName398
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Trompet of Dulciaan" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName68
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Clarabel Flute" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName272
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pedaaloctaaf" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName187
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Groot gedekt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName38
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bazuin" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName368
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stopped Flute" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName242
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Monter" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName157
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluit Quint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName423
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vioolbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName338
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sexquinter" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName212
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Keraulophon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName127
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fagot" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName308
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quintanus" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName284
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Portunaalfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName199
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Haubois" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName254
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Open fluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName169
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluttravers Haut" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName435
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Woudfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName81
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornet spetie" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName224
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Koraalbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName139
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flageolet harm." ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName405
+        rdf:type       core:DisambiguatedName ;
+        core:name      "unit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName51
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bourdonbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName381
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tertscimbel" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName296
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Progressiv Harmonica" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName109
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Duytsche fl." ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName170
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fourniture" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName21
+        rdf:type       core:DisambiguatedName ;
+        core:name      "4'" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName351
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Spitsfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName266
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Orchester Oboe" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName140
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluittravers" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName447
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Zweving" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName321
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Roergedekt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName93
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Decimanovena" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName236
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Maarschalkje" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName110
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Dwarsfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName8
+        rdf:type       core:DisambiguatedName ;
+        core:name      "(in zwelkast)" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName417
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Viole major" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName393
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Trombone" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName63
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Klaroen" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName206
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hoornprestant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName182
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gemskwint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName33
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bas-Tuba" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName363
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stilgedekt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName278
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Piccolo overbl t" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName152
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluit harmoniek" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName333
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Siciliene" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName248
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Nazaard" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName122
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echo-Bourdon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName429
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vox Celestes" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName303
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quint fluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName75
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Coppel" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName218
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Kleine Fluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName194
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Harmonia Aetheria" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName375
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Superkwint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName45
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Blokpijp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName164
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flute à chéminée" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName430
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Voix douce" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName345
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Solo trompet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName15
+        rdf:type       core:DisambiguatedName ;
+        core:name      "1e lade" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName134
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Figaro" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName400
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Trompetbass" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName315
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Regaal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName87
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Corni dolce" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName291
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Prestant octaef" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName104
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Double Diapason" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName57
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Célèste" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName387
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tintinnabulum" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName261
+        rdf:type       core:DisambiguatedName ;
+        core:name      "open plaats" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName176
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gedektquint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName442
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Zing. Gedekt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName27
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Baardpijp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName357
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Srrijker" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName231
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Lieblich Bourdun" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName146
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flauto in duodecima" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName412
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Viola d’amore" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName3
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName327
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Schalmeij" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName201
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Holfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName99
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Dolcan" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName116
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echo Holfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName69
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Klarinet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName399
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Trompet overbl t" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName273
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pedaalsubbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName188
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Groot Mixtuur" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName369
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stopped Treble" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName39
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Basson" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName243
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Musette" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName158
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluit raver" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName424
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Violonprincipaal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName339
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sexquialter harmonique" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+rdf:type  rdf:type     core:DisambiguatedName ;
+        core:name      fx:root ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName70
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Klarinette" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName213
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Klein Bourdon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName128
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fagot Hautbois" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName309
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quintatertia" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName370
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Strijker" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName40
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Basson hautbois" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName285
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Posaune" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName340
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sivfløjte" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName10
+        rdf:type       core:DisambiguatedName ;
+        core:name      "[Linkerhand]" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName255
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Open" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName436
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Wijd gedakt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName310
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Kwintbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName82
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornet en Quintfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName225
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Krijgsfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName406
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Viool de gambe" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName382
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tertsfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName52
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bourdon doux" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName297
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Kwint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName171
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Franz. Trompete" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName22
+        rdf:type       core:DisambiguatedName ;
+        core:name      "8 stemmen" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName352
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Spilfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName267
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Orkestfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName141
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluit angelica" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName448
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Zwitserse pijp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName322
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Roerpijp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName237
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Majorbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName94
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Diapason" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName111
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echo" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName9
+        rdf:type       core:DisambiguatedName ;
+        core:name      "(of Echo)" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName418
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Viola Principal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName394
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Trompet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName64
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Clarina" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName207
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Horn Diapason" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName183
+        rdf:type       core:DisambiguatedName ;
+        core:name      "gereserveerd" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName364
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stillposaune" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName34
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Basse" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName279
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Piramide fluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName153
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluit Major" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName334
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Septième" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName249
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Octaafbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName123
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echobas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName304
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quint gedakt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName76
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Engelse Hoorn" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName219
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Konzertflöte" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName280
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Piston" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName195
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Harmonic Piccolo" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName46
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Blokwerk" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName376
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Superfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName250
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Octaaf" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName165
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flûte conique" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName431
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vox humana" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName16
+        rdf:type       core:DisambiguatedName ;
+        core:name      "2 2/3'" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName346
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Solofluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName220
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Koppelfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName135
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flautmajor" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName401
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tuba" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName316
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Regterhand" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName88
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Corno" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName292
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Prestantfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName105
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Dubbelfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName388
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Trægedakt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName58
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Celestina" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName262
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Open Prestant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName177
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gedekt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName443
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Zingend prestant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName28
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Baarpijpbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName358
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Staalspel" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName232
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Lieblich Flute" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName147
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flauto portunale" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName413
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Viola" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName4
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Concertfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName328
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Schalmei-Regaal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName202
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Holpijp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName117
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echoholpijp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName274
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pedal Bourdon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName189
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Groot Scherp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName244
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Nachthoorn" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName159
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Basfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName425
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Violoncelo" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName71
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Clarinet en Fagot" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName214
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Klein gedackt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName129
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fagot of Tousyn" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName190
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gross-Prinzipal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName371
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Suabe Flute" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName41
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Basson-Trompet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName286
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Posaunebass" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName160
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluittreiver" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName341
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sing-Cornet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName11
+        rdf:type       core:DisambiguatedName ;
+        core:name      "[Rechterhand]" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName256
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Open bas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName130
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fama" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName437
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Wilgenpijp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName311
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quintviool" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName226
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quintadeen" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName83
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornet harmonique" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName100
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Dolce" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName407
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vazart (sic)" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName53
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bourdon open" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName383
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tertsscherp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName298
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quartane" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName172
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fugara" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName353
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Spitsgamba" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName23
+        rdf:type       core:DisambiguatedName ;
+        core:name      "8'" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName268
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pastorel" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName142
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flautabek" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName323
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Roerschalmey" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName238
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Manuaal IV" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName95
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Diapenta" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName112
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echo Bazuin" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName419
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Violadagamba" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName395
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Trompet à piston" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName65
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Clairon harmonique" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName208
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jeu de Clochettes" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName184
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Glockenton" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName35
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Basse Douce" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName365
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stilprincipaal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName154
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Oktaaffluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName420
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Violette" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName335
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Serpent" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName124
+        rdf:type       core:DisambiguatedName ;
+        core:name      "een strijker" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName305
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quint harmonique" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName77
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Engelsche hoorn-Hobo" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName281
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Plein jeu" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName196
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Harmoniek" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName47
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bourdon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName377
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Supertertiaan" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName251
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Octaviante" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName166
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flute ouverte" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName432
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vool" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName17
+        rdf:type       core:DisambiguatedName ;
+        core:name      "2'" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName347
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sologamba" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName221
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Coppelnasat" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName136
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fl. octaviante" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName402
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Twelfth" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName317
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ripieno" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName89
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornopean" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName293
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Prestantkwint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName106
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Doublet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName389
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Trechtergamba" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName59
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cello" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName263
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Open quint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName178
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gedackt pommer" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName444
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Zinghorn" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName29
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bachfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName359
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stentor Solo-Flöte" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName90
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornovit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName233
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Lieblich" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName148
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flötenprincipal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName414
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Viola alta" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName5
+        rdf:type       core:DisambiguatedName ;
+        core:name      "‘een orgel expressif’" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName329
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Scharf" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName203
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Holquint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName390
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tregter Regaal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName60
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Chalumeau" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName118
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echo Prestant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName30
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bardon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName360
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stentor-Solofl." ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName275
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Petit Bourdon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName330
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Schweizer-pfeife" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName245
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Nachthoornquint" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName426
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Viool" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName300
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quikt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName72
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Contra Gamba" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName215
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Klein Mixtuur" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName191
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Grosse Quinte" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName372
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Subbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName42
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Belingua" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName287
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Positie" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName161
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flust" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName342
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Singend-principal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName12
+        rdf:type       core:DisambiguatedName ;
+        core:name      "1 3/5'" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName257
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Open Bourdon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName131
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fernfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName438
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Woudpijp" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName312
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ranket" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName84
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornet-Mixtuur" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName227
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Kwintviool" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName101
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Dooff" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName408
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Veld fluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName384
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Terza mano" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName54
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bourdon Prestant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName299
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quarte de Nasard" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName173
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gambe" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName354
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Spitsgedekt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName24
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Accordeon2" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName269
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pastorita" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName143
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flautin" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName0
+        rdf:type       core:DisambiguatedName ;
+        core:name      "[Ontbreekt]" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName324
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Saliocionaal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName96
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Discant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName239
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Melofoon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName113
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Echo Cornet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName66
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Claironbass" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName209
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jeux de combinaison" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName396
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Trompet harmoniek" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName270
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pedaal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName185
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Grand Bourdon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName366
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stopt Diapason" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName36
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Basse Ouverte" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName240
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Mixtuur" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName155
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fluitprestant" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName421
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Violon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName336
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sesquialtera & Cornet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName210
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jubal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName125
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Emphoon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName306
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Quint Nasaat" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName78
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cor harmonique" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName282
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Plein-Jeu harmonique" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName197
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Harmonikabass" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName378
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Syntematofon" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName48
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bourdon afsluiting" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName252
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Octavin" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName167
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flute Ped" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName433
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vox angelica" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName348
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sonoor Klarinet" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName18
+        rdf:type       core:DisambiguatedName ;
+        core:name      "2e lade" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName222
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Coppelgedackt" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName137
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flagfluit" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName403
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Unda maris" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName318
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Resultantbas" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName294
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Principaal" ;
+        core:refersTo  organ:OrganDivisionStop .
+
+organs:StopDisambiguatedName107
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Dulciaan" ;
+        core:refersTo  organ:OrganDivisionStop .

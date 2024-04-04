@@ -1,0 +1,4473 @@
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:BuilderDisambiguatedName163
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Gradussen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName882
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Wiebe Meyes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName338
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Knipscheer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName804
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P.L. Geerkens" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName384
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R. Kamp & Zn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName131
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Eversdijk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName559
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.M. Holdich" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName850
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Th. Pereboom" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName306
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Huis" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName352
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Merklin & Schütze" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName527
+        rdf:type       core:DisambiguatedName ;
+        core:name      "E. Bergman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName573
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gerrit Petersz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName320
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ludwig Schwarze" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName748
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M. Harinck" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName794
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Lambert-Benoit van Peteghem" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName541
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Ph. Fey" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName716
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Frederik Knoblo" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName296
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jos Vermeulen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName762
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.J. Smits" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName218
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Henrick Niehoff" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName28
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P.G. Sneltjes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName264
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johann Heinrich Wilhelm Bätz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName74
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Firma Bishop & Son" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName439
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D. Zeldenrust" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName730
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Joost Derck Jalinck" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName485
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.J. Jurjaansz." ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName232
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.J. Harkema" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName42
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jürgen Ahrend" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName407
+        rdf:type       core:DisambiguatedName ;
+        core:name      "T.J. van der Meer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName453
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Abbey et Fils" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName200
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. van Buuren" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName10
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.W. Dekker" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName628
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Dovey" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName674
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.D. Dulcken" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName421
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Campen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName849
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Th. Nöhren" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName176
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.W. Lohman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName642
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Poldervaart" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName817
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R. Ibach" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName397
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Wisse" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName144
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa. Faber" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName863
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Faber" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName319
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Lucas Rinkema" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName610
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hele & Co" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName190
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Kriek" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName365
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Nicolaas Adolf Willembroek" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName112
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van der Kleij" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName831
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Samuel Atterton" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName586
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Pereboom" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName333
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Louis II Delhaye" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName508
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D. Wiersma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName554
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.F. Steinmeyer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName301
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johann Theodor Gilman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName729
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Paul van Overbeek" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName775
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.H. Sanders" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName522
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Erven Pieter de Vries" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName87
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C. Stulting" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName277
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jac. van der Linden & Co" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName743
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.F.C. Leichel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName498
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Conrad Ruprecht jr" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName55
+        rdf:type       core:DisambiguatedName ;
+        core:name      "B.F. Bergmeijer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName245
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Winkels" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName711
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F. Vermeulen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName291
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Frans Caspar Schnitger jr." ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName466
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Beekamp" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName23
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Albertus van Gruisen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName213
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flentrop Orgelbouw" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName687
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.P. Karman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName434
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Uittenboogaart" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName609
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.J. Wensveen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName189
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Haffmans" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName480
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.A. Koppe" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName655
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johan Nicolas Heerman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName402
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Van den Berg (Aalten)" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName157
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.B. Lohman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName876
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W.G. Venhoek" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName5
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Doornbos" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName623
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Blummel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName378
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P.F.J. Praat" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName125
+        rdf:type       core:DisambiguatedName ;
+        core:name      "E. Verschueren" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName844
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F. Klimstra" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName171
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. van Leeuwen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName599
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.D. Lindsen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName890
+        rdf:type       core:DisambiguatedName ;
+        core:name      "ds. J. Mostert" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName346
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Matthaeus de Crane" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName812
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pieter Stants" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName392
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Albertus Groneman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName567
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. Oberlinger" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName314
+        rdf:type       core:DisambiguatedName ;
+        core:name      "K.P. van Ingen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName360
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F.C. Smits I" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName788
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Schyven" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName535
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fr. Ureel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName581
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Faber" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName756
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Matthias Schultze" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName503
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D. Dik" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName68
+        rdf:type       core:DisambiguatedName ;
+        core:name      "B.J. van Eldik" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName258
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johan van Giessen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName724
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Baars" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName770
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.M. de Boom" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName479
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C. van der Peet" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName36
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.B. Adema & Zonen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName226
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Lambert Houtappel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName82
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C. Loret" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName272
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan L. van den Heuvel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName447
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.J. Overdijk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName493
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ch. Verbeek" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName50
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Apollonius Bosch" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName240
+        rdf:type       core:DisambiguatedName ;
+        core:name      "fa. Poestkoke" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName668
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.A. van Dellen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName415
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Zwier van Dijk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName461
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Andries van der Haar" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName889
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ysbrand Claesz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName636
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Kuijte" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName682
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.J. van den Berg" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName138
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F.R. Feenstra" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName857
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Van Heyningen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName604
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.W. Standaart" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName184
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. Van Oeckelen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName359
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.J.W. Smits" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName106
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Dirk Ypma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName650
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Verschoor" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName825
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Restauratiebedrijf Renaissant" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName152
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa. Stevens" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName327
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Louis J. Kramer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName0
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P.C. Bik" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName871
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. van Brienen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName373
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pierre H.A. Pereboom" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName120
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jacob Jacobsz van Lin" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName548
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Timmer" ;
+        core:refersTo  core:Agent .
+
+rdf:type  rdf:type     core:DisambiguatedName ;
+        core:name      fx:root ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName594
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. van Olst" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName341
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Maarschalkerweerd & Zn." ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName769
+        rdf:type       core:DisambiguatedName ;
+        core:name      "N.V. Woudenberg" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName516
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Diedrich Martens" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName562
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.P. Reusener" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName737
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Kingsgate Musical Instruments Co" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName49
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Schot" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName783
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Collon" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName239
+        rdf:type       core:DisambiguatedName ;
+        core:name      "fa J. Nicholson" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName530
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F.F. Epmann" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName705
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Schot" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName95
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.G.F. Witte" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName285
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Slegel III" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName751
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Rijke" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName17
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Steenkuijl & Recourt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName207
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.C. Haffmans" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName63
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Winold van de Putten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName253
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.C. Deytenbach" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName428
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Hunter" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName474
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C. Leijser" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName31
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Albert de Graaf" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName221
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Henk van Eeken" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName649
+        rdf:type       core:DisambiguatedName ;
+        core:name      "fa W.F. Stegerhoff" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName695
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jacob van Bilsteyn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName442
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. v.d. Zee" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName617
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Henric van der Locht" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName197
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. ter Hart" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName663
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van't Kruijs" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName119
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jacob Jansz van Lin" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName410
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Rütter" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName838
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vlaanderen Oldenzeel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName165
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Van Dam" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName884
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Wiegman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName631
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Hoogenes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName806
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Paulus van Eijsdonk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName386
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Romanus Seifert & Sohn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName133
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F. de Vries" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName308
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Klaas Doornbos" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName852
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Vermeersch" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName354
+        rdf:type       core:DisambiguatedName ;
+        core:name      "N.A. Naber" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName101
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pieter Müller" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName529
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F.B. Loret" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName820
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R. van Straten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName575
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gijsbert Claes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName322
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L.S. Ypma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName796
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Egidius Franciscus van Peteghem" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName543
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Procee" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName718
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johan van Emden" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName298
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F. van den Boomen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName764
+        rdf:type       core:DisambiguatedName ;
+        core:name      "N. Smits" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName511
+        rdf:type       core:DisambiguatedName ;
+        core:name      "David Kunst" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName76
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa Haupt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName266
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.H.H. Bätz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName732
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Joseph Monday" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName487
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bram Biersteker" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName44
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Andreas de Mare" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName234
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van Kesteren" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName409
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Koulen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName700
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ernst August Scheuer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName90
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.A. van Oeckelen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName280
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jacobus van Eynde" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName455
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Adam Keerman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName12
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Abraham Meere" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName202
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Proper" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName676
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.F. Klein" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName423
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Elles en zoon" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName178
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Germer van Hagerbeer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName644
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.P.J. van Drunen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName819
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R. Venema" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName399
+        rdf:type       core:DisambiguatedName ;
+        core:name      "T. Hofmeyer en Zoon" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName146
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.F. Kruze" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName690
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.R. Titz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName865
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Haffmanns" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName612
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hendrik Petrus Josephus de Rijckere" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName192
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Möseler" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName367
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Nicolaas van Hirtum" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName114
+        rdf:type       core:DisambiguatedName ;
+        core:name      "De Munck" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName833
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Schmidt & Tuinman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName160
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Flaes & Brünjes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName588
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Rosbeek" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName335
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hermanus Knipscheer II" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName801
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pieter Jansz. Radersma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName381
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pereboom & Leijser" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName556
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Frans Rinses" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName303
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Samuel Assendelft" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName777
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Orgelbau Sankt Willibrord" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName524
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F. Bouwmeester" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName89
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornelis van Grondelle" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName279
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jacobus Zeemans" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName570
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gerhardus Rutten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName745
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Lorentz Weinstock" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName791
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Wannewitz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName57
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. van Oeckelen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName247
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van Gelder" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName713
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.A. Neuenstiehl" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName293
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Mart Vermeulen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName468
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Eberhard Berner" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName25
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. van den Haspel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName215
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Florentius Hocque" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName261
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.H. Stinkens" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName71
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bernhardt Edskes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName689
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.P. Vos" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName436
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Vingerhoets" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName482
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.F. Weenig" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName657
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. de Olde" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName404
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Eppinga" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName159
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fonteijn & Gaal" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName7
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Franssen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName450
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.S.J. Dekker" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName878
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa Hagels & Zn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName625
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Boody" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName127
+        rdf:type       core:DisambiguatedName ;
+        core:name      "E. Wadsworth" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName671
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.L. Krom" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName846
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Talsmanschlager" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName173
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.F. Juriaansz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName348
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Theodorus Schiffers" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName814
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Prins" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName394
+        rdf:type       core:DisambiguatedName ;
+        core:name      "S.H. Westerhof" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName141
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa Madern Moraal" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName569
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gerard Steevens" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName860
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vitus Wiegleb" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName316
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Kam & Van der Meulen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName362
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L. Smits" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName537
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Franz Johannes Breil" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName583
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Houtert" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName330
+        rdf:type       core:DisambiguatedName ;
+        core:name      "E. Leichel & Zn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName758
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Michael Vorenweg" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName505
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D. Mulder" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName551
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. van Druten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName726
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Pelt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName772
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Nicolaas Langlez" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName38
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Firma Joseph Adema (H. Schreurs)" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName228
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Bruin" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName84
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C. Shornton" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName274
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.P. Künckel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName449
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.M. Olieman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName740
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L. Hermans" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName495
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Christopher Dickens" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName52
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tobias Bader" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName242
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Spooreman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName417
+        rdf:type       core:DisambiguatedName ;
+        core:name      "fa. R. van den Burg" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName463
+        rdf:type       core:DisambiguatedName ;
+        core:name      "E.H. Meinen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName210
+        rdf:type       core:DisambiguatedName ;
+        core:name      "fa Kamphuis" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName20
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Standaart" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName638
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Laycock" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName684
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.M. Puet" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName431
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Nöhren" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName859
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Verkouw" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName606
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hans Wolff Schonat" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName186
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W.E. Modderkolk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName652
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. de Boer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName108
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pieter Flaes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName827
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ruijf" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName154
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Nicolaas Anthoni Lohman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName2
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Adam Binvignat" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName873
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. van Gruisen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName329
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Leichel & Zonen Arnhem" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName620
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ivimey & Cooper" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName375
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pieter Welter" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName122
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ernst Leeflang" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName841
+        rdf:type       core:DisambiguatedName ;
+        core:name      "T.C. de Wijn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName596
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.A. Lohman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName343
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Martin Renshaw" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName518
+        rdf:type       core:DisambiguatedName ;
+        core:name      "E. van Gelder" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName564
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. Euler" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName311
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L. Meijer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName739
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L. Eversdijk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName785
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Furtwängler & Hammer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName532
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa. Balster" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName707
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Vogel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName97
+        rdf:type       core:DisambiguatedName ;
+        core:name      "S. Graafhuis" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName287
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jean Baptiste le Picard" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName19
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Antoin Schreurs" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName753
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Marten Posselius" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName209
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.G. Holtgräve" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName500
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornelis van Opstal" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName65
+        rdf:type       core:DisambiguatedName ;
+        core:name      "B.A.G. Orgelbouw" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName255
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.C. Scheuer & Zn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName721
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johann Caspar Müller" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName476
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C. Rettlar" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName223
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Isaac Reichner" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName33
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.W. Wattèl" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName697
+        rdf:type       core:DisambiguatedName ;
+        core:name      "James Bruce" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName444
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. van den Oldenalder" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName619
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ingram and Comp." ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName199
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. van Eeken" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName490
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.P. van Sprang" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName665
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.A. Hillebrand" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName412
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. van Leeuwen & Zn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName167
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Schmidt jr" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName886
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Willem Meijnerts" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName633
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M. Kouters" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName808
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Peter Jansz de Swart" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName388
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Roelof Barentsz Duyschot" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName135
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Frederik van der Weele" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName854
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Theodorus Mons" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName601
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.G. Richter" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName181
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. Franssen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName356
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. Smits" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName103
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Christian Vater" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName822
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R.J. Kerkhoff" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName577
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Groninger Orgelwacht" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName324
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Loek van Nes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName370
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sicco Steendam" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName798
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P.F. van Dinter" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName545
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Ridderhof" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName591
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. van Dijk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName766
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.J. Teekman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName513
+        rdf:type       core:DisambiguatedName ;
+        core:name      "De heer Visser" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName268
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.J. Delhaye" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName78
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jean François Moreau" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName734
+        rdf:type       core:DisambiguatedName ;
+        core:name      "K. Kapitein" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName236
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Mitterreither" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName489
+        rdf:type       core:DisambiguatedName ;
+        core:name      "B. Mensing" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName780
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L. Medendorp" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName46
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Andries Paradijs" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName702
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Graurock" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName92
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F.S. Naber" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName282
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Helman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName457
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Allert Meijer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName14
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Nijsse" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName204
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.A. Groet" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName60
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bernard Koch" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName250
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.H. van der Veer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName678
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.H. Derdack" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName425
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Goyvaerts" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName471
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C. Dijkstra" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName646
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Rousseau" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName148
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M. Spiering" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName692
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.W.F. Snethlage" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName867
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Stout" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName614
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes de Rijckere" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName194
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Heinz Wilbrand" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName369
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Orgelbau Ludwig Eisenbarth" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName660
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van den Heuvel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName116
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Dirck Petersz de Swart" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName835
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stephanus Heidenreich" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName162
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Heinrich Hermann Freytag" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName881
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Weimbs Orgelbau" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName337
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hermanus Knipscheer Sr" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName803
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P.J. Teves" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName383
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Q. Jonker" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName130
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Elbertse orgelmakers" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName558
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.L. Preuniger" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName305
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Duyschot" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName351
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L. Schouten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName779
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Baar" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName526
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F. Schrimpf" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName572
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gerrit Nijhoff" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName747
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M. Eertman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName59
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.J. Langendijk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName793
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fam. Van Peteghem" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName249
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes van Nieuwkerk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName540
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Mennes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName715
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johan Frederik Kerckman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName295
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Th.J.H. Vermeulen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName27
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.A. Kuerten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName761
+        rdf:type       core:DisambiguatedName ;
+        core:name      "N.F. Nadorp" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName217
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hendrick Huis" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName73
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Bevington & Sons" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName263
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D.J. Baars" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName438
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Zeldenrust" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName484
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.H. van Oosten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName231
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. de Koff & Zn." ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName41
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Adema's Kerkorgelbouw" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName659
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van Loo" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName406
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Hardorff & Zn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName452
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.W. Hommes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName9
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Verschueren" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName627
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Bruil" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName673
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.C. van Rossum" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName129
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Elberink" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName420
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Bouman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName848
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Th. Frobenius & Co" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName175
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.P. Dik" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName641
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Müller" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName816
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R. Haupt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName396
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sybrand Adema" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName143
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa. Claveaux" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName862
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Boegem" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName318
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L. van den Brink" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName364
+        rdf:type       core:DisambiguatedName ;
+        core:name      "N.W. van Mechelen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName111
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D.P. Verhulst" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName539
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Davit" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName830
+        rdf:type       core:DisambiguatedName ;
+        core:name      "S. Booij" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName585
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Martin" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName332
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R. Nijsse" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName507
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D. Wassink" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName553
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.A.D.J. Gabry" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName300
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johann Michael Schwartzburg" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName728
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes van Overbeek" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName774
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Nicolaus Brunswick" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName521
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Emanuel Frederick van Montfoort" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName276
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.W. Walker" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName86
+        rdf:type       core:DisambiguatedName ;
+        core:name      "I. Winder" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName742
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L. de Vries" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName497
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Conrad Bader" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName54
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Arp Schnitger" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName244
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.W. Timpe" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName419
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Antonisse jr." ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName710
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Joachim Reichner" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName290
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Frans Caspar Schnitger" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName465
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Barthold Joachim Freytag" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName22
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Andries Wolfferts" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName212
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vierdag Orgelbouw" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName686
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.M.W. Stoker" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName433
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Ostertag" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName608
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hardy & Son" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName188
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gottlieb Heyneman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName654
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. de Heer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName401
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Valckx & Van Kouteren & Co." ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName829
+        rdf:type       core:DisambiguatedName ;
+        core:name      "S. Bak" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName156
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Doornbos" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName875
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W.C. Mack" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName4
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Derksen van Angeren" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName622
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Beunis" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName377
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pieter van Peteghem" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName124
+        rdf:type       core:DisambiguatedName ;
+        core:name      "E. Stahlhuth" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName843
+        rdf:type       core:DisambiguatedName ;
+        core:name      "T.P. Klimstra" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName170
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. van Buuren" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName598
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.C. Gabry" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName345
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Matthias van den Brink" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName811
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pieter Keerman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName391
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Rudolph Garrels" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName566
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebroeders Petrus" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName313
+        rdf:type       core:DisambiguatedName ;
+        core:name      "K.M. van Puffelen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName787
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Maarschalkerweerd" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName534
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fr. Eggert" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName709
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jean-François le Picard" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName99
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ludwig König" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName289
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johann Georg Schnitger" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName580
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Dantuma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName755
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Matthias Martin" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName502
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D. Boot" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName257
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johann Daniël Nolting" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName67
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.F. in der Maur" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName723
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johann Pieter Schmidt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName478
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C. van Butselaar" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName35
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. Adema" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName225
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Joseph Binvignat" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName81
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Caspar König" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName271
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Jacob Vool" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName699
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Georg Albert Scheuer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName446
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F. Tucker" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName492
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M. Verbeek" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName667
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.A. Strobel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName414
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Wilhelm Korfmacher" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName169
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hendrik Anthonie Meijer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName460
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Andries Severijn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName888
+        rdf:type       core:DisambiguatedName ;
+        core:name      "William Holt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName635
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.J. Rottemondt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName137
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F.A. Stangenberger" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName681
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.J. Scheuer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName856
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Thomas Houben" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName603
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.J. Reitsema" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName183
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L. Rohlfing" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName358
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F.C. Smits III" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName105
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornelis Hoornbeeck" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName824
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ralf Nagelkerke" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName151
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa. Pereboom" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName579
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gysbert Bongaert" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName326
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L.A. van Nistelrooij" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName870
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.P. Dam" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName372
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Conacher & Co" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName547
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Stanfield" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName593
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. van Oeckelen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName340
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M.K. Koppejan" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName768
+        rdf:type       core:DisambiguatedName ;
+        core:name      "N.V. Standaarts orgelfabrieken" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName515
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Derk Grutterink" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName561
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.P. England" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName736
+        rdf:type       core:DisambiguatedName ;
+        core:name      "K. Veltman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName782
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Clerkx" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName48
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Antoni Christianen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName238
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Mulder" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName704
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Rijmsmit" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName284
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Reinders Radersma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName94
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.H. Quellhorst" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName459
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Andrew Watt & Son" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName206
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.B. Scheuerman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName16
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Recourt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName750
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M. Vos jr" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName62
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bernard Pels & Zoon" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName252
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.L. Preuninger" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName427
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Hoogenboezem" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName473
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C. Hagedorn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName30
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.F. Sommer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName220
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hendriksen & Reitsma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName648
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Tromp" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName694
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jacob Cools" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName441
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M. Schauten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName869
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Yedema" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName616
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Henk Kok" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName196
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Winkels" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName662
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van der Zwan" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName118
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornelis Jansz van Lin" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName837
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Sybe Pyters" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName164
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Knoppers" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName883
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Wendt & Heinrichs" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName339
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Machiel Beekes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName630
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.A. Elberink" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName805
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P.M. van Sprang" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName385
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Roelf Meijer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName132
+        rdf:type       core:DisambiguatedName ;
+        core:name      "fa. Bakker & Timmenga" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName851
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Th. Smet" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName307
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Radeker" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName353
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Slooff Orgelbouw" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName100
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ch. Anneessens et fils" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName528
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F. van der Meulen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName574
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Geurt van Pisa" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName321
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L. Ypma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName749
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M. Reemeijer Mzn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName795
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Maximilien van Peteghem" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName542
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Potvliege" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName717
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johan Rijmsmit" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName297
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. Vermeulen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName29
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.B. Stöcker" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName763
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Smits" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName219
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hendrik Pescheur" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName510
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Daniël Stapper" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName265
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. J. en J.M.W. Bätz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName75
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Th. Strunk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName731
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Joseph Kerkhoff" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName486
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.J. Rogier" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName43
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Albertus Anthoni Hinsz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName233
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Hilboesen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName408
+        rdf:type       core:DisambiguatedName ;
+        core:name      "William Hill & Son" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName454
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Abraham Meere jr" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName201
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. van der Molen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName11
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Kuijte" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName629
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Elberink" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName675
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gibout" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName422
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Cavaillé-Coll" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName177
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Galtus van Hagerbeer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName643
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P.C. Bontebal" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName818
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R. Veijer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName398
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stephanus Cousijns" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName145
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa. H. Spanjaard" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName864
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Feenstra" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName611
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hendrik Blötz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName191
+        rdf:type       core:DisambiguatedName ;
+        core:name      "N. Meijer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName366
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Barend Smit" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName113
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. van der Kleij" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName832
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Samuel Schröder" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName587
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Reijnen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName334
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ludovicus de Backer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName509
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D.J. Robbemondt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName800
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pieter Johannes Geerkens" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName380
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W.N. de Jongh" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName555
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.H. Holtgräve" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName302
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Assendelft" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName776
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Norman & Beard Ltd" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName523
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F. Bergmeijer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName278
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jacob François Moreau" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName88
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C. Verweijs" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName744
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Le Mintier & Gloton" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName790
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Valckx" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName499
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Conrad Ruprecht sr" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName56
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. Hasselaar" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName246
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van der Bliek" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName712
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Vermeulen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName292
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L. Vermeulen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName467
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bernard Frick" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName24
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W.H. Schölgens" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName214
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hans Goltfus" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName70
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Metzler & Söhne" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName260
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.K. Onstenk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName688
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.P. Smit" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName435
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Verduyn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName481
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.C. Bender" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName656
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. de Koff jr" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName403
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Vereenigde Kerkorgelfabrieken" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName158
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fama & Raadgever" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName877
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W.J. te Groen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName6
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Franssen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName624
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D. Nauta" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName379
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pels & Van Leeuwen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName670
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.C. Indermauer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName126
+        rdf:type       core:DisambiguatedName ;
+        core:name      "E. Ypma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName845
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tj. Heidinga" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName172
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.C. Klop" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName347
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Matthias Verhofstadt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName891
+        rdf:type       core:DisambiguatedName ;
+        core:name      "fa. v/h D. Ansingh & Co" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName813
+        rdf:type       core:DisambiguatedName ;
+        core:name      "N. Stants" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName393
+        rdf:type       core:DisambiguatedName ;
+        core:name      "S. Haarsma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName140
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa. Holtman & Leemhuis" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName568
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Geese" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName315
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Kaat & Tijhuis" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName361
+        rdf:type       core:DisambiguatedName ;
+        core:name      "N.L. Smits sr." ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName789
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Storm" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName536
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Frans Jansz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName582
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Honhof" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName757
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Melchior Schrage" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName504
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D. Gray" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName69
+        rdf:type       core:DisambiguatedName ;
+        core:name      "B.P. van Hirtum" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName259
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.H. Holtgräve" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName550
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Alex Verkuyl" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName725
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Engelbert Hageman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName37
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa Joseph Adema" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName771
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Nico van Duren" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName227
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Brink" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName83
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van de Marck" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName273
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.A. Hillebrand" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName448
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.J.M. Remijn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName494
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Chr. Eilers" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName51
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Arnold Bader" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName241
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Orgelmakerij Reil" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName669
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.C. Goldschmeding" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName416
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Peter Joseph Korfmacher" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName462
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Anthonius Caspar van Hirtum" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName637
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Kunst" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName683
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.M. Müller" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName139
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johann Michael Gerstenhauer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName430
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F. de Hoop" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName858
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Van Lierop" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName605
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hameling" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName185
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. Van Vulpen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName107
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D. van Rossum" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName651
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Zijlstra" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName826
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Rijk van Arkel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName153
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa. Vaas en Bron" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName328
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Friedrich Leichel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName1
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Bik" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName872
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. van Dijk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName374
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Peter Torley" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName121
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.C. Sanders" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName549
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Verloop" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName840
+        rdf:type       core:DisambiguatedName ;
+        core:name      "T. Velderman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName595
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. van den Berg" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName342
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M. Pereboom & Zn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName517
+        rdf:type       core:DisambiguatedName ;
+        core:name      "E. Mühleisen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName563
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. Bryceson" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName310
+        rdf:type       core:DisambiguatedName ;
+        core:name      "K. Schuitema" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName738
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Kloosterman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName784
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Faber & Zn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName531
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F.J. Reichert" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName706
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Spoltman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName96
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.F. Witte" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName286
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan van Covelens" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName18
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D.G. Steenkuijl" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName752
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M. Rijke" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName208
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Herman Eberhard Freytag" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName254
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johan Caspar Friedrichs" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName64
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Berend Veger" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName429
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Kleijer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName720
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johann Caspar Friederichs" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName475
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.N. Breedvelt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName222
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ide Boogaard" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName32
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.M.T. van Ingen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName696
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jakob Engelbert Teschemacher" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName443
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. van Oeckelen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName618
+        rdf:type       core:DisambiguatedName ;
+        core:name      "I.H.M. Giesen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName198
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M. Roos" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName664
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Uittenboogaard" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName411
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Wilhelm Sauer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName839
+        rdf:type       core:DisambiguatedName ;
+        core:name      "T. Boersma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName166
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Robustelly" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName885
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Willem Diaken" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName632
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Jonkers" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName807
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Peter Gerritsz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName387
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R.R. Witteveen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName134
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F. Louvigny" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName853
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Theodorus Faber" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName309
+        rdf:type       core:DisambiguatedName ;
+        core:name      "K. Mateboer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName600
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.G. Quellhorst" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName180
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. Müller" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName355
+        rdf:type       core:DisambiguatedName ;
+        core:name      "N.A. van den Berg" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName102
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Christian Müller" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName821
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R. van der Hoeven" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName576
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gottlieb Früh" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName323
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F.L. Ypma & Co" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName797
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pierre François van Peteghem" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName544
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Tj. Reitsma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName719
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johann Baptist Hilgers" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName299
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Vermeulen Kerkorgelbouw Overschie" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName590
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Vonck" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName765
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Smits" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName512
+        rdf:type       core:DisambiguatedName ;
+        core:name      "De Gooyer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName77
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Jacobus Moreau" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName267
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Albertus van Os" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName733
+        rdf:type       core:DisambiguatedName ;
+        core:name      "K. Hoogland" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName488
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.M. Fleetwood" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName235
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Joh. Klais" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName45
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Andries Duyschot" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName701
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Fransen Quint" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName91
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Verbeke" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName281
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Nicolaas Helman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName456
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Albert Kiespenning" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName203
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Van de Wetering" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName13
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.F.G. Heyneman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName677
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johann Friedrich Wenthin" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName424
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Gern" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName179
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jacobus van Hagerbeer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName470
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Breuer en Nass" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName645
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Roeleveld" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName691
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.T. Kerper" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName147
+        rdf:type       core:DisambiguatedName ;
+        core:name      "fa. Loret-Vermeersch" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName866
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Pilcher" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName613
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Josephus de Rijckere" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName193
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Strubbe" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName368
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Olof Hammerberg" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName115
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Deetlef Onderhorst" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName834
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Société Anonyme des Grandes Orgues" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName161
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Harmensz Kamp" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName589
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Vegter" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName880
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Wed. Wijmer & Co" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName336
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Knipscheer III" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName802
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P.J. Schauten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName382
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Peter Weidtman jr" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName557
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.J. van Dungen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName304
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pieter Assendelft" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName350
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Mense Ruiter Orgelmakers" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName778
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Orgelbouw Alkmaar" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName525
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F. Reinburg" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName571
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gerrit Heyneman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName746
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Loys Isoré" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName58
+        rdf:type       core:DisambiguatedName ;
+        core:name      "B. Kerkhoff" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName248
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van Loghem" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName792
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. van Nistelrooy" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName714
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Joh. Speet" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName294
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P.J. Vermeulen & Zn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName26
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W.A. van der Weijde" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName469
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Bob Hower" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName760
+        rdf:type       core:DisambiguatedName ;
+        core:name      "N. Tits" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName216
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hendrich Metzker" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName72
+        rdf:type       core:DisambiguatedName ;
+        core:name      "S.F. Blank" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName262
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gideon Thomas Bätz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName437
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Zuiderhof" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName483
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.H. van Brussel" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName40
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hubert Schreurs" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName230
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jacob Courtain" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName658
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van Gerven" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName405
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W.F. Freytag" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName451
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.W. Blokhuis" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName879
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Beukema" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName8
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.J. Opten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName626
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Taylor" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName672
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.C. Patijn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName128
+        rdf:type       core:DisambiguatedName ;
+        core:name      "E.F. Walcker" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName847
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Th. C. Bates" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName174
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.J.C. Koot" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName349
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Matthijs van Deventer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName640
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Meister" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName815
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R. Feenstra" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName395
+        rdf:type       core:DisambiguatedName ;
+        core:name      "S. de Wit & Zn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName142
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa Spanjaard" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName861
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Beekes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName317
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ko van Putten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName363
+        rdf:type       core:DisambiguatedName ;
+        core:name      "fa N.S. Leijser" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName110
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M.C. Tiggelman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName538
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Friedrich Heilman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName584
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Linsell" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName331
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Levinus Eekman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName759
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Morgan & Smith" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName506
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D. Verboom" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName552
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.A.C. de Graaf" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName727
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jurriaen Overhoff" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName39
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cor Boer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName773
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Nicolaas van Hagen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName229
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Clercx" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName520
+        rdf:type       core:DisambiguatedName ;
+        core:name      "E.R. Ottes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName275
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Strumphler" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName85
+        rdf:type       core:DisambiguatedName ;
+        core:name      "N. Mackereth" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName741
+        rdf:type       core:DisambiguatedName ;
+        core:name      "L. Hooghuys" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName496
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Claes Willemsz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName53
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hans Heinrich Bader" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName243
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Vergaert" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName418
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Aarts" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName464
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Barend van Loon" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName21
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Anthoni Verbeeck" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName211
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hendrik Hermanus Hess" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName639
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Malver" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName685
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.M. Ramakers en Zonen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName432
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Oldknow" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName607
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hans van Rossum" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName187
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gerard van Giessen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName653
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. de Bruijn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName109
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Dirk Lohman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName400
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Thomas Weidtman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName828
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Rushworth & Dreaper" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName155
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Schaaffelt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName3
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Clerinx" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName874
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. van der Kleij" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName621
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Banfield" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName376
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. van Meggelen & Zn" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName123
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Stahlhut" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName842
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M.C. Blom" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName597
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Griffioen orgelbouw" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName344
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M.H. van Dinter" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName519
+        rdf:type       core:DisambiguatedName ;
+        core:name      "E.H. Lamberink" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName810
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Pieter Backer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName390
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Rudolf Knol" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName565
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Gebr. Lameris" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName312
+        rdf:type       core:DisambiguatedName ;
+        core:name      "K.B. Blank & Zn." ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName786
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Huijser" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName533
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Forster & Andrews" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName708
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jarig Bangma" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName98
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.H. Edskes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName288
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes Petrus Hilgers" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName754
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Matthias Amoor" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName501
+        rdf:type       core:DisambiguatedName ;
+        core:name      "D. Antonio" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName66
+        rdf:type       core:DisambiguatedName ;
+        core:name      "fa. Gabry & Zonen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName256
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Christoffel Schmidt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName722
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johann Gustav Schilling" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName477
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C. van Ballegoy" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName224
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jacob Armbrost" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName34
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P.J. Adema & Zoon" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName80
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Carl Philipp König" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName270
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.J. Vollebregt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName698
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Eek Scheuer" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName445
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A.G. Axsen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName491
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ch. Mutin" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName666
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.A. Naber" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName413
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W.H. Kam" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName168
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Spit" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName887
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Willem van Limborgh" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName634
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Koot" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName809
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Philippe le Picard" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName389
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Ron Schouten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName136
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johannes van der Weele" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName680
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Christoffel Bätz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName855
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Thomas Hill" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName602
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.J. Noorman" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName182
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H.C. van der Aa" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName357
+        rdf:type       core:DisambiguatedName ;
+        core:name      "F.C. Smits II" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName104
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Cornelis Gerritsz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName823
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R.W. Kingsgate Davidson" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName150
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Fa. Marcussen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName578
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R. Groustra" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName325
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Walraven" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName371
+        rdf:type       core:DisambiguatedName ;
+        core:name      "R. Ottes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName799
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P.A. van Dinter" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName546
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G. Roos" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName592
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van Dijk" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName767
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W.J. Smits" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName514
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Demaziere" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName269
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.J. van den Bijlaardt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName79
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jacobus Robbers" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName560
+        rdf:type       core:DisambiguatedName ;
+        core:name      "G.P. Bik" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName735
+        rdf:type       core:DisambiguatedName ;
+        core:name      "K. Mulder" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName781
+        rdf:type       core:DisambiguatedName ;
+        core:name      "P. Beversluis" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName47
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Johan Warner" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName237
+        rdf:type       core:DisambiguatedName ;
+        core:name      "M. Oranje" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName703
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Kerstansz" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName283
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Pieter Schmidt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName93
+        rdf:type       core:DisambiguatedName ;
+        core:name      "C.F.A. Naber" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName458
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Anastasius Meinhards" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName15
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Pannekoek" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName205
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.J. Vool" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName251
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.A. Mennes" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName61
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.Th. van Dellen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName679
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J.H. Overdiek" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName426
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Graindorge" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName472
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Dijkstra" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName647
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. Spanjaard" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName149
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Thijs" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName693
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jaan Oenema" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName440
+        rdf:type       core:DisambiguatedName ;
+        core:name      "A. Schauten" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName868
+        rdf:type       core:DisambiguatedName ;
+        core:name      "W. Sweetland" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName615
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Hendrik van Giessen" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName195
+        rdf:type       core:DisambiguatedName ;
+        core:name      "H. Willis" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName661
+        rdf:type       core:DisambiguatedName ;
+        core:name      "J. van der Vegt" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName117
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Jan Jacobsz van Lin" ;
+        core:refersTo  core:Agent .
+
+organs:BuilderDisambiguatedName836
+        rdf:type       core:DisambiguatedName ;
+        core:name      "Stichting De Orgelwacht" ;
+        core:refersTo  core:Agent .

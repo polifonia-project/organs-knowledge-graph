@@ -1,0 +1,138 @@
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:DivisionType14
+        rdf:type       organ:DivisionType ;
+        core:name      "Hoofdwerk" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType3  rdf:type  organ:DivisionType ;
+        core:name      "Bas" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType9  rdf:type  organ:DivisionType ;
+        core:name      "Manuaal III" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType23
+        rdf:type       organ:DivisionType ;
+        core:name      "Principaal" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType13
+        rdf:type       organ:DivisionType ;
+        core:name      "Expressif" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType19
+        rdf:type       organ:DivisionType ;
+        core:name      "Onderwerk" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType2  rdf:type  organ:DivisionType ;
+        core:name      "Middenklavier" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType8  rdf:type  organ:DivisionType ;
+        core:name      "Choir" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType22
+        rdf:type       organ:DivisionType ;
+        core:name      "Rugwerk" ;
+        core:refersTo  organ:OrganDivision .
+
+rdf:type  rdf:type     organ:DivisionType ;
+        core:name      fx:root ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType12
+        rdf:type       organ:DivisionType ;
+        core:name      "Echowerk" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType18
+        rdf:type       organ:DivisionType ;
+        core:name      "Ondermanuaal" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType1  rdf:type  organ:DivisionType ;
+        core:name      "Manuaal II" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType7  rdf:type  organ:DivisionType ;
+        core:name      "Bovenwerk" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType21
+        rdf:type       organ:DivisionType ;
+        core:name      "Positief" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType11
+        rdf:type       organ:DivisionType ;
+        core:name      "Dwarswerk" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType17
+        rdf:type       organ:DivisionType ;
+        core:name      "Nevenwerk" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType0  rdf:type  organ:DivisionType ;
+        core:name      "Manuaal I" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType6  rdf:type  organ:DivisionType ;
+        core:name      "Bovenmanuaal" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType20
+        rdf:type       organ:DivisionType ;
+        core:name      "Pedaal" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType26
+        rdf:type       organ:DivisionType ;
+        core:name      "Zijwerk" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType10
+        rdf:type       organ:DivisionType ;
+        core:name      "Discant" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType16
+        rdf:type       organ:DivisionType ;
+        core:name      "Manuaal" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType5  rdf:type  organ:DivisionType ;
+        core:name      "Borstwerk" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType25
+        rdf:type       organ:DivisionType ;
+        core:name      "Zwelwerk" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType15
+        rdf:type       organ:DivisionType ;
+        core:name      "Klein Manuaal" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType4  rdf:type  organ:DivisionType ;
+        core:name      "Bombardewerk" ;
+        core:refersTo  organ:OrganDivision .
+
+organs:DivisionType24
+        rdf:type       organ:DivisionType ;
+        core:name      "Reciet" ;
+        core:refersTo  organ:OrganDivision .
