@@ -37,7 +37,7 @@ construct {
         rdf:comment ?location_building_description . # string literal.
 
     ?blank_address a core:Address ;
-        core:hasAddressComponent ?address_component ;
+        core:fullAddress ?location_address ;
         core:hasCity ?city .
 
     # blank node for the timeinterval entity
@@ -93,6 +93,17 @@ WHERE {
         OPTIONAL { ?timedlocation xyz:longitude ?location_longitude . }
         OPTIONAL { ?timedlocation xyz:latitude ?location_latitude . }
         OPTIONAL { ?timedlocation xyz:description ?location_building_description . }
+        OPTIONAL { ?timedlocation xyz:place ?city . }
+
+        # Make blank node for address IF city or full address
+        BIND (
+            COALESCE(
+                IF(BOUND(?location_address), "Y", 1/0),
+                IF(BOUND(?city), "Y", 1/0),
+                ?nothing
+            ) AS ?address_present
+        )
+        BIND(IF(BOUND(?address_present), fx:bnode(concat(?blank_locationid, "address")), ?nothing) as ?blank_address)
 
         # #For testing
         # VALUES ?organ_iri {

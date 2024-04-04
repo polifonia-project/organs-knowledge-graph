@@ -238,11 +238,6 @@ WHERE {
         # division iri
         BIND(IRI(concat(str(organs:), ?stop_divisionid)) AS ?stop_divisionid_iri)
 
-        # stopname
-        # unique name for blank stopname node
-        # BIND(concat(?stopid, "name") AS ?blank_stopnameid)
-        # BIND(fx:bnode(?blank_stopnameid) as ?blank_stopname)
-
         OPTIONAL { ?stop_base xyz:partition ?stop_partition }
         OPTIONAL { ?stop_base xyz:double ?stop_double }
         OPTIONAL { ?stop_base xyz:footnote ?stop_footnote }

@@ -19,3 +19,4 @@ fx -q organs-projects.sparql -values filepath="../organs-dataset/French/output/k
 fx -q organs-pictures.sparql -values filepath="../organs-dataset/French/output/kg/kg_fr_pictures.json" > kg/organ-fr-pictures.ttl
 
 # Italian
+fx -q organs-base.sparql -values filepath="../organs-dataset/Italian/output/kg/kg_it_base.json" > kg/organ-it-base.ttl
