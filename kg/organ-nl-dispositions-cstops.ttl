@@ -5523,3 +5523,73 @@ organs:Part13_027Slijk-Ewijk_disposition000_division00_stop007
                         organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" ;
                         organ:lowestKey      "c1"
                       ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_093Lierop_disposition001_division00_stop006
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2/3" , "1" , "1 1/3" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "c1"
+                      ] .
+
+organs:Part13_093Lierop_disposition001_division01_stop003
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 3/5" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" ;
+                        organ:lowestKey      "C"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_120Vroomshoop_disposition001_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2 2/3" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .

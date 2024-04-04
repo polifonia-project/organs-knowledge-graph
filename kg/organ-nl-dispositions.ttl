@@ -45074,3 +45074,418 @@ organs:Part13_143UrkHerv_disposition000_division00_stop007
         organ:hasSpecification  "3 st." ;
         core:hasName            organs:StopDisambiguatedName79 ;
         core:name               "Cornet" .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_033Berkenwoude_disposition000_division00_stop008
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "8"^^xsd:int ;
+        organ:hasPartition      "D" ;
+        organ:hasSpecification  "3 st." ;
+        core:hasName            organs:StopDisambiguatedName79 ;
+        core:name               "Cornet" .
+
+organs:Part13_033Berkenwoude_disposition000_division00_stop002
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "2"^^xsd:int ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName202 ;
+        core:name               "Holpijp" .
+
+organs:Part13_033Berkenwoude_disposition000Console
+        rdf:type                      organ:OrganConsole ;
+        organ:hasKeyboard             organs:Part13_033Berkenwoude_disposition000_division01KeyboardP ;
+        organ:hasKeyboardRanges       "Manuaalomvang: C-g3. Pedaalomvang: C-d1" ;
+        core:hasOrganConsoleLocation  [ rdf:type    organ:OrganConsoleLocation ;
+                                        core:value  "rechterzijde"
+                                      ] ;
+        core:hasPart                  [ rdf:type    organ:OrganConsolePlayingAids ;
+                                        core:value  "tremblant\nwindlozer"
+                                      ] .
+
+organs:Part13_033Berkenwoude
+        core:includesWhole  organs:Part13_033Berkenwoude_disposition000_parthood .
+
+organs:Part13_033Berkenwoude_disposition000_division01_stop000
+        rdf:type                organ:OrganDivisionStop ;
+        rdfs:comment            "transmissie: tr" ;
+        organ:hasOrder          "0"^^xsd:int ;
+        organ:hasSpecification  "16'" ;
+        core:hasName            organs:StopDisambiguatedName372 ;
+        core:name               "Subbas" .
+
+organs:Part13_033Berkenwoude_disposition000_division00_stop001
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "1"^^xsd:int ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName288 ;
+        core:name               "Prestant" .
+
+organs:Part13_033Berkenwoude_disposition000_division00_stop007
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "7"^^xsd:int ;
+        organ:hasSpecification  "2'" ;
+        core:hasName            organs:StopDisambiguatedName250 ;
+        core:name               "Octaaf" .
+
+organs:Part13_033Berkenwoude_disposition000_division00_stop006
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "6"^^xsd:int ;
+        organ:hasSpecification  "3'" ;
+        core:hasName            organs:StopDisambiguatedName297 ;
+        core:name               "Quint" .
+
+organs:Part13_033Berkenwoude_disposition000_division00_stop000
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "0"^^xsd:int ;
+        organ:hasSpecification  "16'" ;
+        core:hasName            organs:StopDisambiguatedName47 ;
+        core:name               "Bourdon" .
+
+organs:Part13_033Berkenwoude_disposition000_division00_stop005
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "5"^^xsd:int ;
+        organ:hasSpecification  "4'" ;
+        core:hasName            organs:StopDisambiguatedName319 ;
+        core:name               "Roerfluit" .
+
+organs:Part13_033Berkenwoude_disposition000_division01KeyboardP
+        rdf:type             organ:OrganConsoleKeyboard ;
+        organ:hasRank        "P" ;
+        core:isClassifiedBy  organ:KeyboardTypePedal .
+
+organs:Part13_033Berkenwoude_disposition000_division00_stop004
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "4"^^xsd:int ;
+        organ:hasSpecification  "4'" ;
+        core:hasName            organs:StopDisambiguatedName250 ;
+        core:name               "Octaaf" .
+
+organs:Part13_033Berkenwoude_disposition000_division01
+        rdf:type             organ:OrganDivision ;
+        organ:hasKeyboard    organs:Part13_033Berkenwoude_disposition000_division01KeyboardP ;
+        organ:hasOrder       "1"^^xsd:int ;
+        core:hasPart         organs:Part13_033Berkenwoude_disposition000_division01_stop000 ;
+        core:isClassifiedBy  organs:DivisionType20 ;
+        core:name            "Pedaal" .
+
+organs:Part13_033Berkenwoude_disposition000_parthood
+        rdf:type               ins:InstrumentWhole ;
+        rdfs:comment           "In het front spreken C-A en c-b van de Prestant 8' (middentoren, linker zijtoren en linkerveld) alsmede G-g van de Violon 8' (G en Gis in de rechter zijtoren, vervolg in het rechterveld).\nAlle onderdelen van de klaviatuur zijn authentiek. Het handklavier is een eiken staartklavier, de ondertoetsen bezitten genageld ivoorbeleg. De registerknoppen van de sprekende registers zijn boven de lessenaar aangebracht, ze hebben witte porseleinen naamplaatjes. Het eiken pedaalklavier is ook origineel, de boventoetsen hebben gelijke lengte.\nHet windtoestel is onder in de kas geplaatst. De tremblant is inliggend.\nDe eiken windlade heeft mahonie stokken en opliggende voorslagen. De cancelvolgorde is chromatisch: dis-g3 d-C. Voor het pedaalregister zijn twee pneumatisch bediende kegellaatjes geplaatst, C-G aan de linker zijkant, het vervolg boven de klaviatuur in twee rijen (Gis-d en dis-d1).\nDe Subbas 16' Ped is van oregonpine. Op het Man zijn houten pijpen toegepast bij de Holpijp 8' (C-G). B en H van de Prestant 8' zijn afgevoerd geplaatste binnenpijpen, vanaf h staat het pijpwerk op de lade. De Violon 8' begint op G. Het hoogste octaaf van de Roerfluit 4' is open, conisch. De Cornet is op de lade geplaatst.\nExpressions zijn toegepast bij alle pijpen van Prestant en Violon, en verder bij de Octaaf 4' (C-h), de Quint 3' (C-g) en de Octaaf 2' (C-H)." ;
+        organ:hasPitch         "a1 = 435 Hz" ;
+        organ:hasTemperament   "evenredig zwevend" ;
+        core:hasPart           organs:Part13_033Berkenwoude_disposition000_division01 , organs:Part13_033Berkenwoude_disposition000_division00 , organs:Part13_033Berkenwoude_disposition000Console ;
+        core:hasPart           [ rdf:type    organ:OrganCase ;
+                                 core:value  "De orgelmakers Van Dam voorzagen dit orgel van een front waarvan het ontwerp in 1881 in hun werk werd geïntroduceerd (Raamsdonk, 1881, deel 1878-1886, 179).\nBinnen het gelijkblijvend kader van het ontwerp werd de uitvoering van het ornament in het verloop van de jaren gevarieerd. Opvallend bij dit front is de plaats waar de voluten zich duidelijk manifesteren: in de middentoren bij de pijpvoeten, in de zijtorens juist bij de boveneinden. De andere blinderingen zijn in hoofdzaak uit plantaardige motieven opgebouwd, bij de boveneinden in de middentoren heeft de beeldhouwer een bijna rococoachtig effect bereikt.\nBij de pijpvoeten in de tussenvelden is eikenloof toegepast, wat op deze plaats wel vaker voorkomt. Bij de boogvormige afsluiting van deze velden is een opengewerkte gelobde versiering aangebracht, bijna als gekoppelde lusjes. Iets dergelijks, maar dan voor alle blinderingen, is te zien bij de Bakker & Timmenga-orgels van Assendelft (1896) en ’s-Gravenzande (1899).\nOp het paneel onder de velden zijn diamantkoppen te zien, op de bovenlijst van de velden traditiegetrouw de liggende voluut met ruitwerk.\nDe opzetstukken op de zijtorens lijken uit een Franse lelie te ontstaan. Ze zijn transparant, in tegenstelling tot het opzetstuk op de middentoren, dat een ingezwenkt schild laat zien met een druiventros op het veld.\nDe vleugelstukken zijn wat hoofdontwerp betreft gelijk aan andere voorbeelden uit deze bouwperiode bij Van Dam.\nDe kleuren waren oorspronkelijk donker, op een wit hoofdgestel."
+                               ] ;
+        core:hasTimedLocation  [ rdf:type              core:TimedLocation ;
+                                 core:hasTimeInterval  [ rdf:type              core:TimeInterval ;
+                                                         core:hasInterpretedIntervalDate
+                                                                 "2008" ;
+                                                         core:hasIntervalDate  "2008"
+                                                       ]
+                               ] ;
+        core:label             "Dispositie in 2008" .
+
+organs:Part13_033Berkenwoude_disposition000_division00_stop003
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "3"^^xsd:int ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName421 ;
+        core:name               "Violon" .
+
+organs:Part13_033Berkenwoude_disposition000_division00
+        rdf:type             organ:OrganDivision ;
+        organ:hasOrder       "0"^^xsd:int ;
+        core:hasPart         organs:Part13_033Berkenwoude_disposition000_division00_stop007 , organs:Part13_033Berkenwoude_disposition000_division00_stop006 , organs:Part13_033Berkenwoude_disposition000_division00_stop004 , organs:Part13_033Berkenwoude_disposition000_division00_stop005 , organs:Part13_033Berkenwoude_disposition000_division00_stop003 , organs:Part13_033Berkenwoude_disposition000_division00_stop002 , organs:Part13_033Berkenwoude_disposition000_division00_stop000 , organs:Part13_033Berkenwoude_disposition000_division00_stop008 , organs:Part13_033Berkenwoude_disposition000_division00_stop001 ;
+        core:isClassifiedBy  organs:DivisionType16 ;
+        core:name            "Manuaal" .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_030Asch_disposition000_division00_stop000
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "0"^^xsd:int ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName288 ;
+        core:name               "Prestant" .
+
+organs:Part13_030Asch_disposition000_division00_stop005
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "5"^^xsd:int ;
+        organ:hasSpecification  "2'" ;
+        core:hasName            organs:StopDisambiguatedName250 ;
+        core:name               "Octaaf" .
+
+organs:Part13_030Asch_disposition000_division00_stop003
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "3"^^xsd:int ;
+        organ:hasSpecification  "4'" ;
+        core:hasName            organs:StopDisambiguatedName250 ;
+        core:name               "Octaaf" .
+
+organs:Part13_030Asch_disposition000_division00_stop001
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "1"^^xsd:int ;
+        organ:hasPartition      "B/D" ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName47 ;
+        core:name               "Bourdon" .
+
+organs:Part13_030Asch_disposition000Console
+        rdf:type                      organ:OrganConsole ;
+        organ:hasKeyboardRanges       "Manuaalomvang: C-f3. Pedaalomvang: C-f" ;
+        core:hasOrganConsoleLocation  [ rdf:type    organ:OrganConsoleLocation ;
+                                        core:value  "linkerzijde"
+                                      ] ;
+        core:hasPart                  [ rdf:type    organ:OrganConsolePlayingAids ;
+                                        core:value  "windlosser"
+                                      ] .
+
+organs:Part13_030Asch_disposition000_parthood
+        rdf:type               ins:InstrumentWhole ;
+        rdfs:comment           "Deling B/D tussen H en c.\nDe registerknoppen zijn in een horizontale rij direct boven de toetsen geplaatst, zoals bij harmoniums gebruikelijk is. De registernamen zijn, in gotische belettering, op witte porseleinen plaatjes geschilderd.\nHet pijpwerk staat als volgt op de windlade opgesteld: C en Cis in het midden, het vervolg in hele tonen naar weerszijden aflopend. Onder de windlade bevindt zich de magazijnbalg.\nMet uitzondering van het groot octaaf van de Bourdon 8' en C-F van de Prestant 8' (beide hout) is het pijpwerk van metaal. De grootste pijpen hebben een expression als steminrichting, de kleine zijn op lengte afgesneden; fis2-f3 van de Fluit-Dolce zijn conisch. Het groot octaaf van de Viola di Gamba 8' is stom.\nOp de frontlijst de naam van de schenker: Geschenk 30 aug. 1896 Familie van Steenis." ;
+        organ:hasPitch         "a1 = 431 Hz" ;
+        organ:hasTemperament   "evenredig zwevend" ;
+        core:hasPart           organs:Part13_030Asch_disposition000_division00 , organs:Part13_030Asch_disposition000Console ;
+        core:hasPart           [ rdf:type    organ:OrganCase ;
+                                 core:value  "Een der eerste orgelfronten uit de door Maarschalkerweerd voor protestantse kerken gemaakte reeks. Bij de bespreking van het orgelfront in Ursem (1894, deel 1886-1894, 373-374) werd reeds gewezen op de Musterprospekte van August Laukhuff uit Weikersheim als mogelijke inspiratiebron voor dit fronttype. Het fronttype-Ursem vertoont namelijk enige gelijkenis met nr. 12 van de in 1892 door Laukhuff uitgegeven eerste serie van 25 stuks (aangeduid als ‘Früh-Renaissance’). Dominerend in dit ontwerp zijn de drie brede velden. Tussen middenveld en zijvelden zijn horizontaal gedeelde vlakke velden gesitueerd.\nDe verschillen tussen het ontwerp van Laukhuff en het Maarschalkerweerd-front zijn  weliswaar evident (labiumverloop, kortere pijpen, hogere velden, wijze vormgeving tussenvelden, vormgeving en decoratie frontons), maar de door Maarschalkerweerd toegepaste fronten zijn ook niet identiek. Zo valt bij vergelijking van de fronten in Asch en Ursem op dat de velden in Ursem breder zijn, het labiumverloop in de tussenvelden is verschillend, geen diamantkoppen in Asch, verschillende behandeling van de frontons, de in Ursem aanwezige toten zijn in Asch weggelaten.\nAls opvallende elementen in het front van Asch kunnen nog genoemd worden de frontons op de vijf pijpen tellende velden. Alle frontons zijn doorbroken. Onder de frontons ronde bogen die de pijpvelden afsluiten. De gedeelde tussenveldjes worden met een horizontale lijst afgesloten, waaronder weer eenvoudig snijwerk.\nDe voeten van de frontpijpen staan op dezelfde hoogte. De frontlijst verspringt echter, wat een plastische uitwerking geeft.\nOnder elk veld een ruitvormig, motief. Onder het middenveld een plaquette waarop de naam van de schenker, de familie Van Steenis, is aangebracht. Bij de pijpvoeten in de grote velden is geen blinderingssnijwerk aangebracht, bij die van de smallere, inspringende veldjes wel."
+                               ] ;
+        core:hasTimedLocation  [ rdf:type              core:TimedLocation ;
+                                 core:hasTimeInterval  [ rdf:type              core:TimeInterval ;
+                                                         core:hasInterpretedIntervalDate
+                                                                 "2008" ;
+                                                         core:hasIntervalDate  "2008"
+                                                       ]
+                               ] ;
+        core:label             "Dispositie in 2008" .
+
+organs:Part13_030Asch_disposition000_division00_stop004
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "4"^^xsd:int ;
+        organ:hasSpecification  "4'" ;
+        core:hasName            organs:StopDisambiguatedName149 ;
+        core:name               "Fluit-Dolce" .
+
+organs:Part13_030Asch_disposition000_division00_stop002
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "2"^^xsd:int ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName406 ;
+        core:name               "Viola di Gamba" .
+
+organs:Part13_030Asch_disposition000_division00
+        rdf:type             organ:OrganDivision ;
+        organ:hasOrder       "0"^^xsd:int ;
+        core:hasPart         organs:Part13_030Asch_disposition000_division00_stop000 , organs:Part13_030Asch_disposition000_division00_stop005 , organs:Part13_030Asch_disposition000_division00_stop002 , organs:Part13_030Asch_disposition000_division00_stop004 , organs:Part13_030Asch_disposition000_division00_stop001 , organs:Part13_030Asch_disposition000_division00_stop003 ;
+        core:isClassifiedBy  organs:DivisionType16 ;
+        core:name            "Manuaal" .
+
+organs:Part13_030Asch
+        core:includesWhole  organs:Part13_030Asch_disposition000_parthood .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_122Mussel_disposition000_division00_stop000
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "0"^^xsd:int ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName288 ;
+        core:name               "Prestand" .
+
+organs:Part13_122Mussel_disposition000_division00_stop003
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "3"^^xsd:int ;
+        organ:hasSpecification  "4'" ;
+        core:hasName            organs:StopDisambiguatedName250 ;
+        core:name               "Octaaf" .
+
+organs:Part13_122Mussel_disposition000_division00_stop001
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "1"^^xsd:int ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName47 ;
+        core:name               "Bourdon" .
+
+organs:Part13_122Mussel_disposition000_division00
+        rdf:type             organ:OrganDivision ;
+        organ:hasOrder       "0"^^xsd:int ;
+        core:hasPart         organs:Part13_122Mussel_disposition000_division00_stop000 , organs:Part13_122Mussel_disposition000_division00_stop001 , organs:Part13_122Mussel_disposition000_division00_stop004 , organs:Part13_122Mussel_disposition000_division00_stop002 , organs:Part13_122Mussel_disposition000_division00_stop003 ;
+        core:isClassifiedBy  organs:DivisionType16 ;
+        core:name            "Manuaal" .
+
+organs:Part13_122Mussel_disposition000Console
+        rdf:type                      organ:OrganConsole ;
+        organ:hasKeyboardRanges       "Manuaalomvang: C-f3. Pedaalomvang: C-a" ;
+        core:hasOrganConsoleLocation  [ rdf:type    organ:OrganConsoleLocation ;
+                                        core:value  "linkerzijde"
+                                      ] ;
+        core:hasPart                  [ rdf:type    organ:OrganConsolePlayingAids ;
+                                        core:value  "tremulant\nnihil"
+                                      ] .
+
+organs:Part13_122Mussel_disposition000_parthood
+        rdf:type               ins:InstrumentWhole ;
+        rdfs:comment           "Over de geschiedenis van dit orgel tot aan de plaatsing te Bargercompascuum in 1926 is vooralsnog niets bekend. De uiterlijke kenmerken van het orgel (front, orgelkas en klaviatuur) en de inwendige opbouw wijzen evident op het huis Van Oeckelen. Doordat juist in de jaren rond 1900 diverse tot dan toe karakteristieke elementen, bijvoorbeeld de 'zwart-witte' manuaalbakstukken en de ronde palmhouten afsluitingen van de windladen-voorslagen, niet meer consequent werden toegepast, is een preciezere datering van dit orgel zonder nadere archivalia niet mogelijk.\nHet is een intrigerende vraag waarom in 1926 de bovengenoemde werkzaamheden zijn uitgevoerd. Waren de oorspronkelijke frontpijpen en de ornamentiek zodanig beschadigd dat ze niet te handhaven waren? Gold dat alleen voor de frontpijpen en vond men in Bargercompascuum de ornamentiek niet fraai dan wel te uitbundig? Of is het orgel afkomstig uit het een Duitse kerk net over de grens en waren, zoals overal in Duitsland, de tinnen frontpijpen in 1917 gevorderd? Deze laatste veronderstelling zou kunnen kloppen, zeker als men bedenkt dat de Altreformierte Classis Nordhorn deel uitmaakte van de Nederlandse Hervormde Synode en er daardoor diverse contacten waren over de landsgrenzen heen. Tenslotte is er nog de mogelijkheid dat na het overlijden van Antonius van Oeckelen in 1918 een nog altijd in de werkplaats aanwezig grotendeels voltooid orgel in 1926 (dan waarschijnlijk door de opvolger, Harmannus Thijs) met nieuwe frontpijpen en ornamentiek werd aangevuld tot een compleet instrument. Vanuit het gegeven dat de Van Oeckelens vaak voor eigen risico vrijwel complete orgels bouwden en die vervolgens te koop aanboden, is het niet onmogelijk dat een nog onverkocht orgel in de boedel was achtergebleven. Het feit dat het basement, de stijlen en de kappen van het orgelfront duidelijk uit ca 1900 stammen, pleit overigens weer tegen deze theorie; want de Van Oeckelens voltooiden de voor eigen risico gebouwde orgels doorgaans tot aan het front, en liet de koper de keuze uit verschillende frontontwerpen. Zonder nader archiefmateriaal zullen al deze vragen onbeantwoord moeten blijven.\nDe Prestand 8' staat van C-d1 in het front. De klaviatuur, met de registerknoppen in een horizontale rij boven de muzieklessenaar, is geheel origineel. De bakstukken hebben hetzelfde model als die te Garsthuizen (1900) en Dorkwerd (1909). De registerknop voor de niet-originele tremulant zal oorspronkelijk verbonden zijn geweest met een windlosser. De loze registerknop (Nihil) en de vrije ruimte tussen front en windlade zijn indicaties dat de kas mogelijk oorspronkelijk voor een groter eenmanuaals orgel bedoeld was.\nHet pijpwerk staat op één in hele tonen ingedeelde windlade, met de grootste pijpen in het midden.\nDe Bourdon 8' is van C-H van hout. De Sallicionaal 8' (in werkelijkheid een typische Viola di Gamba van Van Oeckelen) is van C-H gecombineerd met de Bourdon 8'. De Fluit 2' is in 1969 gecreëerd door opschuiving van de oorspronkelijke Fluit 4' (C-H gedekt, vanaf c open cilindrisch) en aanvulling met een nieuw (open cilindrisch) hoogste octaaf." ;
+        organ:hasPitch         "a1 = 440 Hz" ;
+        organ:hasTemperament   "evenredig zwevend" ;
+        core:hasPart           organs:Part13_122Mussel_disposition000_division00 , organs:Part13_122Mussel_disposition000Console ;
+        core:hasPart           [ rdf:type    organ:OrganCase ;
+                                 core:value  "Diverse niet originele elementen bemoeilijken een nadere duiding van dit zevenledige front. Dat het instrument uit het atelier van de gebroeders Van Oeckelen afkomstig moet zijn, blijkt behalve uit het front ook uit diverse technische aspecten. Het front is nauw verwant aan dat van het orgel te Vierhuizen (1892, deel 1886-1894, 282-283), dat van het niet meer bestaande orgel in de Gereformeerde Oosterkerk te Dokkum (1890) en aan dat van de Lutherse Kerk te Breda (1889, deel 1886-1894, 119-121); zij het dat dit laatste orgel spitse zijtorens heeft, en dat alleen de orgelfronten te Breda en Mussel van een onderbouw zijn voorzien. De hoofdindeling omvat een geronde middentoren met vijf pijpen, geflankeerd door vlakke velden met ieder oorspronkelijk twee pijpen (in 1926 zijn bij het Musselse orgel deze velden gedeeld), gedeelde tussenvelden en geronde zijtorens met ieder vijf pijpen (in Dokkum en Vierhuizen zeven). De zijtorens van het orgel te Breda zijn smaller dan die van de andere drie orgels.\nBij de plaatsing van het orgel in de Hervormde Evangelisatiekapel te Bargercompascuum in 1926 is het front vrij drastisch gewijzigd. Uit dat jaar dateren zonder twijfel de uiterst eenvoudige kasbekroningen en de zinken frontpijpen. Mogelijk werd het blinderingssnijwerk aan de pijpvoeten, dat sinds in elk geval 1926 behalve in de bovenste tussenvelden ontbreekt, deels gebruikt ten behoeve van de toen gecreëerde deling van de velden naast de middentoren. Door die deling is een karakteristiek Van Oeckelen-element verloren gegaan.\nOpvallend is de in 1969 totaal gewijzigde kleurstelling van het front. In Bargercompascuum waren de in de balustrade opgenomen onderbouw en het eigenlijke front (inclusief de kasbekroningen) in een mahonie-imitatie geschilderd, terwijl het snijwerk met goudverf was bestreken. De huidige kleurstelling wijkt volstrekt af van in het huis Van Oeckelen gepraktiseerde principes. De eenvormige richting van de pijpenlabia in de tussenvelden en de, in vergelijking met originele Van Oeckelen-fronten, geringere variatie in de voethoogten van de frontpijpen in de torens, doen duidelijk afbreuk aan de plasticiteit van Van Oeckelen-fronten.\nHet snijwerk is tamelijk grof van opzet en uitwerking, en mist de bij de Van Oeckelens gebruikelijke luciditeit. Zelfs in zodanige mate dat de vraag of ook het snijwerk uit 1926 dateert, alleszins is gerechtvaardigd."
+                               ] ;
+        core:hasTimedLocation  [ rdf:type              core:TimedLocation ;
+                                 core:hasTimeInterval  [ rdf:type              core:TimeInterval ;
+                                                         core:hasInterpretedIntervalDate
+                                                                 "2008" ;
+                                                         core:hasIntervalDate  "2008"
+                                                       ]
+                               ] ;
+        core:label             "Dispositie in 2008" .
+
+organs:Part13_122Mussel
+        core:includesWhole  organs:Part13_122Mussel_disposition000_parthood .
+
+organs:Part13_122Mussel_disposition000_division00_stop004
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "4"^^xsd:int ;
+        organ:hasSpecification  "2'" ;
+        core:hasName            organs:StopDisambiguatedName3 ;
+        core:name               "Fluit" .
+
+organs:Part13_122Mussel_disposition000_division00_stop002
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "2"^^xsd:int ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName324 ;
+        core:name               "Sallicionaal" .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_050Warns_disposition000_parthood
+        rdf:type               ins:InstrumentWhole ;
+        rdfs:comment           "Bij de oplevering in 1896 was de laatste sleep, gerekend vanaf het front, leeg; deze open plaats is in 1938 benut voor de Bourdon 16'. De bas van dit register bestaat uit pijpen van oregonpine, die op twee pneumatisch bediende kegelladen zijn geplaatst, gevoed vanuit de stokboringen. De discant staat op de lade.\nHet handklavier is een eiken staartklavier. Het eiken pedaalklavier heeft korte boventoetsen van gelijke lengte. De registerknoppen zijn (behalve de Tremulant) boven de lessenaar geplaatst en bezitten witte porseleinen naamplaatjes.\nHet windtoestel bevindt zich in de onderkas. Het windkanaal is van eiken, de Tremulant is pneumatisch.\nDe windlade heeft een eiken cancellenraam en ventielkast en mahonie stokken en roosters. De Prestant 8' staat op een kantsleep. De ventielkast is afgesloten door middel van drie opliggende voorslagen. De cancelvolgorde is (f aan de klaviatuurzijde): fis d B Gis c e gis / e3 (hele tonen) b / Fis E D C Cis Dis F / a (hele tonen) f3 / g dis H G A cis f.\nDe frontpijpen zijn van Engels tin. In het front spreken C-e1 van de Prestant 8' (torens en in elk boogvormig veld vier pijpen). Eiken pijpen zijn toegepast voor C-H van de Bourdon 8'. De Melophone 8' is van C-H gecombineerd met de Prestant; de Viola di Gamba is van C-H gecombineerd met de Bourdon 8'. De Melophone heeft in de discant pijpen van hoog tingehalte; de meeste pijpen zijn voorzien van schuine voorbaardjes, vanaf g zijn zijbaarden aan de expression-uitsnijdingen aangebracht. De Viola di Gamba 8' heeft eveneens tinnen pijpwerk in de discant, alle pijpen zijn voorzien van zijbaardjes. De Roerfluit 4' is in het hoogste octaaf open, conisch. De Woudfluit 2' bestaat uit open cilindrisch pijpwerk, de grootste pijp draagt als naaminscriptie: Octaaf 2 vt. Van de Bourdon 16' zijn c1-h1 van zink.\nAlle metalen pijpwerk heeft geritste spitslabia. Expressions zijn toegepast bij de Prestant, Melophone en Viola di Gamba tot en met h2; bij Octaaf 4' en Viola 4' tot en met h1 en bij de Woudfluit 2' tot en met h." ;
+        organ:hasPitch         "a1 = 435 Hz" ;
+        organ:hasTemperament   "evenredig zwevend" ;
+        core:hasPart           organs:Part13_050Warns_disposition000_division00 , organs:Part13_050Warns_disposition000Console ;
+        core:hasPart           [ rdf:type    organ:OrganCase ;
+                                 core:value  "Evenals bij het orgel van Gytsjerk (1896) behoort het front van dit orgel tot een reeks die als navolging van een ontwerp van de Adema’s kan worden gezien. Ook hier zijn de tussenvelden hol gewelfd uitgevoerd.\nDe ornamentiek is bovendien zeer verwant aan die van het orgel in Gytsjerk. Het effect is echter, door de kleurstelling, anders. Tegenover de deftigheid van Gytsjerk staat de feestelijkheid van Warns.\nIn de blinderingen zijn weer de bladslingers, voluten en bloemen te zien; in de culs-de-lampe de krachtig vormgegeven bladmotieven. In de opzetstukken vallen de C-voluten op, aangevuld met blad- en bloemmotieven. Het opzetstuk op de middentoren telt zelfs zes C-voluten, waarbij de middelste twee als piëdestal voor de lier fungeren. In de vleugelstukken de grote S-voluut, de wijnstok met druiventros en het vogeltje die standaard zijn bij fronten van dit type.\nVermeldenswaard is nog het gemarmerd hoofdgestel van de orgelgalerij, dat behalve door twee dunne gietijzeren kolommen ook door twee forse stenen (waarschijnlijk gestucte) consoles wordt gedragen."
+                               ] ;
+        core:hasTimedLocation  [ rdf:type              core:TimedLocation ;
+                                 core:hasTimeInterval  [ rdf:type              core:TimeInterval ;
+                                                         core:hasInterpretedIntervalDate
+                                                                 "2008" ;
+                                                         core:hasIntervalDate  "2008"
+                                                       ]
+                               ] ;
+        core:label             "Dispositie in 2008" .
+
+organs:Part13_050Warns_disposition000_division00_stop002
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "2"^^xsd:int ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName47 ;
+        core:name               "Bourdon" .
+
+organs:Part13_050Warns_disposition000_division00_stop008
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "8"^^xsd:int ;
+        organ:hasSpecification  "2'" ;
+        core:hasName            organs:StopDisambiguatedName435 ;
+        core:name               "Woudfluit" .
+
+organs:Part13_050Warns_disposition000_division00_stop001
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "1"^^xsd:int ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName288 ;
+        core:name               "Prestant" .
+
+organs:Part13_050Warns_disposition000_division00_stop007
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "7"^^xsd:int ;
+        organ:hasSpecification  "4'" ;
+        core:hasName            organs:StopDisambiguatedName413 ;
+        core:name               "Viola" .
+
+organs:Part13_050Warns
+        core:includesWhole  organs:Part13_050Warns_disposition000_parthood .
+
+organs:Part13_050Warns_disposition000_division00_stop000
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "0"^^xsd:int ;
+        organ:hasSpecification  "16'" ;
+        core:hasName            organs:StopDisambiguatedName47 ;
+        core:name               "Bourdon" .
+
+organs:Part13_050Warns_disposition000_division00_stop006
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "6"^^xsd:int ;
+        organ:hasSpecification  "4'" ;
+        core:hasName            organs:StopDisambiguatedName319 ;
+        core:name               "Roerfluit" .
+
+organs:Part13_050Warns_disposition000_division00_stop005
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "5"^^xsd:int ;
+        organ:hasSpecification  "4'" ;
+        core:hasName            organs:StopDisambiguatedName250 ;
+        core:name               "Octaaf" .
+
+organs:Part13_050Warns_disposition000_division00
+        rdf:type             organ:OrganDivision ;
+        organ:hasOrder       "0"^^xsd:int ;
+        core:hasPart         organs:Part13_050Warns_disposition000_division00_stop003 , organs:Part13_050Warns_disposition000_division00_stop002 , organs:Part13_050Warns_disposition000_division00_stop008 , organs:Part13_050Warns_disposition000_division00_stop001 , organs:Part13_050Warns_disposition000_division00_stop000 , organs:Part13_050Warns_disposition000_division00_stop007 , organs:Part13_050Warns_disposition000_division00_stop005 , organs:Part13_050Warns_disposition000_division00_stop006 , organs:Part13_050Warns_disposition000_division00_stop004 ;
+        core:isClassifiedBy  organs:DivisionType16 ;
+        core:name            "Manuaal" .
+
+organs:Part13_050Warns_disposition000_division00_stop004
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "4"^^xsd:int ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName406 ;
+        core:name               "Viola di Gamba" .
+
+organs:Part13_050Warns_disposition000Console
+        rdf:type                      organ:OrganConsole ;
+        organ:hasKeyboardRanges       "Manuaalomvang: C-f3. Pedaalomvang: C-c1" ;
+        core:hasOrganConsoleLocation  [ rdf:type    organ:OrganConsoleLocation ;
+                                        core:value  "linkerzijde"
+                                      ] ;
+        core:hasPart                  [ rdf:type    organ:OrganConsolePlayingAids ;
+                                        core:value  "tremulant\nventiel"
+                                      ] .
+
+organs:Part13_050Warns_disposition000_division00_stop003
+        rdf:type                organ:OrganDivisionStop ;
+        organ:hasOrder          "3"^^xsd:int ;
+        organ:hasSpecification  "8'" ;
+        core:hasName            organs:StopDisambiguatedName239 ;
+        core:name               "Melophone" .
