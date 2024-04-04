@@ -5593,3 +5593,1011 @@ organs:Part13_120Vroomshoop_disposition001_division00_stop007
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_066Schiermonnikoog_disposition000_division00_stop008
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] .
+
+organs:Part13_066Schiermonnikoog_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_121Wijckel_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_083RotterdamRem_disposition000_division00_stop009
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" , "4" , "8" ;
+                        organ:lowestKey      "c1"
+                      ] .
+
+organs:Part13_083RotterdamRem_disposition000_division01_stop008
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2 2/3" ;
+                        organ:lowestKey      "C"
+                      ] .
+
+organs:Part13_083RotterdamRem_disposition000_division01_stop009
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1/2" , "2/3" , "1" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c3"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2/3" , "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1/2" , "1" , "1 1/3" ;
+                        organ:lowestKey      "c"
+                      ] .
+
+organs:Part13_083RotterdamRem_disposition000_division00_stop008
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2/3" , "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "fis"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" , "5 1/3" ;
+                        organ:lowestKey      "fis1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "Fis"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_125Waaxens_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "4" , "5 1/3" , "8" ;
+                        organ:lowestKey      "c3"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2 2/3" , "4" , "5 1/3" ;
+                        organ:lowestKey      "c2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" ;
+                        organ:lowestKey      "C"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_113Hemmen_disposition001_division00_stop005
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2 2/3" ;
+                        organ:lowestKey      "c"
+                      ] .
+
+organs:Part13_113Hemmen_disposition001_division00_stop004
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2/3" , "2" , "1 1/3" ;
+                        organ:lowestKey      "C"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_138Ruinen_disposition000_division00_stop008
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2/3" , "1" , "1 1/3" ;
+                        organ:lowestKey      "C"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_100Wageningen_disposition001_division00_stop010
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] .
+
+organs:Part13_100Wageningen_disposition001_division00_stop009
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c"
+                      ] .
+
+organs:Part13_100Wageningen_disposition001_division00_stop011
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_006DeHeurne_disposition000_division00_stop008
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2/3" , "1" , "1 1/3" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c3"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_042Leidschendam_disposition001_division00_stop006
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2/3" , "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "C"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_118Oudemirdum_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "4" , "5 1/3" , "8" ;
+                        organ:lowestKey      "c3"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2 2/3" , "4" , "5 1/3" ;
+                        organ:lowestKey      "c2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" ;
+                        organ:lowestKey      "c"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_144Vlagtwedde_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_041Kornhorn_disposition000_division01_stop004
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2/3" , "1" , "1 1/3" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_082Rijssen_disposition001_division00_stop008
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2/3" , "1" , "1 1/3" ;
+                        organ:lowestKey      "C"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_070Winsum_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_099Saaksum_disposition001_division00_stop006
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" ;
+                        organ:lowestKey      "c"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_071Zoelen_disposition000_division00_stop008
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_002Wouterswoude_disposition000_division00_stop006
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "G"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" , "5 1/3" ;
+                        organ:lowestKey      "g2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "g1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "g"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_135Lunteren_disposition002_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2 2/3" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "4/5" , "1 1/3" ;
+                        organ:lowestKey      "C"
+                      ] .
+
+organs:Part13_135Lunteren_disposition002_division00_stop008
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2/3" , "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1/2" , "2/3" , "1" , "1 1/3" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_051Amsterdam_disposition001_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] .
+
+organs:Part13_051Amsterdam_disposition001_division00_stop006
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "fis"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "Fis"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" , "5 1/3" ;
+                        organ:lowestKey      "fis1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_058Heerewaarden_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" , "5 1/3" ;
+                        organ:lowestKey      "h2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "cis2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "cis1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2/3" , "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "cis"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1/2" , "2/3" , "1" , "1 1/3" ;
+                        organ:lowestKey      "C"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_052ApeldoornMaria_disposition002_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" , "4" , "8" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_008Exmorra_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_078Harlingen_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" , "5 1/3" ;
+                        organ:lowestKey      "fis1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" ;
+                        organ:lowestKey      "C"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_011HengeloHervormd_disposition001_division00_stop008
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] .
+
+organs:Part13_011HengeloHervormd_disposition001_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" , "5 1/3" ;
+                        organ:lowestKey      "c3"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_089Brakel_disposition001_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "4" , "5 1/3" , "8" ;
+                        organ:lowestKey      "c3"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2 2/3" , "4" , "5 1/3" ;
+                        organ:lowestKey      "c2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "c"
+                      ] .
+
+organs:Part13_089Brakel_disposition001_division00_stop008
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_136Middelstum_disposition000_division00_stop008
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" , "4" , "5 1/3" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2 2/3" , "4" ;
+                        organ:lowestKey      "C"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_057Gramsbergen_disposition000_division00_stop008
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_003Arum_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_087Bontebrug_disposition000_division01_stop006
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "cis1"
+                      ] .
+
+organs:Part13_087Bontebrug_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "1 3/5" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_074EgmondaandeHoef_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_112Heerenveen_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "c"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2/3" , "1" , "1 1/3" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "dis2"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_009Gendringen_disposition000_division00_stop005
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "2" , "2 2/3" , "4" , "5 1/3" ;
+                        organ:lowestKey      "c2"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 1/3" , "2" , "2 2/3" , "4" ;
+                        organ:lowestKey      "c1"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" ;
+                        organ:lowestKey      "C"
+                      ] ;
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1" , "1 1/3" , "2" , "2 2/3" ;
+                        organ:lowestKey      "c"
+                      ] .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix ins:    <http://w3id.org/polifonia/ontology/instrument/> .
+@prefix organ:  <http://w3id.org/polifonia/ontology/organs/> .
+@prefix organs: <http://w3id.org/polifonia/resource/organs/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+organs:Part13_137Pieterburen_disposition000_division00_stop007
+        core:hasPart  [ rdf:type             organ:OrgandivisionStopRankRange ;
+                        organ:hasFootHeight  "1 3/5" , "2 2/3" , "4" , "8" ;
+                        organ:lowestKey      "c1"
+                      ] .
