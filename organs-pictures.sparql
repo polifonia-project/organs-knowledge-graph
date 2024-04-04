@@ -18,6 +18,8 @@ construct {
     ?blank_picture a core:PictureDescription ;
         core:isPrimary ?primary_picture ; # add to input True/False
         core:name ?picture_id ;
+        core:id ?picture_id ;
+        core:url ?picture_url ;
         core:hasDate ?blank_timeinterval ;
         core:label ?picture_caption ;
         core:comment ?picture_comment ;
@@ -50,10 +52,12 @@ WHERE {
         BIND(fx:bnode(?blank_pictureid) as ?blank_picture)
 
         ?picture_base xyz:picture_id ?picture_id .
-        ?picture_base xyz:caption ?picture_caption .
+        OPTIONAL { ?picture_base xyz:caption ?picture_caption . }
         OPTIONAL { ?picture_base xyz:date ?picture_date . }
         OPTIONAL { ?picture_base xyz:creator ?picture_creator . }
         OPTIONAL { ?picture_base xyz:comment ?picture_comment . }
+        OPTIONAL { ?picture_base xyz:primary_picture ?primary_picture . }
+        OPTIONAL { ?picture_base xyz:picture_url ?picture_url . }
 
         BIND(IF(BOUND(?picture_date), concat(?organid, ?picture_slotid, "time"), ?nothing) AS ?blank_timeintervalid)
         BIND(IF(BOUND(?picture_date), fx:bnode(?blank_timeintervalid), ?nothing) as ?blank_timeinterval)

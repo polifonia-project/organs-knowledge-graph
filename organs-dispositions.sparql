@@ -91,16 +91,13 @@ construct {
 
     # Stop
     ?stop_iri a organ:OrganDivisionStop ;
-        core:hasName ?blank_stopname ;
+        core:name ?stop_name ;
         core:hasName ?disambiguated_stopname_iri ;
         organ:hasPartition ?stop_partition ; # string literal
         organ:hasDouble ?stop_double ; # string literal
         organ:hasOrder ?stop_order ; # integer
         organ:hasSpecification ?stop_specification ; # string literal
         rdfs:comment ?stop_footnote . # string literal
-
-    ?blank_stopname a core:Name ;
-        core:name ?stop_name . # string literal
 
     # link stop with division
     ?stop_divisionid_iri core:hasPart ?stop_iri .
@@ -243,8 +240,8 @@ WHERE {
 
         # stopname
         # unique name for blank stopname node
-        BIND(concat(?stopid, "name") AS ?blank_stopnameid)
-        BIND(fx:bnode(?blank_stopnameid) as ?blank_stopname)
+        # BIND(concat(?stopid, "name") AS ?blank_stopnameid)
+        # BIND(fx:bnode(?blank_stopnameid) as ?blank_stopname)
 
         OPTIONAL { ?stop_base xyz:partition ?stop_partition }
         OPTIONAL { ?stop_base xyz:double ?stop_double }
