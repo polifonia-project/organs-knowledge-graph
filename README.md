@@ -7,6 +7,7 @@ project: polifonia-project
 pilot:
 - ORGANS
 work-package: 
+- WP1
 - WP2
 licence: CC BY
 related-components:
