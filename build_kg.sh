@@ -20,3 +20,8 @@ fx -q organs-pictures.sparql -values filepath="../organs-dataset/French/output/k
 
 # Italian
 fx -q organs-base.sparql -values filepath="../organs-dataset/Italian/output/kg/kg_it_base.json" > kg/organ-it-base.ttl
+
+# German
+fx -q organs-base.sparql -values filepath="../organs-dataset/German_OrganIndex/output/kg/kg_de_base.json" > kg/organ-de-base.ttl
+fx -q organs-pictures.sparql -values filepath="../organs-dataset/German_OrganIndex/output/kg/kg_de_pictures.json" > kg/organ-de-pictures.ttl
+fx -q organs-projects.sparql -values filepath="../organs-dataset/German_OrganIndex/output/kg/kg_de_projects.json" > kg/organ-de-projects.ttl
