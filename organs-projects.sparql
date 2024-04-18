@@ -114,7 +114,7 @@ WHERE {
         BIND(IF(BOUND(?task_type), IRI(concat(str(organ:), "TaskType", ?task_type)), ?nothing) AS ?task_type_iri)
 
         # date stated
-        ?project_base xyz:date_stated ?project_date .
+        OPTIONAL { ?project_base xyz:date_stated ?project_date . }
         
         # interpreted date
         OPTIONAL { ?project_base xyz:year_high ?project_interpreted_date_low . }
