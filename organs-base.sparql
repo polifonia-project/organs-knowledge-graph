@@ -15,8 +15,15 @@ construct {
 
     ?organ_iri a organ:Organ ;
         rdfs:label ?organ_name ; # string literal
+#        src:hasIdentifier ?blank_organ_db_id ; # unique id as in the source database
         core:includesWhole ?organ_parthood_iri ;
-        organ:hasOrganNumber ?organ_number . 
+        core:description ?organ_url ;
+        organ:hasOrganNumber ?organ_number .
+
+#    ?blank_organ_db_id a src:Identifier ;
+#            src:hasIdentifierType ?id_in_collection_identifier_type_iri ;
+#            src:hasIdentifierValue ?source_id_in_collection ;
+#            src:identifierIssuedBy ?source_id_issuer_iri .  #colection
 
     # construct a parthood with location(s) and timeinterval(s) of the organ
     ?organ_parthood_iri a ins:InstrumentWhole ;
@@ -56,7 +63,9 @@ WHERE {
             ?organ_slot ?organ_base .
 
         ?organ_base xyz:label ?organ_name .
+        ?organ_base xyz:organ_datbase_id ?organ_datbase_id .
         OPTIONAL { ?organ_base xyz:organnumber ?organ_number . }
+        OPTIONAL { ?organ_base xyz:url ?organ_url . }
 
         # Extract organ identifier
         BIND(replace(str(?organ_slot), str(xyz:), "") AS ?organid)
