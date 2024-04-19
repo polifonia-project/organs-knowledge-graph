@@ -30,8 +30,10 @@ construct {
         core:hasTimeInterval ?blank_timeinterval .
 
     ?blank_timeinterval a core:TimeInterval ;
-        core:hasIntervalDate ?disposition_date ;
-        core:hasInterpretedIntervalDate ?disposition_date .
+        rdfs:label ?disposition_date ;
+        core:time ?average_date ;
+        core:startTime ?year_low ;
+        core:endTime ?year_high .
 
     # windsystem
     ?disposition_parthood_iri core:hasPart ?blank_windsystem .
@@ -146,7 +148,9 @@ WHERE {
         OPTIONAL { ?disposition_base xyz:peculiarities ?disposition_peculiarities . }
         OPTIONAL { ?disposition_base xyz:case_description ?disposition_case_description . }
         OPTIONAL { ?disposition_base xyz:console_location ?disposition_console_location . }
-        OPTIONAL { ?disposition_base xyz:year_low ?disposition_date . }
+        OPTIONAL { ?disposition_base xyz:year_low ?year_low . }
+        OPTIONAL { ?disposition_base xyz:year_high ?year_high . }
+        OPTIONAL { ?disposition_base xyz:date_stated ?date_stated . }
         OPTIONAL { ?disposition_base xyz:extra_information ?disposition_extra_information . }
 
         #only if a console is needed
@@ -166,8 +170,12 @@ WHERE {
         BIND(IF(BOUND(?disposition_console_location), fx:bnode(?blank_console_locationid), ?nothing) AS ?blank_console_location)
 
         # only if a timeinterval is needed:
-        BIND(IF(BOUND(?disposition_date), fx:bnode(concat(?dispositionid, "timedlocation")), ?nothing) AS ?blank_timedlocation)
-        BIND(IF(BOUND(?disposition_date), fx:bnode(concat(?dispositionid, "timeinterval")), ?nothing) AS ?blank_timeinterval)
+        BIND(IF(BOUND(?year_low), fx:bnode(concat(?dispositionid, "timedlocation")), ?nothing) AS ?blank_timedlocation)
+        BIND(IF(BOUND(?year_low), fx:bnode(concat(?dispositionid, "timeinterval")), ?nothing) AS ?blank_timeinterval)
+
+        # compute one year to represent time interval
+        BIND(IF(BOUND(?year_low), str(xsd:integer(ROUND((xsd:integer(?year_low) + xsd:integer(?year_high)) / 2))), ?nothing) AS ?average_date)
+        BIND(IF(BOUND(?date_stated), ?date_stated, ?average_date) AS ?disposition_date)
 
         # Windsystem
         BIND(IF(BOUND(?windsystem_description), fx:bnode(concat(?dispositionid, "windsystem")), ?nothing) AS ?blank_windsystem)

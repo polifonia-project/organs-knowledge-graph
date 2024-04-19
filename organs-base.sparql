@@ -49,8 +49,10 @@ construct {
 
     # blank node for the timeinterval entity
     ?blank_timeinterval a core:TimeInterval ;
-        rdfs:label ?start_time_label ;
-        core:hasIntervalStartDate ?start_time .
+        rdfs:label ?time_interval_label ;
+        core:time ?start_time ;
+        core:startTime ?start_time ;
+        core:endTime ?end_time . #mostly absent in data. Determined by next start_time
 
 }
 WHERE {
@@ -63,7 +65,7 @@ WHERE {
             ?organ_slot ?organ_base .
 
         ?organ_base xyz:label ?organ_name .
-        ?organ_base xyz:organ_datbase_id ?organ_datbase_id .
+        OPTIONAL { ?organ_base xyz:organ_datbase_id ?organ_datbase_id . }
         OPTIONAL { ?organ_base xyz:organnumber ?organ_number . }
         OPTIONAL { ?organ_base xyz:url ?organ_url . }
 
@@ -97,7 +99,8 @@ WHERE {
 
         # Add optional data
         OPTIONAL { ?timedlocation xyz:startTime ?start_time . }
-        OPTIONAL { ?timedlocation xyz:startTimeLable ?start_time_label . }
+        OPTIONAL { ?timedlocation xyz:timeIntervalLabel ?time_interval_label . }
+        OPTIONAL { ?timedlocation xyz:endTime ?end_time . }
         OPTIONAL { ?timedlocation xyz:address ?location_address . }
         OPTIONAL { ?timedlocation xyz:longitude ?location_longitude . }
         OPTIONAL { ?timedlocation xyz:latitude ?location_latitude . }

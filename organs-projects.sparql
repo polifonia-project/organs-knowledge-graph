@@ -24,8 +24,11 @@ construct {
         core:hasTimeInterval ?blank_timeinterval .
 
     ?blank_timeinterval a core:TimeInterval ;
-        rdfs:label ?project_date ;
-        core:hasIntervalDate ?project_date .
+        rdfs:label ?date_stated ;
+        core:hasIntervalDate ?date_stated ;
+        core:hasInterpretedIntervalDate ?average_date ;
+        core:startTime ?year_low ;
+        core:endTime ?year_high .
 
     ?blank_task a core:Task ;
         core:value ?task_description ;
@@ -114,10 +117,15 @@ WHERE {
         BIND(IF(BOUND(?task_type), IRI(concat(str(organ:), "TaskType", ?task_type)), ?nothing) AS ?task_type_iri)
 
         # date stated
-        OPTIONAL { ?project_base xyz:date_stated ?project_date . }
-        
-        # interpreted date
-        OPTIONAL { ?project_base xyz:year_high ?project_interpreted_date_low . }
+        OPTIONAL { ?project_base xyz:date_stated ?date_stated . }
+        OPTIONAL {
+            ?project_base xyz:year_low ?year_low . 
+            ?project_base xyz:year_high ?year_high .
+        }
+
+        # compute one year to represent time interval
+        BIND(IF(BOUND(?year_low), str(xsd:integer(ROUND((xsd:integer(?year_low) + xsd:integer(?year_high)) / 2))), ?nothing) AS ?average_date)
+        BIND(IF(BOUND(?date_stated), ?date_stated, ?average_date) AS ?disposition_date)
 
 
     }
