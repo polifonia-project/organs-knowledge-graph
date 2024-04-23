@@ -1,6 +1,6 @@
 ---
 component-id: organs-knowledge-graph-construction
-type: 
+type: Script
 name: ORGANS Knowledge Graph Construction
 description: A set of SPARQL Anything queries to construct the ORGANS knowledge graph.
 project: polifonia-project
