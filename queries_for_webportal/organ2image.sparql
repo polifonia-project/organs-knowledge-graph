@@ -1,0 +1,21 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX core:  <https://w3id.org/polifonia/ontology/core/>
+PREFIX organs: <http://w3id.org/polifonia/resource/organs/>
+PREFIX organ: <http://w3id.org/polifonia/ontology/organs/>
+
+SELECT DISTINCT ?image_url ?caption
+WHERE {
+    ?organ_query_iri a organ:Organ ;
+    core:hasPicture ?picture .
+    
+    ?picture core:url ?image_url ;
+        core:isPrimary   true .
+    
+    OPTIONAL { ?picture rdfs:label ?caption . }
+
+    VALUES ?organ_query_iri {
+        organs:Part15_021AlphenaandenRijn
+        organs:OI-ee4e8485b89314b0555e15c5b0b7181c
+        organs:FR-67462-SELES-STFOYY1-X
+    }
+}

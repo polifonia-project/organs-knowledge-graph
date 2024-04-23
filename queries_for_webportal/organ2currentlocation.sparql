@@ -1,0 +1,44 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX core:  <https://w3id.org/polifonia/ontology/core/>
+PREFIX organs: <http://w3id.org/polifonia/resource/organs/>
+PREFIX organ: <http://w3id.org/polifonia/ontology/organs/>
+PREFIX ins: <http://w3id.org/polifonia/ontology/instrument/>
+
+SELECT DISTINCT ?time ?name ?fulladdress ?city ?latitude ?longitude
+WHERE {
+
+    ?organ_query_iri core:includesWhole [
+        a ins:InstrumentWhole ;
+        core:hasTimedLocation [
+            a core:TimedLocation ;
+            core:hasLocation ?location ;
+            core:hasTimeInterval [
+                core:time ?time
+            ]
+        ]
+    ] .
+
+    OPTIONAL { 
+        ?location core:latitude ?latitude ;
+            core:longitude ?longitude .
+    }
+
+    OPTIONAL {
+        ?location core:name ?name .
+    }
+
+    OPTIONAL {
+        ?location core:hasAddress ?address .
+        OPTIONAL {
+            ?address core:fullAddress ?fulladdress .
+        }
+
+        OPTIONAL {
+            ?address core:hasCity ?city .
+        }
+    }
+
+    VALUES ?organ_query_iri {
+        organs:Part12_062RhenenGereformeerde
+    }
+} ORDER BY DESC(?time) LIMIT 1
