@@ -25,8 +25,7 @@ construct {
 
     ?blank_timeinterval a core:TimeInterval ;
         rdfs:label ?date_stated ;
-        core:hasIntervalDate ?date_stated ;
-        core:hasInterpretedIntervalDate ?average_date ;
+        core:time ?average_date ;
         core:startTime ?year_low ;
         core:endTime ?year_high .
 
@@ -118,13 +117,17 @@ WHERE {
 
         # date stated
         OPTIONAL { ?project_base xyz:date_stated ?date_stated . }
-        OPTIONAL {
-            ?project_base xyz:year_low ?year_low . 
-            ?project_base xyz:year_high ?year_high .
-        }
+        OPTIONAL { ?project_base xyz:year_low ?year_low . }
+        OPTIONAL { ?project_base xyz:year_high ?year_high . }
 
         # compute one year to represent time interval
-        BIND(IF(BOUND(?year_low), str(xsd:integer(ROUND((xsd:integer(?year_low) + xsd:integer(?year_high)) / 2))), ?nothing) AS ?average_date)
+        BIND(IF(BOUND(?year_low), ?year_low, ?year_high) AS ?year_low_for_average)
+        BIND(IF(BOUND(?year_high), ?year_high, ?year_low) AS ?year_high_for_average)
+
+        BIND(IF(
+            BOUND(?year_low_for_average) && BOUND(?year_high_for_average),
+            str(xsd:integer(ROUND((xsd:integer(?year_low_for_average) + xsd:integer(?year_high_for_average)) / 2))), ?nothing) AS ?average_date)
+        
         BIND(IF(BOUND(?date_stated), ?date_stated, ?average_date) AS ?disposition_date)
 
 
