@@ -9,7 +9,8 @@ pilot:
 work-package: 
 - WP1
 - WP2
-licence: CC BY
+licence:
+- CC-BY_v4
 related-components:
 - story:
   - Paul#1_OrganComparison
