@@ -1591,13 +1591,13 @@ organs:IT-0600181010  core:hasPicture  [ rdf:type        core:PictureDescription
                                        ] .
 
 organs:IT-0100127473  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "veduta d'insieme" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1994/00/00"
                                                           ] ;
                                          core:id          "IT-0100127473PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "veduta d'insieme" ;
                                          core:name        "IT-0100127473PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248953_00132537.jpg"
                                        ] .
@@ -2902,13 +2902,13 @@ organs:IT-0100016796  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100127469  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "facciata" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1994/00/00"
                                                           ] ;
                                          core:id          "IT-0100127469PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "facciata" ;
                                          core:name        "IT-0100127469PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248920_00132542.jpg"
                                        ] .
@@ -2936,13 +2936,13 @@ organs:IT-0100016860  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100016775  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "secondo organo" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1979/05/27"
                                                           ] ;
                                          core:id          "IT-0100016775PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "secondo organo" ;
                                          core:name        "IT-0100016775PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039285/ICCD13248074_00026725.jpg"
                                        ] .
@@ -3690,12 +3690,12 @@ organs:IT-0100033478  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0303275227  core:hasPicture  [ rdf:type        core:PictureDescription ;
+                                         rdfs:label      "Cantoria, cassa e organo visti dalla navata" ;
                                          core:hasDate    [ rdf:type              core:TimeInterval ;
                                                            core:hasIntervalDate  "2023"
                                                          ] ;
                                          core:id         "IT-0303275227PrimaryPicture" ;
                                          core:isPrimary  true ;
-                                         core:label      "Cantoria, cassa e organo visti dalla navata" ;
                                          core:name       "IT-0303275227PrimaryPicture" ;
                                          core:url        "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1072245/ICCD15962347_Casalpusterlengo_0001.jpg"
                                        ] .
@@ -4471,13 +4471,13 @@ organs:IT-0100046650  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100127476  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "veduta d'insieme" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1994/00/00"
                                                           ] ;
                                          core:id          "IT-0100127476PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "veduta d'insieme" ;
                                          core:name        "IT-0100127476PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248975_00132536.jpg"
                                        ] .
@@ -4659,13 +4659,13 @@ organs:IT-0100038067  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100127471  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "veduta d'insieme" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1994/00/00"
                                                           ] ;
                                          core:id          "IT-0100127471PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "veduta d'insieme" ;
                                          core:name        "IT-0100127471PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248937_00132533.jpg"
                                        ] .
@@ -4953,13 +4953,13 @@ organs:IT-0100034443  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100024566  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "prospetto" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1979/10/00"
                                                           ] ;
                                          core:id          "IT-0100024566PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "prospetto" ;
                                          core:name        "IT-0100024566PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248498_00035514.jpg"
                                        ] .
@@ -5031,13 +5031,13 @@ organs:IT-0100028663  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100020485  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "veduta d'insieme" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1979/11/00"
                                                           ] ;
                                          core:id          "IT-0100020485PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "veduta d'insieme" ;
                                          core:name        "IT-0100020485PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248393_00030325.jpg"
                                        ] .
@@ -5197,13 +5197,13 @@ organs:IT-0100006340  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100024561  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "veduta d'insieme" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1980/10/02"
                                                           ] ;
                                          core:id          "IT-0100024561PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "veduta d'insieme" ;
                                          core:name        "IT-0100024561PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248484_00035502.jpg"
                                        ] .
@@ -6171,12 +6171,12 @@ organs:IT-0100006399  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-1400108393  core:hasPicture  [ rdf:type        core:PictureDescription ;
+                                         rdfs:label      "Cantoria, cassa e organo visti dalla navata" ;
                                          core:hasDate    [ rdf:type              core:TimeInterval ;
                                                            core:hasIntervalDate  "2022"
                                                          ] ;
                                          core:id         "IT-1400108393PrimaryPicture" ;
                                          core:isPrimary  true ;
-                                         core:label      "Cantoria, cassa e organo visti dalla navata" ;
                                          core:name       "IT-1400108393PrimaryPicture" ;
                                          core:url        "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1070866/ICCD15749838_Trivento_001.jpg"
                                        ] .
@@ -6884,13 +6884,13 @@ organs:IT-0100026794  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100026715  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "particolare canne" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1981/05/00"
                                                           ] ;
                                          core:id          "IT-0100026715PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "particolare canne" ;
                                          core:name        "IT-0100026715PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039285/ICCD13247310_00037904.jpg"
                                        ] .
@@ -7171,13 +7171,13 @@ organs:IT-0100026731  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100016854  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "duplice copia" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1979/05/30"
                                                           ] ;
                                          core:id          "IT-0100016854PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "duplice copia" ;
                                          core:name        "IT-0100016854PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248683_00026968.jpg"
                                        ] .
@@ -7526,13 +7526,13 @@ organs:IT-0303275082  core:hasPicture  [ rdf:type        core:PictureDescription
                                        ] .
 
 organs:IT-0100127474  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "veduta d'insieme" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1994/00/00"
                                                           ] ;
                                          core:id          "IT-0100127474PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "veduta d'insieme" ;
                                          core:name        "IT-0100127474PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248969_00132532.jpg"
                                        ] .
@@ -10395,13 +10395,13 @@ organs:IT-0100012750  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100127477  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "veduta d'insieme" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1994/00/00"
                                                           ] ;
                                          core:id          "IT-0100127477PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "veduta d'insieme" ;
                                          core:name        "IT-0100127477PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248981_00132538.jpg"
                                        ] .
@@ -10571,13 +10571,13 @@ organs:IT-0100038068  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100127472  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "veduta d'insieme" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1994/00/00"
                                                           ] ;
                                          core:id          "IT-0100127472PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "veduta d'insieme" ;
                                          core:name        "IT-0100127472PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248946_00132534.jpg"
                                        ] .
@@ -11106,13 +11106,13 @@ organs:IT-0100026709  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0900896448  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "Prospetto e consolle dell'organo della chiesa di Sant’Antonio in Viareggio" ;
                                          core:hasCreator  "Famiglia Organaria Vincenzo Mascioni SRL" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "gennaio 2020"
                                                           ] ;
                                          core:id          "IT-0900896448PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "Prospetto e consolle dell'organo della chiesa di Sant’Antonio in Viareggio" ;
                                          core:name        "IT-0900896448PrimaryPicture" ;
                                          core:url         "http://www.sigecweb.beniculturali.it/images/fullsize/ICCD1067146/ICCD14956975_Foto%201.JPG"
                                        ] .
@@ -11891,13 +11891,13 @@ organs:IT-0100016795  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100127468  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "facciata" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1994/00/00"
                                                           ] ;
                                          core:id          "IT-0100127468PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "facciata" ;
                                          core:name        "IT-0100127468PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248925_00132541.jpg"
                                        ] .
@@ -12983,13 +12983,13 @@ organs:IT-0100033414  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100046659  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "veduta d'insieme" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1989/11/00"
                                                           ] ;
                                          core:id          "IT-0100046659PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "veduta d'insieme" ;
                                          core:name        "IT-0100046659PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248539_00062218.jpg"
                                        ] .
@@ -13543,13 +13543,13 @@ organs:IT-0100024310  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100127475  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "veduta d'insieme" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1994/00/00"
                                                           ] ;
                                          core:id          "IT-0100127475PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "veduta d'insieme" ;
                                          core:name        "IT-0100127475PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248962_00132539.jpg"
                                        ] .
@@ -13720,25 +13720,25 @@ organs:IT-0100006476  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100038066  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "prospetto" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1985/10/25"
                                                           ] ;
                                          core:id          "IT-0100038066PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "prospetto" ;
                                          core:name        "IT-0100038066PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248868_00049542.jpg"
                                        ] .
 
 organs:IT-0100127470  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "veduta d'insieme" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1994/00/00"
                                                           ] ;
                                          core:id          "IT-0100127470PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "veduta d'insieme" ;
                                          core:name        "IT-0100127470PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248931_00132540.jpg"
                                        ] .
@@ -13766,13 +13766,13 @@ organs:IT-0100006455  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100037927  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "veduta d'insieme" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1985/05/00"
                                                           ] ;
                                          core:id          "IT-0100037927PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "veduta d'insieme" ;
                                          core:name        "IT-0100037927PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248534_00049385.jpg"
                                        ] .
@@ -14744,13 +14744,13 @@ organs:IT-0100020851  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100014466  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "immagine scansionata in digitale in data 2010/06/16" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1990/11/05"
                                                           ] ;
                                          core:id          "IT-0100014466PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "immagine scansionata in digitale in data 2010/06/16" ;
                                          core:name        "IT-0100014466PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248360_DIG15515.jpg"
                                        ] .
@@ -14843,13 +14843,13 @@ organs:IT-0100020745  core:hasPicture  [ rdf:type         core:PictureDescriptio
                                        ] .
 
 organs:IT-0100046661  core:hasPicture  [ rdf:type         core:PictureDescription ;
+                                         rdfs:label       "prospetto" ;
                                          core:hasCreator  "SPSAE TO" ;
                                          core:hasDate     [ rdf:type              core:TimeInterval ;
                                                             core:hasIntervalDate  "1989/11/00"
                                                           ] ;
                                          core:id          "IT-0100046661PrimaryPicture" ;
                                          core:isPrimary   true ;
-                                         core:label       "prospetto" ;
                                          core:name        "IT-0100046661PrimaryPicture" ;
                                          core:url         "https://www.sigecweb.beniculturali.it/images/fullsize/ICCD1039286/ICCD13248544_00062224.jpg"
                                        ] .
