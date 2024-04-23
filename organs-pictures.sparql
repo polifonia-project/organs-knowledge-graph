@@ -21,7 +21,7 @@ construct {
         core:id ?picture_id ;
         core:url ?picture_url ;
         core:hasDate ?blank_timeinterval ;
-        core:label ?picture_caption ;
+        rdfs:label ?picture_caption ;
         core:comment ?picture_comment ;
         core:hasCreator ?picture_creator .
 
